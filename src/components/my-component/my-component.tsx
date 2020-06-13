@@ -1,6 +1,6 @@
 import {Component, h} from '@stencil/core';
 import {
-  BenefitsBots,
+  BenefitsBots, Consultation,
   header,
   PerformanceInformation,
   ProductInformation,
@@ -16,7 +16,6 @@ import {
 export class MyComponent {
 
   render() {
-    console.log(ProductInformation)
     return (
       <div>
         <s-abdullakh-header header={header}/>
@@ -25,6 +24,8 @@ export class MyComponent {
         <s-abdullakh-transition-create-bot TransitionCreateBot={TransitionCreateBot}/>
         <s-abdullakh-performance-information PerformanceInformation={PerformanceInformation}/>
         <s-abdullakh-benefits-bots BenefitsBots={BenefitsBots} />
+        <s-abdullakh-consultation Consultation={Consultation} />
+        <s-abdullakh-tariffs/>
       </div>
     );
   }

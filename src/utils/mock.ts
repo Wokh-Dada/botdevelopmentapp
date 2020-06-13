@@ -253,6 +253,67 @@ export const PerformanceInformation = {
 ;
 
 export const BenefitsBots = {
-  outerImg: 'https://static.tildacdn.com/tild3430-3262-4337-b730-313335633963/44.svg',
-  innerImg: 'https://static.tildacdn.com/tild3333-3336-4335-b164-356134623438/plane_1.svg',
+  title: "Преимущества чат-ботов",
+  infoBlock: [
+    {
+      id: 1,
+      outerImg: 'https://static.tildacdn.com/tild3730-6136-4538-b535-333639386533/Ellipse_12.svg',
+      innerImg: 'https://static.tildacdn.com/tild6462-3862-4966-a361-363238616264/1.svg',
+      title: 'Низкая цена',
+      text: 'Бот поможет оптимизировать затраты на сотрудников'
+    },
+    {
+      id: 2,
+      outerImg: 'https://static.tildacdn.com/tild3730-6136-4538-b535-333639386533/Ellipse_12.svg',
+      innerImg: 'https://static.tildacdn.com/tild3466-3337-4139-b261-353162653833/2.svg',
+      title: 'Рост конверсии',
+      text: 'Бот увеличивает приток клиентов с сайта, и привлекает новых клиентов'
+    },
+    {
+      id: 3,
+      outerImg: 'https://static.tildacdn.com/tild3730-6136-4538-b535-333639386533/Ellipse_12.svg',
+      innerImg: 'https://static.tildacdn.com/tild3434-3466-4665-b634-666564303434/3.svg',
+      title: 'Работает 24/7',
+      text: 'Бот не отдыхает, не обедает, не спит'
+    },
+    {
+      id: 4,
+      outerImg: 'https://static.tildacdn.com/tild3730-6136-4538-b535-333639386533/Ellipse_12.svg',
+      innerImg: 'https://static.tildacdn.com/tild6335-3332-4338-b232-383161306137/10.svg',
+      title: 'Высокая скорость работы',
+      text: 'Бот отвечает моментально'
+    },
+    {
+      id: 5,
+      outerImg: 'https://static.tildacdn.com/tild3730-6136-4538-b535-333639386533/Ellipse_12.svg',
+      innerImg: 'https://static.tildacdn.com/tild3636-3263-4330-b131-666462653465/5.svg',
+      title: 'Простое обслуживание',
+      text: 'Бота легко дорабатывать и обновлять'
+    },
+    {
+      id: 6,
+      outerImg: 'https://static.tildacdn.com/tild3730-6136-4538-b535-333639386533/Ellipse_12.svg',
+      innerImg: 'https://static.tildacdn.com/tild6537-6631-4335-b334-306266373339/6.svg',
+      title: 'Автоматизация рутины',
+      text: 'Бот экономит ваше время автоматически выполняя любые типовые задачи'
+    },
+  ]
+}
+
+export const Consultation= {
+  imgUrl: 'https://static.tildacdn.com/tild6436-6430-4061-a561-343031666633/undraw_moving_forwar.svg',
+  title: 'Бесплатная консультация',
+  text: `
+        Расскажем какой
+            <strong>
+                <span style="color: rgb(255, 208, 0);">
+                    чат-бот
+                </span>
+            </strong> подойдет
+            <strong>
+                <span style="color: rgb(255, 208, 0);">
+                    вашему бизнесу
+                 </span>
+            </strong>`,
+  btnText: 'Хочу консультацию'
 }

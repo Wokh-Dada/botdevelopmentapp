@@ -1,0 +1,61 @@
+.Consultation{
+  padding: 100px 0 200px 0;
+}
+
+.Consultation_img{
+  width: 480px;
+  height: 352px;
+  background-size: cover;
+  background-position: center;
+}
+
+.Consultation_advertising_link_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Consultation_title_block {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  transform: rotate(2deg);
+  background-color: #ffd000;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  width: 388px;
+  height: 95px;
+}
+
+.Consultatio_title {
+  color: #323145;
+  font-size: 40px;
+  line-height: 0.95;
+  font-weight: 700;
+  text-align: center;
+}
+
+.Consultation_text{
+  text-align: center;
+  width: 250px;
+  margin: 30px;
+}
+
+.Consultation_btn {
+  width: 310px;
+  height: 55px;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 700;
+  border-width: 1px;
+  border-radius: 30px;
+  background-color: #ffd000!important;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  box-shadow: 2px 2px 2px 1px rgba(130, 127, 127, 0.2);
+}

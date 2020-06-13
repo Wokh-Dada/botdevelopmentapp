@@ -11,6 +11,12 @@ export namespace Components {
     interface SAbdullakhBenefitsBots {
         "BenefitsBots": any;
     }
+    interface SAbdullakhBenefitsBotsBlock {
+        "arr": any;
+    }
+    interface SAbdullakhConsultation {
+        "Consultation": any;
+    }
     interface SAbdullakhHeader {
         /**
           * массив меню
@@ -65,6 +71,8 @@ export namespace Components {
          */
         "arr": any;
     }
+    interface SAbdullakhTariffs {
+    }
     interface SAbdullakhTransitionCreateBot {
         "TransitionCreateBot": any;
     }
@@ -87,6 +95,18 @@ declare global {
     var HTMLSAbdullakhBenefitsBotsElement: {
         prototype: HTMLSAbdullakhBenefitsBotsElement;
         new (): HTMLSAbdullakhBenefitsBotsElement;
+    };
+    interface HTMLSAbdullakhBenefitsBotsBlockElement extends Components.SAbdullakhBenefitsBotsBlock, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhBenefitsBotsBlockElement: {
+        prototype: HTMLSAbdullakhBenefitsBotsBlockElement;
+        new (): HTMLSAbdullakhBenefitsBotsBlockElement;
+    };
+    interface HTMLSAbdullakhConsultationElement extends Components.SAbdullakhConsultation, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhConsultationElement: {
+        prototype: HTMLSAbdullakhConsultationElement;
+        new (): HTMLSAbdullakhConsultationElement;
     };
     interface HTMLSAbdullakhHeaderElement extends Components.SAbdullakhHeader, HTMLStencilElement {
     }
@@ -154,6 +174,12 @@ declare global {
         prototype: HTMLSAbdullakhProductPresentationTitleElement;
         new (): HTMLSAbdullakhProductPresentationTitleElement;
     };
+    interface HTMLSAbdullakhTariffsElement extends Components.SAbdullakhTariffs, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhTariffsElement: {
+        prototype: HTMLSAbdullakhTariffsElement;
+        new (): HTMLSAbdullakhTariffsElement;
+    };
     interface HTMLSAbdullakhTransitionCreateBotElement extends Components.SAbdullakhTransitionCreateBot, HTMLStencilElement {
     }
     var HTMLSAbdullakhTransitionCreateBotElement: {
@@ -175,6 +201,8 @@ declare global {
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
         "s-abdullakh-benefits-bots": HTMLSAbdullakhBenefitsBotsElement;
+        "s-abdullakh-benefits-bots-block": HTMLSAbdullakhBenefitsBotsBlockElement;
+        "s-abdullakh-consultation": HTMLSAbdullakhConsultationElement;
         "s-abdullakh-header": HTMLSAbdullakhHeaderElement;
         "s-abdullakh-header-center": HTMLSAbdullakhHeaderCenterElement;
         "s-abdullakh-header-end": HTMLSAbdullakhHeaderEndElement;
@@ -186,6 +214,7 @@ declare global {
         "s-abdullakh-product-presentation": HTMLSAbdullakhProductPresentationElement;
         "s-abdullakh-product-presentation-img": HTMLSAbdullakhProductPresentationImgElement;
         "s-abdullakh-product-presentation-title": HTMLSAbdullakhProductPresentationTitleElement;
+        "s-abdullakh-tariffs": HTMLSAbdullakhTariffsElement;
         "s-abdullakh-transition-create-bot": HTMLSAbdullakhTransitionCreateBotElement;
         "s-abdullakh-transition-create-bot-follow": HTMLSAbdullakhTransitionCreateBotFollowElement;
         "s-abdullakh-transition-create-bot-title": HTMLSAbdullakhTransitionCreateBotTitleElement;
@@ -196,6 +225,12 @@ declare namespace LocalJSX {
     }
     interface SAbdullakhBenefitsBots {
         "BenefitsBots"?: any;
+    }
+    interface SAbdullakhBenefitsBotsBlock {
+        "arr"?: any;
+    }
+    interface SAbdullakhConsultation {
+        "Consultation"?: any;
     }
     interface SAbdullakhHeader {
         /**
@@ -251,6 +286,8 @@ declare namespace LocalJSX {
          */
         "arr"?: any;
     }
+    interface SAbdullakhTariffs {
+    }
     interface SAbdullakhTransitionCreateBot {
         "TransitionCreateBot"?: any;
     }
@@ -263,6 +300,8 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "my-component": MyComponent;
         "s-abdullakh-benefits-bots": SAbdullakhBenefitsBots;
+        "s-abdullakh-benefits-bots-block": SAbdullakhBenefitsBotsBlock;
+        "s-abdullakh-consultation": SAbdullakhConsultation;
         "s-abdullakh-header": SAbdullakhHeader;
         "s-abdullakh-header-center": SAbdullakhHeaderCenter;
         "s-abdullakh-header-end": SAbdullakhHeaderEnd;
@@ -274,6 +313,7 @@ declare namespace LocalJSX {
         "s-abdullakh-product-presentation": SAbdullakhProductPresentation;
         "s-abdullakh-product-presentation-img": SAbdullakhProductPresentationImg;
         "s-abdullakh-product-presentation-title": SAbdullakhProductPresentationTitle;
+        "s-abdullakh-tariffs": SAbdullakhTariffs;
         "s-abdullakh-transition-create-bot": SAbdullakhTransitionCreateBot;
         "s-abdullakh-transition-create-bot-follow": SAbdullakhTransitionCreateBotFollow;
         "s-abdullakh-transition-create-bot-title": SAbdullakhTransitionCreateBotTitle;
@@ -285,6 +325,8 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "s-abdullakh-benefits-bots": LocalJSX.SAbdullakhBenefitsBots & JSXBase.HTMLAttributes<HTMLSAbdullakhBenefitsBotsElement>;
+            "s-abdullakh-benefits-bots-block": LocalJSX.SAbdullakhBenefitsBotsBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhBenefitsBotsBlockElement>;
+            "s-abdullakh-consultation": LocalJSX.SAbdullakhConsultation & JSXBase.HTMLAttributes<HTMLSAbdullakhConsultationElement>;
             "s-abdullakh-header": LocalJSX.SAbdullakhHeader & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderElement>;
             "s-abdullakh-header-center": LocalJSX.SAbdullakhHeaderCenter & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderCenterElement>;
             "s-abdullakh-header-end": LocalJSX.SAbdullakhHeaderEnd & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderEndElement>;
@@ -296,6 +338,7 @@ declare module "@stencil/core" {
             "s-abdullakh-product-presentation": LocalJSX.SAbdullakhProductPresentation & JSXBase.HTMLAttributes<HTMLSAbdullakhProductPresentationElement>;
             "s-abdullakh-product-presentation-img": LocalJSX.SAbdullakhProductPresentationImg & JSXBase.HTMLAttributes<HTMLSAbdullakhProductPresentationImgElement>;
             "s-abdullakh-product-presentation-title": LocalJSX.SAbdullakhProductPresentationTitle & JSXBase.HTMLAttributes<HTMLSAbdullakhProductPresentationTitleElement>;
+            "s-abdullakh-tariffs": LocalJSX.SAbdullakhTariffs & JSXBase.HTMLAttributes<HTMLSAbdullakhTariffsElement>;
             "s-abdullakh-transition-create-bot": LocalJSX.SAbdullakhTransitionCreateBot & JSXBase.HTMLAttributes<HTMLSAbdullakhTransitionCreateBotElement>;
             "s-abdullakh-transition-create-bot-follow": LocalJSX.SAbdullakhTransitionCreateBotFollow & JSXBase.HTMLAttributes<HTMLSAbdullakhTransitionCreateBotFollowElement>;
             "s-abdullakh-transition-create-bot-title": LocalJSX.SAbdullakhTransitionCreateBotTitle & JSXBase.HTMLAttributes<HTMLSAbdullakhTransitionCreateBotTitleElement>;

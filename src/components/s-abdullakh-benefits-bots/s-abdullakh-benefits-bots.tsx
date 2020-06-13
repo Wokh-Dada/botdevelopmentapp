@@ -14,135 +14,27 @@ export class SAbdullakhBenefitsBots implements ComponentInterface {
         <div class="container">
           <div class="BenefitsBotsTitleBlock">
             <div class="BenefitsBotsTitle">
-              Преимущества чат-ботов
+              {this.BenefitsBots.title}
             </div>
           </div>
           <div class="row">
-            <div class="col-4">
-              <div class="BenefitsBotsBlock">
-                <div class="BenefitsBotsBlock_imgBlock">
-                  <div class="BenefitsBotsBlock_outer_img"
-                       style={{backgroundImage: "url(" + this.BenefitsBots.outerImg + ")"}}>
-                    <div class="BenefitsBotsBlock_inner_img"
-                         style={{backgroundImage: "url(" + this.BenefitsBots.innerImg + ")"}}>
-                    </div>
-                  </div>
-                </div>
-                <div class="BenefitsBotsBlock_content">
-                  <div class="BenefitsBotsBlock_content_title">
-                    Низкая цена
-                  </div>
-                  <div class="BenefitsBotsBlock_content_text">
-                    Бот поможет оптимизировать затраты на сотрудников
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="BenefitsBotsBlock">
-                <div class="BenefitsBotsBlock_imgBlock">
-                  <div class="BenefitsBotsBlock_outer_img"
-                       style={{backgroundImage: "url(" + this.BenefitsBots.outerImg + ")"}}>
-                    <div class="BenefitsBotsBlock_inner_img"
-                         style={{backgroundImage: "url(" + this.BenefitsBots.innerImg + ")"}}>
-                    </div>
-                  </div>
-                </div>
-                <div class="BenefitsBotsBlock_content">
-                  <div class="BenefitsBotsBlock_content_title">
-                    Низкая цена
-                  </div>
-                  <div class="BenefitsBotsBlock_content_text">
-                    Бот поможет оптимизировать затраты на сотрудников
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="BenefitsBotsBlock">
-                <div class="BenefitsBotsBlock_imgBlock">
-                  <div class="BenefitsBotsBlock_outer_img"
-                       style={{backgroundImage: "url(" + this.BenefitsBots.outerImg + ")"}}>
-                    <div class="BenefitsBotsBlock_inner_img"
-                         style={{backgroundImage: "url(" + this.BenefitsBots.innerImg + ")"}}>
-                    </div>
-                  </div>
-                </div>
-                <div class="BenefitsBotsBlock_content">
-                  <div class="BenefitsBotsBlock_content_title">
-                    Низкая цена
-                  </div>
-                  <div class="BenefitsBotsBlock_content_text">
-                    Бот поможет оптимизировать затраты на сотрудников
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="BenefitsBotsBlock">
-                <div class="BenefitsBotsBlock_imgBlock">
-                  <div class="BenefitsBotsBlock_outer_img"
-                       style={{backgroundImage: "url(" + this.BenefitsBots.outerImg + ")"}}>
-                    <div class="BenefitsBotsBlock_inner_img"
-                         style={{backgroundImage: "url(" + this.BenefitsBots.innerImg + ")"}}>
-                    </div>
-                  </div>
-                </div>
-                <div class="BenefitsBotsBlock_content">
-                  <div class="BenefitsBotsBlock_content_title">
-                    Низкая цена
-                  </div>
-                  <div class="BenefitsBotsBlock_content_text">
-                    Бот поможет оптимизировать затраты на сотрудников
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="BenefitsBotsBlock">
-                <div class="BenefitsBotsBlock_imgBlock">
-                  <div class="BenefitsBotsBlock_outer_img"
-                       style={{backgroundImage: "url(" + this.BenefitsBots.outerImg + ")"}}>
-                    <div class="BenefitsBotsBlock_inner_img"
-                         style={{backgroundImage: "url(" + this.BenefitsBots.innerImg + ")"}}>
-                    </div>
-                  </div>
-                </div>
-                <div class="BenefitsBotsBlock_content">
-                  <div class="BenefitsBotsBlock_content_title">
-                    Низкая цена
-                  </div>
-                  <div class="BenefitsBotsBlock_content_text">
-                    Бот поможет оптимизировать затраты на сотрудников
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="BenefitsBotsBlock">
-                <div class="BenefitsBotsBlock_imgBlock">
-                  <div class="BenefitsBotsBlock_outer_img"
-                       style={{backgroundImage: "url(" + this.BenefitsBots.outerImg + ")"}}>
-                    <div class="BenefitsBotsBlock_inner_img"
-                         style={{backgroundImage: "url(" + this.BenefitsBots.innerImg + ")"}}>
-                    </div>
-                  </div>
-                </div>
-                <div class="BenefitsBotsBlock_content">
-                  <div class="BenefitsBotsBlock_content_title">
-                    Низкая цена
-                  </div>
-                  <div class="BenefitsBotsBlock_content_text">
-                    Бот поможет оптимизировать затраты на сотрудников
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            <BotsInfoBlocks arr={this.BenefitsBots.infoBlock} />
           </div>
         </div>
       </section>
     );
   }
+}
 
+/*
+* компонентная функция для вывода элементов news-main-block
+ */
+const BotsInfoBlocks = (props) => {
+  return props.arr.map((item) => {
+    return (
+      <div class="col-4">
+        <s-abdullakh-benefits-bots-block arr={item}/>
+      </div>
+    );
+  })
 }
