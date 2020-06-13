@@ -1,0 +1,46 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:not([href]) {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
+  text-decoration: inherit;
+  color: inherit;
+  outline: inherit;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+  text-decoration: inherit;
+  color: inherit;
+  outline: inherit;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+  .container{
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1200px) {
+}

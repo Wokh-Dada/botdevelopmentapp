@@ -1,0 +1,84 @@
+.PerformanceInformation {
+  padding: 150px 0;
+  display: flex;
+}
+
+.PerformanceInformationTitleBlock {
+  max-width: 660px;
+  margin: auto;
+}
+
+.PerformanceInformationTitle {
+  color: #323145;
+  font-size: 40px;
+  line-height: 0.95;
+  font-weight: 700;
+  text-align: center;
+}
+
+.PerformanceInformationContentBlock {
+
+}
+
+.PerformanceInformationContent {
+  display: flex;
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.PerformanceInformationContentEndText {
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 600;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  padding-top: 25px;
+}
+
+.PerformanceInformationContentStart {
+  text-align: right;
+  align-self: flex-end;
+}
+
+.PerformanceInformationContentCenter {
+  width: 290px;
+  height: 365px;
+  background-size: cover;
+  background-position: center;
+}
+
+.PerformanceInformationContentEnd {
+  text-align: left;
+  align-self: flex-end;
+}
+
+.PerformanceInformationBtnBlock{
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px 155px 0 0;
+}
+
+.PerformanceInformationBtn{
+  width: 320px;
+  height: 55px;
+  color: #ffffff!important;
+  font-size: 18px;
+  font-family: 'Montserrat',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 700;
+  border-width: 1px;
+  border-radius: 30px;
+  background-color: #ffd000;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  box-shadow: 1px 1px 2px 1px rgba(189,189,189,0.2);
+}

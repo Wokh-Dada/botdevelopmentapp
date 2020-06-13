@@ -1,0 +1,25 @@
+.my_navbar{
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: .5rem 1rem;
+
+}
+
+.navbar_item{
+  display: inline-block;
+  padding: 20px 0 0 35px;
+}
+
+.navbar_item a{
+  color: #242323;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}

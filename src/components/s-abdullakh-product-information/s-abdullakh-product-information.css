@@ -1,0 +1,82 @@
+.ProductInformation{
+  margin: 240px 0 100px 0;
+}
+
+.ProductInfoTitle{
+  color: #323145;
+  font-size: 40px;
+  font-family: 'Montserrat',Arial,sans-serif;
+  line-height: 0.95;
+  font-weight: 700;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.ProductInfoBlock{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ProductInfoBlockOuterImgBlock{
+  display: flex;
+  justify-content: center;
+  color: #323145;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.ProductInfoBlockOuterImg{
+  width: 140px;
+  height: 102px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ProductInfoBlockInnerImg{
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  background-position: center;
+}
+
+.ProductInfoTextBlock{
+  width: 245px;
+  min-height: 118px;
+  color: #323145;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  padding-bottom: 20px;
+}
+
+.ProductInfoBtn{
+  width: 245px;
+  height: 45px;
+  color: #ffffff!important;
+  font-size: 14px;
+  font-family: 'Montserrat',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  border-width: 1px;
+  border-radius: 30px;
+  background-color: #ffd000;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  box-shadow: 1px 1px 2px 2px rgba(50,49,69,0.2);
+}

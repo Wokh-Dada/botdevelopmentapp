@@ -1,0 +1,60 @@
+/*.PerformanceInformation {*/
+/*  margin-top: 150px;*/
+/*  display: flex;*/
+/*}*/
+
+/*.PerformanceInformationTitleBlock {*/
+/*  max-width: 660px;*/
+/*  margin: auto;*/
+/*}*/
+
+/*.PerformanceInformationTitle {*/
+/*  color: #323145;*/
+/*  font-size: 40px;*/
+/*  line-height: 0.95;*/
+/*  font-weight: 700;*/
+/*  text-align: center;*/
+/*}*/
+/*!**!*/
+/*.PerformanceInformationContentBlock {*/
+
+/*}*/
+
+/*.PerformanceInformationContent {*/
+/*  display: flex;*/
+/*  color: #000000;*/
+/*  font-size: 14px;*/
+/*  line-height: 1.55;*/
+/*  font-weight: 400;*/
+/*  background-position: center center;*/
+/*  border-color: transparent;*/
+/*  border-style: solid;*/
+/*}*/
+
+/*.PerformanceInformationContentEndText {*/
+/*  color: #000000;*/
+/*  font-size: 14px;*/
+/*  line-height: 1.55;*/
+/*  font-weight: 600;*/
+/*  background-position: center center;*/
+/*  border-color: transparent;*/
+/*  border-style: solid;*/
+/*  padding-top: 25px;*/
+/*}*/
+
+/*.PerformanceInformationContentStart {*/
+/*  text-align: right;*/
+/*  align-self: flex-end;*/
+/*}*/
+
+/*.PerformanceInformationContentCenter {*/
+/*  width: 290px;*/
+/*  height: 365px;*/
+/*  background-size: cover;*/
+/*  background-position: center;*/
+/*}*/
+
+/*.PerformanceInformationContentEnd {*/
+/*  text-align: left;*/
+/*  align-self: flex-end;*/
+/*}*/
