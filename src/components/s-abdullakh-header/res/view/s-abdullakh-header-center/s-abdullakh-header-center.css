@@ -1,4 +1,4 @@
-.my_navbar{
+.my_navbar {
   height: 100%;
   position: relative;
   display: flex;
@@ -8,12 +8,12 @@
 
 }
 
-.navbar_item{
+.navbar_item {
   display: inline-block;
   padding: 20px 0 0 35px;
 }
 
-.navbar_item a{
+.navbar_item a {
   color: #242323;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
@@ -22,4 +22,31 @@
   background-position: center center;
   border-color: transparent;
   border-style: solid;
+}
+
+@media (max-width: 479px) {
+  .my_navbar {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+  .navbar_item {
+    padding: 20px 0 0 10px;
+  }
+
+  .navbar_item a {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
 }

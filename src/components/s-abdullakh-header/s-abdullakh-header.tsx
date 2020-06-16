@@ -1,4 +1,5 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
+import {AbdullakhHeader} from "./interface/common.interface";
 
 @Component({
   tag: 's-abdullakh-header',
@@ -7,26 +8,34 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 })
 export class SAbdullakhHeader implements ComponentInterface {
   /**
-   * массив меню
+   * объект с массивом меню и string для подкомпонентов header-start header-end
    * */
-  @Prop() header: any;
+  @Prop() header: AbdullakhHeader;
+
+  /**
+   * клик по элементам компонента header
+   * */
+  @Event() clickOnHeader: EventEmitter;
 
   render() {
 
     return (
       <header>
         <div class="container mt-2">
-          <div class="row">
-            <div class="col-3">
-              <s-abdullakh-header-start arr={this.header} />
+          <div class="header_menu">
+            <div class="HeaderStart ">
+              <s-abdullakh-header-start logo={this.header.logoUrl}/>
             </div>
-            <div class="col-6">
+            <div class="HeaderCenter">
               <nav class="my_navbar">
                 <ItemLink arr={this.header.menu}/>
+                <div class="d-block d-md-none">
+                  <s-abdullakh-header-end phoneNumber={this.header.phoneNumber}/>
+                </div>
               </nav>
             </div>
-            <div class="col-3">
-              <s-abdullakh-header-end arr={this.header}/>
+            <div class="HeaderEnd d-md-block d-none">
+              <s-abdullakh-header-end phoneNumber={this.header.phoneNumber}/>
             </div>
           </div>
         </div>

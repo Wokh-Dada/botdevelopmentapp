@@ -1,4 +1,5 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
+import {AbdullakhHeaderCenter} from "./interface/common.interface";
 
 @Component({
   tag: 's-abdullakh-header-center',
@@ -7,13 +8,22 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 })
 export class SAbdullakhHeaderCenter implements ComponentInterface {
   /**
-   * массив меню
+   * объект с данными и для элементов меню
    * */
-  @Prop() arr: any;
+  @Prop() arr: AbdullakhHeaderCenter;
+
+  /**
+   * клик по элементу HeaderCenter (меню) компонента header
+   * */
+  @Event() clickOnHeader: EventEmitter;
 
   render() {
     return (
-      <div class="navbar_item">
+      <div
+        class="navbar_item"
+        onClick={() => {
+          this.clickOnHeader.emit(this.arr.linkName)
+        }}>
         <a>
           {this.arr.linkName}
         </a>

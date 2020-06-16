@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 's-abdullakh-tariffs',
@@ -6,85 +6,48 @@ import {Component, ComponentInterface, h} from '@stencil/core';
   shadow: false,
 })
 export class SAbdullakhTariffs implements ComponentInterface {
+  /**
+   * данные компонента Tariffs
+   * */
+  @Prop() Tariffs: any;
+
+  /**
+   * клик по элементам компонента Tariffs
+   * */
+  @Event() clickOnTariffs: EventEmitter;
 
   render() {
     return (
       <section class="Tariffs_section">
+        <div class="dinamicImg" style={{backgroundImage: "url(" + this.Tariffs.dinamicImg + ")"}}
+             onClick={() => this.clickOnTariffs.emit(this.Tariffs.dinamicImg)}>
+          <span onClick={() => this.clickOnTariffs.emit(this.Tariffs.dinamicText)}>
+            {this.Tariffs.dinamicText}
+          </span>
+        </div>
         <div class="container">
-          <div class="Tariffs_title">
-            Тарифы
+          <div class="Tariffs_title" onClick={() => this.clickOnTariffs.emit(this.Tariffs.title)}>
+            {this.Tariffs.title}
           </div>
-          <div class="Tariffs_info_blocks">
-            <div class="Tariffs_info_block">
-              <div class="Tariffs_info_block_outer_icon"
-                   style={{backgroundImage: "url(https://static.tildacdn.com/tild3433-3861-4062-a230-656534333436/Ellipse_11.svg)"}}>
-                <div class="Tariffs_info_block_inner_icon"
-                     style={{backgroundImage: "url(https://static.tildacdn.com/tild6237-3161-4162-b332-623865363564/boy_1.svg)"}}>
-
-                </div>
-              </div>
-              <div class="Tariffs_info_block_title">
-                Чат-бот визитка
-              </div>
-              <div class="Tariffs_info_block_text">
-                Чат-бот который поможет вашим клиентам познакомится с вашим бизнесом, узнать информацию о оказываемых
-                услугах.
-              </div>
-              <div class="Tariffs_info_price">
-                узнайте стоимость
-              </div>
-              <div class="Tariffs_info_btnBlock">
-                <button class="Tariffs_info_btn">
-                  Заказать бота
-                </button>
-              </div>
-            </div>
-            <div class="Tariffs_info_block">
-              <div class="Tariffs_info_block_icon"
-                   style={{backgroundImage: "url(https://static.tildacdn.com/tild6237-3161-4162-b332-623865363564/boy_1.svg)"}}>
-
-              </div>
-              <div class="Tariffs_info_block_title">
-                Чат-бот визитка
-              </div>
-              <div class="Tariffs_info_block_text">
-                Чат-бот который поможет вашим клиентам познакомится с вашим бизнесом, узнать информацию о оказываемых
-                услугах.
-              </div>
-              <div class="Tariffs_info_price">
-                узнайте стоимость
-              </div>
-              <div class="Tariffs_info_btnBlock">
-                <button class="Tariffs_info_btn">
-                  Заказать бота
-                </button>
-              </div>
-            </div>
-            <div class="Tariffs_info_block">
-              <div class="Tariffs_info_block_icon"
-                   style={{backgroundImage: "url(https://static.tildacdn.com/tild6237-3161-4162-b332-623865363564/boy_1.svg)"}}>
-
-              </div>
-              <div class="Tariffs_info_block_title">
-                Чат-бот визитка
-              </div>
-              <div class="Tariffs_info_block_text">
-                Чат-бот который поможет вашим клиентам познакомится с вашим бизнесом, узнать информацию о оказываемых
-                услугах.
-              </div>
-              <div class="Tariffs_info_price">
-                узнайте стоимость
-              </div>
-              <div class="Tariffs_info_btnBlock">
-                <button class="Tariffs_info_btn">
-                  Заказать бота
-                </button>
-              </div>
+          <div class="Tariffs_info_blocks_bckgrnd" style={{backgroundImage: "url(" + this.Tariffs.bckgrndImg + ")"}}
+               onClick={() => this.clickOnTariffs.emit(this.Tariffs.bckgrndImg)}>
+            <div class="Tariffs_info_blocks" >
+              <TariffsInfoBlocks arr={this.Tariffs.infoBlock}/>
             </div>
           </div>
         </div>
       </section>
     );
   }
+}
 
+/*
+* компонентная функция для вывода элементов news-main-block
+ */
+const TariffsInfoBlocks = (props) => {
+  return props.arr.map((item) => {
+    return (
+      <s-abdullakh-tariffs-info-blocks arr={item}/>
+    );
+  })
 }

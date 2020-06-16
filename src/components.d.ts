@@ -5,81 +5,137 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { SSAbdullakhBenefitsBots, } from "./components/s-abdullakh-benefits-bots/interface/common.interface";
+import { SSAbdullakhConsultation, } from "./components/s-abdullakh-consultation/interface/common.interface";
+import { AbdullakhHeader, } from "./components/s-abdullakh-header/interface/common.interface";
+import { AbdullakhHeaderCenter, } from "./components/s-abdullakh-header/res/view/s-abdullakh-header-center/interface/common.interface";
+import { SSAbdullakhPerformanceInformation, } from "./components/s-abdullakh-performance-information/interface/common.interface";
+import { SSAbdullakhProductInformation, } from "./components/s-abdullakh-product-information/interface/common.interface";
+import { SSAbdullakhProductPresentation, } from "./components/s-abdullakh-product-presentation/interface/common.interface";
+import { SSAbdullakhTransitionCreateBot, } from "./components/s-abdullakh-transition-create-bot/interface/common.interface";
 export namespace Components {
     interface MyComponent {
     }
     interface SAbdullakhBenefitsBots {
-        "BenefitsBots": any;
+        /**
+          * объект с массивом и данными BenefitsBots
+         */
+        "BenefitsBots": SSAbdullakhBenefitsBots;
     }
     interface SAbdullakhBenefitsBotsBlock {
+        /**
+          * данные переданные методом map компоненту BenefitsBotsBlock
+         */
         "arr": any;
     }
     interface SAbdullakhConsultation {
-        "Consultation": any;
+        /**
+          * данные компонента Consultation
+         */
+        "Consultation": SSAbdullakhConsultation;
     }
     interface SAbdullakhHeader {
         /**
-          * массив меню
+          * объект с массивом меню и string для подкомпонентов header-start header-end
          */
-        "header": any;
+        "header": AbdullakhHeader;
     }
     interface SAbdullakhHeaderCenter {
         /**
-          * массив меню
+          * объект с данными и для элементов меню
          */
-        "arr": any;
+        "arr": AbdullakhHeaderCenter;
     }
     interface SAbdullakhHeaderEnd {
         /**
-          * массив меню
+          * number
          */
-        "arr": any;
+        "phoneNumber": string;
     }
     interface SAbdullakhHeaderStart {
         /**
           * объект с url logo
          */
-        "arr": any;
+        "logo": any;
     }
     interface SAbdullakhPerformanceInformation {
-        "PerformanceInformation": any;
+        /**
+          * массив для вывода элементов PerformanceInformation
+         */
+        "PerformanceInformation": SSAbdullakhPerformanceInformation;
     }
     interface SAbdullakhPerformanceInformationList {
+        /**
+          * объект с массивом и данными PerformanceInformationList
+         */
         "PerformanceInformation": any;
+        /**
+          * объект с массивом и данными PerformanceInformationList
+         */
+        "endText": string;
     }
     interface SAbdullakhProductInformation {
-        "ProductInformation": any;
+        /**
+          * данные из объекта для компонента ProductInformation
+         */
+        "ProductInformation": SSAbdullakhProductInformation;
     }
     interface SAbdullakhProductInformationBlocks {
+        /**
+          * объект с данными и для элементов компонента ProductInformationBlocks
+         */
         "arr": any;
     }
     interface SAbdullakhProductPresentation {
         /**
           * массив для вывода элементов ProductPresentationTitle
          */
-        "ProductPresentation": any;
+        "ProductPresentation": SSAbdullakhProductPresentation;
     }
     interface SAbdullakhProductPresentationImg {
         /**
           * массив для вывода url img в компоненете ProductPresentationImg
          */
-        "img": string;
+        "img": any;
     }
     interface SAbdullakhProductPresentationTitle {
         /**
           * массив для вывода элементов ProductPresentationTitle
          */
         "arr": any;
+        /**
+          * массив для вывода элементов ProductPresentationTitle
+         */
+        "img": string;
     }
     interface SAbdullakhTariffs {
+        /**
+          * данные компонента Tariffs
+         */
+        "Tariffs": any;
+    }
+    interface SAbdullakhTariffsInfoBlocks {
+        /**
+          * данные переданные методом map компоненту Tariffs
+         */
+        "arr": any;
     }
     interface SAbdullakhTransitionCreateBot {
-        "TransitionCreateBot": any;
+        /**
+          * массив для вывода элементов TransitionCreateBot
+         */
+        "TransitionCreateBot": SSAbdullakhTransitionCreateBot;
     }
     interface SAbdullakhTransitionCreateBotFollow {
+        /**
+          * массив для вывода элементов подкомпонента TransitionCreateBotFollow компонента TransitionCreateBot
+         */
         "arr": any;
     }
     interface SAbdullakhTransitionCreateBotTitle {
+        /**
+          * массив для вывода элементов подкомпонента TransitionCreateBotTitle компонента TransitionCreateBot
+         */
         "arr": any;
     }
 }
@@ -180,6 +236,12 @@ declare global {
         prototype: HTMLSAbdullakhTariffsElement;
         new (): HTMLSAbdullakhTariffsElement;
     };
+    interface HTMLSAbdullakhTariffsInfoBlocksElement extends Components.SAbdullakhTariffsInfoBlocks, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhTariffsInfoBlocksElement: {
+        prototype: HTMLSAbdullakhTariffsInfoBlocksElement;
+        new (): HTMLSAbdullakhTariffsInfoBlocksElement;
+    };
     interface HTMLSAbdullakhTransitionCreateBotElement extends Components.SAbdullakhTransitionCreateBot, HTMLStencilElement {
     }
     var HTMLSAbdullakhTransitionCreateBotElement: {
@@ -215,6 +277,7 @@ declare global {
         "s-abdullakh-product-presentation-img": HTMLSAbdullakhProductPresentationImgElement;
         "s-abdullakh-product-presentation-title": HTMLSAbdullakhProductPresentationTitleElement;
         "s-abdullakh-tariffs": HTMLSAbdullakhTariffsElement;
+        "s-abdullakh-tariffs-info-blocks": HTMLSAbdullakhTariffsInfoBlocksElement;
         "s-abdullakh-transition-create-bot": HTMLSAbdullakhTransitionCreateBotElement;
         "s-abdullakh-transition-create-bot-follow": HTMLSAbdullakhTransitionCreateBotFollowElement;
         "s-abdullakh-transition-create-bot-title": HTMLSAbdullakhTransitionCreateBotTitleElement;
@@ -224,78 +287,202 @@ declare namespace LocalJSX {
     interface MyComponent {
     }
     interface SAbdullakhBenefitsBots {
-        "BenefitsBots"?: any;
+        /**
+          * объект с массивом и данными BenefitsBots
+         */
+        "BenefitsBots"?: SSAbdullakhBenefitsBots;
+        /**
+          * клик по элементам компонента BenefitsBots
+         */
+        "onClickOnBenefitsBots"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhBenefitsBotsBlock {
+        /**
+          * данные переданные методом map компоненту BenefitsBotsBlock
+         */
         "arr"?: any;
+        /**
+          * клик по элементам компонента BenefitsBots
+         */
+        "onClickOnBenefitsBots"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhConsultation {
-        "Consultation"?: any;
+        /**
+          * данные компонента Consultation
+         */
+        "Consultation"?: SSAbdullakhConsultation;
+        /**
+          * клик по элементам компонента Consultation
+         */
+        "onClickOnConsultation"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhHeader {
         /**
-          * массив меню
+          * объект с массивом меню и string для подкомпонентов header-start header-end
          */
-        "header"?: any;
+        "header"?: AbdullakhHeader;
+        /**
+          * клик по элементам компонента header
+         */
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhHeaderCenter {
         /**
-          * массив меню
+          * объект с данными и для элементов меню
          */
-        "arr"?: any;
+        "arr"?: AbdullakhHeaderCenter;
+        /**
+          * клик по элементу HeaderCenter (меню) компонента header
+         */
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhHeaderEnd {
         /**
-          * массив меню
+          * клик по элементy HeaderEnd компонента header
          */
-        "arr"?: any;
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
+        /**
+          * number
+         */
+        "phoneNumber"?: string;
     }
     interface SAbdullakhHeaderStart {
         /**
           * объект с url logo
          */
-        "arr"?: any;
+        "logo"?: any;
+        /**
+          * клик по элементy HeaderStart компонента header
+         */
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhPerformanceInformation {
-        "PerformanceInformation"?: any;
+        /**
+          * массив для вывода элементов PerformanceInformation
+         */
+        "PerformanceInformation"?: SSAbdullakhPerformanceInformation;
+        /**
+          * клик по элементам компонента PerformanceInformation
+         */
+        "onClickOnPerformanceInformation"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhPerformanceInformationList {
+        /**
+          * объект с массивом и данными PerformanceInformationList
+         */
         "PerformanceInformation"?: any;
+        /**
+          * объект с массивом и данными PerformanceInformationList
+         */
+        "endText"?: string;
+        /**
+          * клик по элементам компонента PerformanceInformation подкомпонента PerformanceInformationList
+         */
+        "onClickOnPerformanceInformation"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhProductInformation {
-        "ProductInformation"?: any;
+        /**
+          * данные из объекта для компонента ProductInformation
+         */
+        "ProductInformation"?: SSAbdullakhProductInformation;
+        /**
+          * клик по элементам компонента ProductInformation
+         */
+        "onClickOnProductInformation"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhProductInformationBlocks {
+        /**
+          * объект с данными и для элементов компонента ProductInformationBlocks
+         */
         "arr"?: any;
+        /**
+          * клик по элементам компонента ProductInformation
+         */
+        "onClickOnProductInformation"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhProductPresentation {
         /**
           * массив для вывода элементов ProductPresentationTitle
          */
-        "ProductPresentation"?: any;
+        "ProductPresentation"?: SSAbdullakhProductPresentation;
+        /**
+          * клик по элементам компонента ProductPresentation
+         */
+        "onClickOnProductPresentation"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhProductPresentationImg {
         /**
           * массив для вывода url img в компоненете ProductPresentationImg
          */
-        "img"?: string;
+        "img"?: any;
+        /**
+          * клик по элементам подкомпонента ProductPresentationImg компонента ProductPresentation
+         */
+        "onClickOnProductPresentation"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhProductPresentationTitle {
         /**
           * массив для вывода элементов ProductPresentationTitle
          */
         "arr"?: any;
+        /**
+          * массив для вывода элементов ProductPresentationTitle
+         */
+        "img"?: string;
+        /**
+          * клик по элементам компонента ProductPresentation подкомпонента ProductPresentationTitle
+         */
+        "onClickOnProductPresentation"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhTariffs {
+        /**
+          * данные компонента Tariffs
+         */
+        "Tariffs"?: any;
+        /**
+          * клик по элементам компонента Tariffs
+         */
+        "onClickOnTariffs"?: (event: CustomEvent<any>) => void;
+    }
+    interface SAbdullakhTariffsInfoBlocks {
+        /**
+          * данные переданные методом map компоненту Tariffs
+         */
+        "arr"?: any;
+        /**
+          * клик по элементам компонента Tariffs
+         */
+        "onClickOnTariffs"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhTransitionCreateBot {
-        "TransitionCreateBot"?: any;
+        /**
+          * массив для вывода элементов TransitionCreateBot
+         */
+        "TransitionCreateBot"?: SSAbdullakhTransitionCreateBot;
+        /**
+          * клик по элементам компонента TransitionCreateBot
+         */
+        "onClickOnTransitionCreateBot"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhTransitionCreateBotFollow {
+        /**
+          * массив для вывода элементов подкомпонента TransitionCreateBotFollow компонента TransitionCreateBot
+         */
         "arr"?: any;
+        /**
+          * клик по элементам компонента TransitionCreateBot
+         */
+        "onClickOnTransitionCreateBot"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhTransitionCreateBotTitle {
+        /**
+          * массив для вывода элементов подкомпонента TransitionCreateBotTitle компонента TransitionCreateBot
+         */
         "arr"?: any;
+        /**
+          * клик по элементам компонента TransitionCreateBot
+         */
+        "onClickOnTransitionCreateBot"?: (event: CustomEvent<any>) => void;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;
@@ -314,6 +501,7 @@ declare namespace LocalJSX {
         "s-abdullakh-product-presentation-img": SAbdullakhProductPresentationImg;
         "s-abdullakh-product-presentation-title": SAbdullakhProductPresentationTitle;
         "s-abdullakh-tariffs": SAbdullakhTariffs;
+        "s-abdullakh-tariffs-info-blocks": SAbdullakhTariffsInfoBlocks;
         "s-abdullakh-transition-create-bot": SAbdullakhTransitionCreateBot;
         "s-abdullakh-transition-create-bot-follow": SAbdullakhTransitionCreateBotFollow;
         "s-abdullakh-transition-create-bot-title": SAbdullakhTransitionCreateBotTitle;
@@ -339,6 +527,7 @@ declare module "@stencil/core" {
             "s-abdullakh-product-presentation-img": LocalJSX.SAbdullakhProductPresentationImg & JSXBase.HTMLAttributes<HTMLSAbdullakhProductPresentationImgElement>;
             "s-abdullakh-product-presentation-title": LocalJSX.SAbdullakhProductPresentationTitle & JSXBase.HTMLAttributes<HTMLSAbdullakhProductPresentationTitleElement>;
             "s-abdullakh-tariffs": LocalJSX.SAbdullakhTariffs & JSXBase.HTMLAttributes<HTMLSAbdullakhTariffsElement>;
+            "s-abdullakh-tariffs-info-blocks": LocalJSX.SAbdullakhTariffsInfoBlocks & JSXBase.HTMLAttributes<HTMLSAbdullakhTariffsInfoBlocksElement>;
             "s-abdullakh-transition-create-bot": LocalJSX.SAbdullakhTransitionCreateBot & JSXBase.HTMLAttributes<HTMLSAbdullakhTransitionCreateBotElement>;
             "s-abdullakh-transition-create-bot-follow": LocalJSX.SAbdullakhTransitionCreateBotFollow & JSXBase.HTMLAttributes<HTMLSAbdullakhTransitionCreateBotFollowElement>;
             "s-abdullakh-transition-create-bot-title": LocalJSX.SAbdullakhTransitionCreateBotTitle & JSXBase.HTMLAttributes<HTMLSAbdullakhTransitionCreateBotTitleElement>;

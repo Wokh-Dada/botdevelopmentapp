@@ -1,4 +1,5 @@
 export const header = {
+  id: 'header',
   logoUrl: "https://static.tildacdn.com/tild3532-3833-4936-a237-616331303266/5.jpg",
   phoneNumber: '+7 995 606 84 62',
   menu: [
@@ -10,6 +11,13 @@ export const header = {
 
 export const ProductPresentation = {
   imgUrl: "https://static.tildacdn.com/tild6438-3564-4763-b064-353463373538/phone.svg",
+  icon: [
+    {id: 'whatsApp', img: 'https://static.tildacdn.com/tild6666-6137-4538-b264-353465333332/waaa.svg'},
+    {id: 'telegram', img: 'https://static.tildacdn.com/tild3638-6633-4764-a662-653739626663/telegram.png'},
+    {id: 'viber', img: 'https://static.tildacdn.com/tild3161-6165-4964-a137-616535383837/viber.png'},
+    {id: 'mes', img: 'https://static.tildacdn.com/tild6430-3636-4533-b661-613233343835/fb.svg'},
+    {id: 'vk', img: 'https://static.tildacdn.com/tild6465-3664-4032-a239-373162326538/vk.svg'},
+  ],
   title: [
     {
       id: 1,
@@ -107,7 +115,7 @@ export const ProductInformation = {
       btnText: 'Идеально, беру!'
     },
   ]
-}
+};
 
 export const TransitionCreateBot = {
   title: [
@@ -135,122 +143,122 @@ export const TransitionCreateBot = {
   ]
 };
 
+export const PerformanceandBenefitsbckgrnd = 'https://static.tildacdn.com/tild3838-6433-4637-a435-313133666535/bg.svg';
 
 export const PerformanceInformation = {
-    imgUrl: 'https://static.tildacdn.com/tild3566-3665-4163-b435-653234346164/phone.svg',
-    title: 'Где использование ботов будет наиболее эффективным.',
-    ContentRightEndText: 'ВАШ БИЗНЕС',
-    ContentLeftEndText: 'ВАШ БИЗНЕС',
-    btnText: 'Разработать →',
-    right: [
-      {
-        id: 1,
-        text: 'Агентства недвижимости и застройщики',
-      },
-      {
-        id: 2,
-        text: 'Дизайн и ремонт квартир',
-      },
-      {
-        id: 3,
-        text: 'Юридические услуги',
-      },
-      {
-        id: 4,
-        text: 'Автошколы',
-      },
-      {
-        id: 5,
-        text: 'Автосервисы',
-      },
-      {
-        id: 6,
-        text: 'Страховые компании и брокеры',
-      },
-      {
-        id: 7,
-        text: 'Ремонт бытовой техники',
-      },
-      {
-        id: 8,
-        text: 'Маникюр, ресницы, перманентный макияж, прически',
-      },
-      {
-        id: 9,
-        text: 'Медицинские центры',
-      }, {
-        id: 10,
-        text: 'Курсы иностранных языков',
-      },
-      {
-        id: 11,
-        text: 'Изготовление мебели',
-      },
-      {
-        id: 12,
-        text: 'Транспортные компании (такси, перевозки)',
-      },
-      {
-        id: 13,
-        text: 'Купля-продажа недвижимости',
-      }
-    ],
-    left: [
-      {
-        id: 1,
-        text: 'Еда (Ресторан, доставка)',
-      },
-      {
-        id: 2,
-        text: 'Одежда, обувь и аксессуары',
-      },
-      {
-        id: 3,
-        text: 'Автосалоны и запчасти',
-      },
-      {
-        id: 4,
-        text: 'Товары для ремонта',
-      },
-      {
-        id: 5,
-        text: 'Товары для дома и дачи',
-      },
-      {
-        id: 6,
-        text: 'Товары для спорта и отдыха',
-      },
-      {
-        id: 7,
-        text: 'Товары для красоты и здоровья',
-      },
-      {
-        id: 8,
-        text: 'Салоны цветов и подарков',
-      },
-      {
-        id: 9,
-        text: 'Компьютеры, электроника и бытовая техника',
-      },
-      {
-        id: 10,
-        text: 'Любые интернет-магазины',
-      },
-      {
-        id: 11,
-        text: 'Игрушки, игры и развлечения',
-      },
-      {
-        id: 12,
-        text: 'Узкоспециализированные товары',
-      },
-      {
-        id: 13,
-        text: 'Книги и обучающие материалы',
-      },
-    ]
-  }
-;
+  imgUrl: 'https://static.tildacdn.com/tild3566-3665-4163-b435-653234346164/phone.svg',
+  title: 'Где использование ботов будет наиболее эффективным.',
+  ContentRightEndText: 'ВАШ БИЗНЕС',
+  ContentLeftEndText: 'ВАШ БИЗНЕС',
+  btnText: 'Разработать →',
+  right: [
+    {
+      id: 1,
+      text: 'Агентства недвижимости и застройщики',
+    },
+    {
+      id: 2,
+      text: 'Дизайн и ремонт квартир',
+    },
+    {
+      id: 3,
+      text: 'Юридические услуги',
+    },
+    {
+      id: 4,
+      text: 'Автошколы',
+    },
+    {
+      id: 5,
+      text: 'Автосервисы',
+    },
+    {
+      id: 6,
+      text: 'Страховые компании и брокеры',
+    },
+    {
+      id: 7,
+      text: 'Ремонт бытовой техники',
+    },
+    {
+      id: 8,
+      text: 'Маникюр, ресницы, перманентный макияж, прически',
+    },
+    {
+      id: 9,
+      text: 'Медицинские центры',
+    }, {
+      id: 10,
+      text: 'Курсы иностранных языков',
+    },
+    {
+      id: 11,
+      text: 'Изготовление мебели',
+    },
+    {
+      id: 12,
+      text: 'Транспортные компании (такси, перевозки)',
+    },
+    {
+      id: 13,
+      text: 'Купля-продажа недвижимости',
+    }
+  ],
+  left: [
+    {
+      id: 1,
+      text: 'Еда (Ресторан, доставка)',
+    },
+    {
+      id: 2,
+      text: 'Одежда, обувь и аксессуары',
+    },
+    {
+      id: 3,
+      text: 'Автосалоны и запчасти',
+    },
+    {
+      id: 4,
+      text: 'Товары для ремонта',
+    },
+    {
+      id: 5,
+      text: 'Товары для дома и дачи',
+    },
+    {
+      id: 6,
+      text: 'Товары для спорта и отдыха',
+    },
+    {
+      id: 7,
+      text: 'Товары для красоты и здоровья',
+    },
+    {
+      id: 8,
+      text: 'Салоны цветов и подарков',
+    },
+    {
+      id: 9,
+      text: 'Компьютеры, электроника и бытовая техника',
+    },
+    {
+      id: 10,
+      text: 'Любые интернет-магазины',
+    },
+    {
+      id: 11,
+      text: 'Игрушки, игры и развлечения',
+    },
+    {
+      id: 12,
+      text: 'Узкоспециализированные товары',
+    },
+    {
+      id: 13,
+      text: 'Книги и обучающие материалы',
+    },
+  ]
+};
 
 export const BenefitsBots = {
   title: "Преимущества чат-ботов",
@@ -298,9 +306,9 @@ export const BenefitsBots = {
       text: 'Бот экономит ваше время автоматически выполняя любые типовые задачи'
     },
   ]
-}
+};
 
-export const Consultation= {
+export const Consultation = {
   imgUrl: 'https://static.tildacdn.com/tild6436-6430-4061-a561-343031666633/undraw_moving_forwar.svg',
   title: 'Бесплатная консультация',
   text: `
@@ -316,4 +324,45 @@ export const Consultation= {
                  </span>
             </strong>`,
   btnText: 'Хочу консультацию'
-}
+};
+
+export const Tariffs = {
+  dinamicImg: 'https://static.tildacdn.com/tild6132-6539-4561-b838-663866306265/Vector.svg',
+  dinamicText: '$',
+  title: "Тарифы",
+  bckgrndImg: 'https://static.tildacdn.com/tild3962-3166-4338-a434-383631623131/undraw_work_chat_erd.svg',
+  infoBlock: [
+    {
+      id: 1,
+      outerImg: 'https://static.tildacdn.com/tild3433-3861-4062-a230-656534333436/Ellipse_11.svg',
+      innerImg: 'https://static.tildacdn.com/tild6237-3161-4162-b332-623865363564/boy_1.svg',
+      class: 'small',
+      title: 'Чат-бот визитка',
+      text: 'Чат-бот который поможет вашим клиентам познакомится с вашим бизнесом, узнать информацию о оказываемых услугах.',
+      priceText: 'узнайте стоимость',
+      btnText: 'Заказать бота'
+    },
+    {
+      id: 2,
+      outerImg: 'https://static.tildacdn.com/tild3433-3861-4062-a230-656534333436/Ellipse_11.svg',
+      innerImg: 'https://static.tildacdn.com/tild6366-6131-4761-b338-623963616534/icons8-chuck-norris-.png',
+      class: 'big',
+      title: 'Чат-бот лидогенератор',
+      text: 'Помогает обрабатывать запросы клиентов в мессенджерах.\n' +
+        'В режиме "вопрос-ответ" узнает потребность клиента, собирает контактные данные и отправляет заявку на вашу почту или в CRM.',
+      priceText: 'узнайте стоимость',
+      btnText: 'Заказать бота'
+    },
+    {
+      id: 3,
+      outerImg: 'https://static.tildacdn.com/tild3433-3861-4062-a230-656534333436/Ellipse_11.svg',
+      innerImg: 'https://static.tildacdn.com/tild3138-3537-4766-a237-383331316461/darth.svg',
+      class: 'small',
+      title: 'Чат-бот магазин',
+      text: 'Чат-бот знакомит покупателя с ассортиментом товаров\n.' +
+        'Главное меню с кнопками помогает покупателю сформировать заказ и оплатить его банковской картой.',
+      priceText: 'узнайте стоимость',
+      btnText: 'Заказать бота'
+    },
+  ]
+};

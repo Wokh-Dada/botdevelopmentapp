@@ -1,1 +1,26 @@
+.header_menu {
+  display: flex;
+  justify-content: space-around;
+}
 
+@media (max-width: 479px) {
+  .header_menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+}

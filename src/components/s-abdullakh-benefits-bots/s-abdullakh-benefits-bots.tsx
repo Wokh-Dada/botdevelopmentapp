@@ -1,4 +1,5 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
+import {SSAbdullakhBenefitsBots} from "./interface/common.interface";
 
 @Component({
   tag: 's-abdullakh-benefits-bots',
@@ -6,14 +7,22 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
   shadow: false,
 })
 export class SAbdullakhBenefitsBots implements ComponentInterface {
-  @Prop() BenefitsBots: any;
+  /**
+   * объект с массивом и данными BenefitsBots
+   * */
+  @Prop() BenefitsBots: SSAbdullakhBenefitsBots;
+
+  /**
+   * клик по элементам компонента BenefitsBots
+   * */
+  @Event() clickOnBenefitsBots: EventEmitter;
 
   render() {
     return (
       <section class="BenefitsBots">
         <div class="container">
           <div class="BenefitsBotsTitleBlock">
-            <div class="BenefitsBotsTitle">
+            <div class="BenefitsBotsTitle" onClick={() => this.clickOnBenefitsBots.emit(this.BenefitsBots.title)}>
               {this.BenefitsBots.title}
             </div>
           </div>
@@ -32,7 +41,7 @@ export class SAbdullakhBenefitsBots implements ComponentInterface {
 const BotsInfoBlocks = (props) => {
   return props.arr.map((item) => {
     return (
-      <div class="col-4">
+      <div class="col-lg-4 col-12">
         <s-abdullakh-benefits-bots-block arr={item}/>
       </div>
     );

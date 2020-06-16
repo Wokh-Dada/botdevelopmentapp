@@ -1,5 +1,5 @@
 .PerformanceInformation {
-  padding: 150px 0;
+  padding: 260px 0 150px 0;
   display: flex;
 }
 
@@ -59,18 +59,18 @@
   align-self: flex-end;
 }
 
-.PerformanceInformationBtnBlock{
+.PerformanceInformationBtnBlock {
   display: flex;
   justify-content: flex-end;
   padding: 50px 155px 0 0;
 }
 
-.PerformanceInformationBtn{
+.PerformanceInformationBtn {
   width: 320px;
   height: 55px;
-  color: #ffffff!important;
+  color: #ffffff !important;
   font-size: 18px;
-  font-family: 'Montserrat',Arial,sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   line-height: 1.55;
   font-weight: 700;
   border-width: 1px;
@@ -80,5 +80,101 @@
   border-color: transparent;
   border-style: solid;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  box-shadow: 1px 1px 2px 1px rgba(189,189,189,0.2);
+  box-shadow: 1px 1px 2px 1px rgba(189, 189, 189, 0.2);
+}
+
+.PerformanceInformationBtn:hover {
+  background-color: #ffdd33;
+  color: #3d3636 !important;
+}
+
+@media (max-width: 479px) {
+  .PerformanceInformationContentStart, .PerformanceInformationContentEnd {
+    text-align: center;
+  }
+
+  .visibilityProductInfo_center{
+    display: block;
+  }
+
+  .visibilityProductInfo_start, .visibilityProductInfo_end{
+    display: none!important;
+  }
+
+  .PerformanceInformationBtnBlock {
+    padding: 20px 0 0 0;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 479px) {
+  .visibilityProductInfo_center{
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .PerformanceInformationContentStart {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .PerformanceInformationContentStart {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+  .visibilityProductInfo_center{
+    display: block;
+  }
+
+  .visibilityProductInfo_start, .visibilityProductInfo_end{
+    display: none!important;
+  }
+}
+
+@media (max-width: 992px) {
+  .PerformanceInformationTitle {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .PerformanceInformationContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PerformanceInformationContentCenter {
+    width: 240px;
+    height: 302px;
+  }
+
+  .PerformanceInformationContentEnd {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+
+  .PerformanceInformationContentEnd, .PerformanceInformationContentStart {
+    width: 100%;
+    display: flex;
+  }
+
+  .PerformanceInformationContent {
+    font-size: 12px;
+  }
+
+  .PerformanceInformationContentEndText {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+
 }

@@ -8,3 +8,24 @@
   border-style: solid;
   padding: 20px 28px;
 }
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+  .container{
+    width: 100%;
+  }
+  .phone_number{
+    font-size: 14px;
+    line-height: 0.8;
+  }
+}
+
+@media (min-width: 1200px) {
+}

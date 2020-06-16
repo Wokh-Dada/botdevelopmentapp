@@ -1,4 +1,5 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
+import {SSAbdullakhPerformanceInformation} from "./interface/common.interface";
 
 @Component({
   tag: 's-abdullakh-performance-information',
@@ -6,31 +7,63 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
   shadow: false,
 })
 export class SAbdullakhPerformanceInformation implements ComponentInterface {
-  @Prop()PerformanceInformation: any;
+  /**
+   * массив для вывода элементов PerformanceInformation
+   * */
+  @Prop() PerformanceInformation: SSAbdullakhPerformanceInformation;
+
+  /**
+   * клик по элементам компонента PerformanceInformation
+   * */
+  @Event() clickOnPerformanceInformation: EventEmitter;
 
   render() {
     return (
       <section class="PerformanceInformation">
         <div class='container'>
           <div class="PerformanceInformationTitleBlock">
-            <div class="PerformanceInformationTitle">
+            <div
+              class="PerformanceInformationTitle"
+              onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.title)}
+            >
               {this.PerformanceInformation.title}
             </div>
           </div>
           <div class="PerformanceInformationContentBlock">
             <div class="PerformanceInformationContent">
               <div class="PerformanceInformationContentStart">
-                <s-abdullakh-performance-information-list PerformanceInformation={this.PerformanceInformation} />
+                <s-abdullakh-performance-information-list PerformanceInformation={this.PerformanceInformation.right} endText={this.PerformanceInformation.ContentRightEndText}/>
+                <div
+                  class="PerformanceInformationContentCenter visibilityProductInfo_start"
+                  style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
+                  onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
+                >
+
+                </div>
               </div>
-              <div class="PerformanceInformationContentCenter"
-                   style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}>
+              <div
+                class="PerformanceInformationContentCenter visibilityProductInfo_center"
+                style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
+                onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
+              >
+
               </div>
               <div class="PerformanceInformationContentEnd">
-                <s-abdullakh-performance-information-list PerformanceInformation={this.PerformanceInformation} />
+                <div
+                  class="PerformanceInformationContentCenter  visibilityProductInfo_end"
+                  style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
+                  onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
+                >
+
+                </div>
+                <s-abdullakh-performance-information-list PerformanceInformation={this.PerformanceInformation.left} endText={this.PerformanceInformation.ContentLeftEndText}/>
               </div>
             </div>
             <div class="PerformanceInformationBtnBlock">
-              <button class="PerformanceInformationBtn">
+              <button
+                class="PerformanceInformationBtn"
+                onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.btnText)}
+              >
                 <a>
                   {this.PerformanceInformation.btnText}
                 </a>

@@ -1,4 +1,5 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
+import {SSAbdullakhProductInformation} from "./interface/common.interface";
 
 @Component({
   tag: 's-abdullakh-product-information',
@@ -6,12 +7,20 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
   shadow: false,
 })
 export class SAbdullakhProductInformation implements ComponentInterface {
-  @Prop() ProductInformation: any;
+  /**
+   * данные из объекта для компонента ProductInformation
+   * */
+  @Prop() ProductInformation: SSAbdullakhProductInformation;
+
+  /**
+   * клик по элементам компонента ProductInformation
+   * */
+  @Event() clickOnProductInformation: EventEmitter;
 
   render() {
     return (
       <div class="container ProductInformation">
-        <div class="ProductInfoTitle">
+        <div class="ProductInfoTitle" onClick={() => this.clickOnProductInformation.emit(this.ProductInformation.title)}>
           {this.ProductInformation.title}
         </div>
         <div class="row justify-content-center">
@@ -28,7 +37,7 @@ export class SAbdullakhProductInformation implements ComponentInterface {
 const ProductInfoBlock = (props) => {
   return props.arr.map((item) => {
     return (
-      <div class="col-4 mb-5">
+      <div class="col-lg-4 col-md-6 col-12 mb-5">
         <s-abdullakh-product-information-blocks arr={item}/>
       </div>
     );

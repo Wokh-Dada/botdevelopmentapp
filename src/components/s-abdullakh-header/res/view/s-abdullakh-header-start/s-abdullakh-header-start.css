@@ -4,3 +4,21 @@
   background-size: cover;
   background-position: center;
 }
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+  .logo{
+    width: 130px;
+    height: 68px;
+  }
+}
+
+@media (min-width: 1200px) {
+}

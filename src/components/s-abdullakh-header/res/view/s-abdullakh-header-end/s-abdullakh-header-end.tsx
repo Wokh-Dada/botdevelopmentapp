@@ -1,4 +1,5 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
+// import {AbdullakhHeaderEnd} from "./interface/common.interface";
 
 @Component({
   tag: 's-abdullakh-header-end',
@@ -7,14 +8,23 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 })
 export class SAbdullakhHeaderEnd implements ComponentInterface {
   /**
-   * массив меню
+   * number
    * */
-  @Prop() arr: any;
+  @Prop() phoneNumber: string;
+
+  /**
+   * клик по элементy HeaderEnd компонента header
+   * */
+  @Event() clickOnHeader: EventEmitter;
 
   render() {
     return (
-      <div class="phone_number">
-        {this.arr.phoneNumber}
+      <div
+        class="phone_number"
+        onClick={() => {
+          this.clickOnHeader.emit(this.phoneNumber)
+        }}>
+        {this.phoneNumber}
       </div>
     );
   }

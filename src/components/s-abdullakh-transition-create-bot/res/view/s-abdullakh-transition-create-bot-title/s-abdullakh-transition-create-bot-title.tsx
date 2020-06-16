@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 's-abdullakh-transition-create-bot-title',
@@ -6,22 +6,34 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
   shadow: false,
 })
 export class SAbdullakhTransitionCreateBotTitle implements ComponentInterface {
+  /**
+   * массив для вывода элементов подкомпонента TransitionCreateBotTitle компонента TransitionCreateBot
+   * */
   @Prop() arr: any;
+
+  /**
+   * клик по элементам компонента TransitionCreateBot
+   * */
+  @Event() clickOnTransitionCreateBot: EventEmitter;
 
   render() {
     return (
-      <div>
-        <div class="transitionCreateBotImg"
-             style={{backgroundImage: "url(" + this.arr.imgUrl + ")"}}>
-          {/*style={{backgroundImage: "url(" + this.imgUrl + ")"}}*/}
+      <div class="transitionCreateBotImgPosition">
+        <div
+          class="transitionCreateBotImg"
+          style={{backgroundImage: "url(" + this.arr.imgUrl + ")"}}
+          onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.imgUrl)}>
+
         </div>
         <div class="transitionCreateBotTitleBlock">
-          <div class="transitionCreateBotTitle" innerHTML={this.arr.title}>
-            {/*{this.arr.title}*/}
+          <div
+            class="transitionCreateBotTitle"
+            innerHTML={this.arr.title}
+            onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.title)}>
+
           </div>
         </div>
       </div>
     );
   }
-
 }

@@ -1,11 +1,11 @@
-.ProductInformation{
+.ProductInformation {
   margin: 240px 0 100px 0;
 }
 
-.ProductInfoTitle{
+.ProductInfoTitle {
   color: #323145;
   font-size: 40px;
-  font-family: 'Montserrat',Arial,sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   line-height: 0.95;
   font-weight: 700;
   background-position: center center;
@@ -15,13 +15,13 @@
   margin-bottom: 60px;
 }
 
-.ProductInfoBlock{
+.ProductInfoBlock {
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
-.ProductInfoBlockOuterImgBlock{
+.ProductInfoBlockOuterImgBlock {
   display: flex;
   justify-content: center;
   color: #323145;
@@ -33,7 +33,7 @@
   border-style: solid;
 }
 
-.ProductInfoBlockOuterImg{
+.ProductInfoBlockOuterImg {
   width: 140px;
   height: 102px;
   background-size: cover;
@@ -42,14 +42,14 @@
   justify-content: center;
 }
 
-.ProductInfoBlockInnerImg{
+.ProductInfoBlockInnerImg {
   width: 90px;
   height: 90px;
   background-size: cover;
   background-position: center;
 }
 
-.ProductInfoTextBlock{
+.ProductInfoTextBlock {
   width: 245px;
   min-height: 118px;
   color: #323145;
@@ -63,12 +63,12 @@
   padding-bottom: 20px;
 }
 
-.ProductInfoBtn{
+.ProductInfoBtn {
   width: 245px;
   height: 45px;
-  color: #ffffff!important;
+  color: #ffffff !important;
   font-size: 14px;
-  font-family: 'Montserrat',Arial,sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   line-height: 1.55;
   font-weight: 600;
   border-width: 1px;
@@ -78,5 +78,50 @@
   border-color: transparent;
   border-style: solid;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  box-shadow: 1px 1px 2px 2px rgba(50,49,69,0.2);
+  box-shadow: 1px 1px 2px 2px rgba(50, 49, 69, 0.2);
+}
+
+.ProductInfoBtn:hover {
+  background-color: #ffdd33;
+  color: #3b3535 !important;
+}
+
+@media (max-width: 479px) {
+
+}
+
+@media (min-width: 479px) {
+}
+
+@media (max-width: 576px) {
+  .ProductInfoTitle{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .ProductInfoTitle{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+.ProductInfoTextBlock{
+  min-height: inherit;
+}
+}
+
+@media (max-width: 992px) {
+  .ProductInformation {
+    margin: 100px 0 100px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .ProductInfoTitle{
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
 }

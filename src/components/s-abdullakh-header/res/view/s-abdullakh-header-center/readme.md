@@ -7,16 +7,23 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type  | Default     |
-| -------- | --------- | ----------- | ----- | ----------- |
-| `arr`    | `arr`     | массив меню | `any` | `undefined` |
+| Property | Attribute | Description                           | Type                    | Default     |
+| -------- | --------- | ------------------------------------- | ----------------------- | ----------- |
+| `arr`    | --        | объект с данными и для элементов меню | `AbdullakhHeaderCenter` | `undefined` |
+
+
+## Events
+
+| Event           | Description                                            | Type               |
+| --------------- | ------------------------------------------------------ | ------------------ |
+| `clickOnHeader` | клик по элементу HeaderCenter (меню) компонента header | `CustomEvent<any>` |
 
 
 ## Dependencies
 
 ### Used by
 
- - [s-abdullakh-header](../../../../../../..)
+ - [s-abdullakh-header](../../..)
 
 ### Graph
 ```mermaid

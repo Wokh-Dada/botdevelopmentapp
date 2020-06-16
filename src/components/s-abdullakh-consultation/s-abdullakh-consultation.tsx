@@ -1,4 +1,5 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
+import {SSAbdullakhConsultation} from "./interface/common.interface";
 
 @Component({
   tag: 's-abdullakh-consultation',
@@ -6,31 +7,43 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
   shadow: false,
 })
 export class SAbdullakhConsultation implements ComponentInterface {
-  @Prop() Consultation: any;
+  /**
+   * данные компонента Consultation
+   * */
+  @Prop() Consultation: SSAbdullakhConsultation;
+
+  /**
+   * клик по элементам компонента Consultation
+   * */
+  @Event() clickOnConsultation: EventEmitter;
 
   render() {
     return (
       <section class="Consultation">
         <div class="container">
           <div class="row">
-            <div class="col-6">
-              <div class="Consultation_img"
-                   style={{backgroundImage: "url(" + this.Consultation.imgUrl + ")"}}>
+            <div class="col-lg-6 col-12">
+              <div
+                class="Consultation_img"
+                style={{backgroundImage: "url(" + this.Consultation.imgUrl + ")"}}
+                onClick={() => this.clickOnConsultation.emit(this.Consultation.imgUrl)}>
 
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-12 mt-5 pt-5">
               <div class="Consultation_advertising_link_block">
                 <div class="Consultation_title_block">
-                  <div class="Consultatio_title">
+                  <div class="Consultatio_title" onClick={() => this.clickOnConsultation.emit(this.Consultation.title)}>
                     {this.Consultation.title}
                   </div>
                 </div>
-                <div class="Consultation_text" innerHTML={this.Consultation.text}>
+                <div class="Consultation_text" innerHTML={this.Consultation.text}
+                     onClick={() => this.clickOnConsultation.emit(this.Consultation.text)}>
 
                 </div>
                 <div class="Consultation_btn_block">
-                  <button class="Consultation_btn">
+                  <button class="Consultation_btn"
+                          onClick={() => this.clickOnConsultation.emit(this.Consultation.btnText)}>
                     {this.Consultation.btnText}
                   </button>
                 </div>
@@ -41,5 +54,4 @@ export class SAbdullakhConsultation implements ComponentInterface {
       </section>
     );
   }
-
 }

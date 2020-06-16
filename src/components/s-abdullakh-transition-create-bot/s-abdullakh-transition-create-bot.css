@@ -1,4 +1,4 @@
-.transitionCreateBot{
+.transitionCreateBot {
   padding: 50px 0 80px 0;
 }
 
@@ -9,7 +9,7 @@
   background-position: center;
 }
 
-.transitionCreateBotTitleBlock{
+.transitionCreateBotTitleBlock {
   display: flex;
   justify-content: flex-end;
 }
@@ -24,20 +24,20 @@
   padding-right: 60px;
 }
 
-.transitionCreateBotTextBlock{
+.transitionCreateBotTextBlock {
   display: flex;
   height: 100%;
   align-items: flex-end;
 }
 
-.innerCreateBotTextBlock{
+.innerCreateBotTextBlock {
   display: flex;
   height: max-content;
   align-items: center;
   width: 100%;
 }
 
-.transitionCreateBotText{
+.transitionCreateBotText {
   max-width: 330px;
   text-align: center;
   color: #323145;
@@ -52,10 +52,19 @@
   justify-content: flex-end;
 }
 
+.CreateBotBtnBlock-border{
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 30px;
+  background-position: center center;
+  border-color: #ffd000;
+  padding: 5px;
+}
+
 .transitionCreateBotBtn {
   width: 300px;
   height: 45px;
-  color: #ffffff!important;
+  color: #ffffff !important;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.55;
@@ -70,4 +79,48 @@
   box-shadow: 1px 1px 2px 2px rgba(199, 199, 199, 0.5);
 }
 
+.transitionCreateBotBtn:hover {
+  background-color: #ffdd33;
+  color: #3d3636 !important;
+}
 
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+  .transitionCreateBotImgPosition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .transitionCreateBotImg {
+    width: 310px;
+    height: 182px;
+  }
+
+  .transitionCreateBotTitle{
+    padding: 0;
+  }
+
+  .transitionCreateBotTextBlock {
+    padding-top: 20px;
+  }
+
+  .innerCreateBotTextBlock {
+    flex-direction: column;
+  }
+
+  .transitionCreateBotBtnBlock{
+    width: auto;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+}
