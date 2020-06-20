@@ -10,16 +10,27 @@
   position: relative;
   top: 210px;
   right: 110px;
+  transition: linear;
+  animation-name: povorot;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.dinamicImg span{
+.dollar{
+  display: inline-block;
   color: #ffd000;
   font-size: 69px;
   line-height: 0.95;
   font-weight: 700;
   position: relative;
-  top: 110px;
-  left: 160px;
+  top: 40px;
+  left: 50px;
+  transition: linear;
+  animation-name: povorot;
+  animation-duration: 1.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .Tariffs_title {
@@ -43,8 +54,22 @@
   align-items: center;
 }
 
-@media (min-width: 576px) {
+@keyframes povorot {
+  0% { transform: rotate(0.1turn); }
+  50% { transform: rotate(0.5turn); }
+  100% { transform: rotate(0.9turn); }
+}
 
+@media (max-width: 576px) {
+  .dinamicImg {
+    width: 230px;
+    height: 230px;
+  }
+
+  .dollar{
+    top: 50px;
+    left: 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -55,6 +80,8 @@
   .Tariffs_info_blocks {
     flex-direction: column;
   }
+
+
 }
 
 @media (min-width: 1200px) {

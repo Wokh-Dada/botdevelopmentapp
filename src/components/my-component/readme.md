@@ -9,6 +9,7 @@
 
 ### Depends on
 
+- [s-abdullakh-form-communication](../s-abdullakh-form-communication)
 - [s-abdullakh-header](../s-abdullakh-header)
 - [s-abdullakh-product-presentation](../s-abdullakh-product-presentation)
 - [s-abdullakh-product-information](../s-abdullakh-product-information)
@@ -21,6 +22,7 @@
 ### Graph
 ```mermaid
 graph TD;
+  my-component --> s-abdullakh-form-communication
   my-component --> s-abdullakh-header
   my-component --> s-abdullakh-product-presentation
   my-component --> s-abdullakh-product-information
@@ -29,6 +31,7 @@ graph TD;
   my-component --> s-abdullakh-benefits-bots
   my-component --> s-abdullakh-consultation
   my-component --> s-abdullakh-tariffs
+  s-abdullakh-form-communication --> s-abdullakh-form-close
   s-abdullakh-header --> s-abdullakh-header-start
   s-abdullakh-header --> s-abdullakh-header-end
   s-abdullakh-header --> s-abdullakh-header-center

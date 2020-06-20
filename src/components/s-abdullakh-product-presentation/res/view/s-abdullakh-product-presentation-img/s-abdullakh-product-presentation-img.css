@@ -8,6 +8,11 @@
 .whats, .telega, .vider, .messgs, .vk {
   background-size: cover;
   background-position: center;
+  animation-name: mypulse;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
 }
 
 .whats {
@@ -16,6 +21,7 @@
   position: relative;
   top: 111px;
   left: 320px;
+  animation-delay: 0s;
 }
 
 .telega {
@@ -24,6 +30,7 @@
   position: relative;
   top: 83px;
   left: 412px;
+  animation-delay: 1s;
 }
 
 .vider {
@@ -32,6 +39,7 @@
   position: relative;
   top: 110px;
   left: 452px;
+  animation-delay: 2s;
 }
 
 .messgs {
@@ -40,6 +48,7 @@
   position: relative;
   top: 139px;
   left: 421px;
+  animation-delay: 3s;
 }
 
 .vk {
@@ -48,6 +57,7 @@
   position: relative;
   top: 111px;
   left: 320px;
+  animation-delay: 4s;
 }
 
 @media (min-width: 576px) {
@@ -59,7 +69,7 @@
 }
 
 @media (max-width: 992px) {
-  .presentationImg{
+  .presentationImg {
     width: 300px;
     height: 378px;
   }

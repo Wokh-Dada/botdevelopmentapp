@@ -24,11 +24,28 @@ export class SAbdullakhHeaderCenter implements ComponentInterface {
         onClick={() => {
           this.clickOnHeader.emit(this.arr.linkName)
         }}>
-        <a>
+        <a href={hrefBlock(this.arr.linkName)}>
           {this.arr.linkName}
         </a>
+        <div class="menu_line"
+             style={{backgroundImage: "url(https://static.tildacdn.com/tild6635-3830-4663-b066-353665666462/line2.svg)"}}>
+
+        </div>
       </div>
     );
   }
 
+}
+
+function hrefBlock(x) {
+  switch (x) {
+    case 'Возможности':
+      return '#productInformation';
+
+    case 'Преимущества':
+      return '#benefitsBots';
+
+    case 'Для кого':
+      return '#performanceInformation';
+  }
 }

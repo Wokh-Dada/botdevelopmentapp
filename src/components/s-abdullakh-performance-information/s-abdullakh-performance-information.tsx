@@ -17,14 +17,18 @@ export class SAbdullakhPerformanceInformation implements ComponentInterface {
    * */
   @Event() clickOnPerformanceInformation: EventEmitter;
 
+  /**
+   *  Вызов модального окна формы
+   * */
+  @Event() openForm: EventEmitter;
+
   render() {
     return (
-      <section class="PerformanceInformation">
+      <section class="PerformanceInformation" id="performanceInformation">
         <div class='container'>
           <div class="PerformanceInformationTitleBlock">
-            <div
-              class="PerformanceInformationTitle"
-              onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.title)}
+            <div class="PerformanceInformationTitle"
+                 onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.title)}
             >
               {this.PerformanceInformation.title}
             </div>
@@ -32,37 +36,39 @@ export class SAbdullakhPerformanceInformation implements ComponentInterface {
           <div class="PerformanceInformationContentBlock">
             <div class="PerformanceInformationContent">
               <div class="PerformanceInformationContentStart">
-                <s-abdullakh-performance-information-list PerformanceInformation={this.PerformanceInformation.right} endText={this.PerformanceInformation.ContentRightEndText}/>
-                <div
-                  class="PerformanceInformationContentCenter visibilityProductInfo_start"
-                  style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
-                  onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
+                <s-abdullakh-performance-information-list PerformanceInformation={this.PerformanceInformation.right}
+                                                          endText={this.PerformanceInformation.ContentRightEndText}
+                />
+                <div class="PerformanceInformationContentCenter visibilityProductInfo_start"
+                     style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
+                     onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
                 >
 
                 </div>
               </div>
-              <div
-                class="PerformanceInformationContentCenter visibilityProductInfo_center"
-                style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
-                onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
+              <div class="PerformanceInformationContentCenter visibilityProductInfo_center"
+                   style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
+                   onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
               >
 
               </div>
               <div class="PerformanceInformationContentEnd">
-                <div
-                  class="PerformanceInformationContentCenter  visibilityProductInfo_end"
-                  style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
-                  onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
+                <div class="PerformanceInformationContentCenter  visibilityProductInfo_end"
+                     style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
+                     onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
                 >
 
                 </div>
-                <s-abdullakh-performance-information-list PerformanceInformation={this.PerformanceInformation.left} endText={this.PerformanceInformation.ContentLeftEndText}/>
+                <s-abdullakh-performance-information-list PerformanceInformation={this.PerformanceInformation.left}
+                                                          endText={this.PerformanceInformation.ContentLeftEndText}/>
               </div>
             </div>
             <div class="PerformanceInformationBtnBlock">
-              <button
-                class="PerformanceInformationBtn"
-                onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.btnText)}
+              <button class="PerformanceInformationBtn"
+                      onClick={() => {
+                        this.clickOnPerformanceInformation.emit(this.PerformanceInformation.btnText);
+                        this.openForm.emit();
+                      }}
               >
                 <a>
                   {this.PerformanceInformation.btnText}

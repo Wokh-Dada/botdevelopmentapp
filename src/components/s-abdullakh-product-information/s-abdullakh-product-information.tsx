@@ -17,10 +17,15 @@ export class SAbdullakhProductInformation implements ComponentInterface {
    * */
   @Event() clickOnProductInformation: EventEmitter;
 
+  /**
+   *  Вызов модального окна формы
+   * */
+  @Event() openForm: EventEmitter;
+
   render() {
     return (
-      <div class="container ProductInformation">
-        <div class="ProductInfoTitle" onClick={() => this.clickOnProductInformation.emit(this.ProductInformation.title)}>
+      <div class="container ProductInformation" id="productInformation">
+        <div class="ProductInfoTitle animate__animated animate__bounceInRight" onClick={() => this.clickOnProductInformation.emit(this.ProductInformation.title)}>
           {this.ProductInformation.title}
         </div>
         <div class="row justify-content-center">
@@ -32,7 +37,7 @@ export class SAbdullakhProductInformation implements ComponentInterface {
 }
 
 /*
-* компонентная функция для вывода элементов меню
+* компонентная функция для вывода блоков компонента product-information-blocks
  */
 const ProductInfoBlock = (props) => {
   return props.arr.map((item) => {

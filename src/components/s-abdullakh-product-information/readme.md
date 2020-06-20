@@ -17,6 +17,7 @@
 | Event                       | Description                                     | Type               |
 | --------------------------- | ----------------------------------------------- | ------------------ |
 | `clickOnProductInformation` | клик по элементам компонента ProductInformation | `CustomEvent<any>` |
+| `openForm`                  | Вызов модального окна формы                     | `CustomEvent<any>` |
 
 
 ## Dependencies

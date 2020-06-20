@@ -31,17 +31,6 @@
   border-style: solid;
 }
 
-.PerformanceInformationContentEndText {
-  color: #000000;
-  font-size: 14px;
-  line-height: 1.55;
-  font-weight: 600;
-  background-position: center center;
-  border-color: transparent;
-  border-style: solid;
-  padding-top: 25px;
-}
-
 .PerformanceInformationContentStart {
   text-align: right;
   align-self: flex-end;
@@ -93,12 +82,12 @@
     text-align: center;
   }
 
-  .visibilityProductInfo_center{
+  .visibilityProductInfo_center {
     display: block;
   }
 
-  .visibilityProductInfo_start, .visibilityProductInfo_end{
-    display: none!important;
+  .visibilityProductInfo_start, .visibilityProductInfo_end {
+    display: none !important;
   }
 
   .PerformanceInformationBtnBlock {
@@ -108,13 +97,17 @@
 }
 
 @media (min-width: 479px) {
-  .visibilityProductInfo_center{
+  .visibilityProductInfo_center {
     display: none;
   }
 }
 
 @media (max-width: 576px) {
   .PerformanceInformationContentStart {
+    justify-content: center;
+  }
+
+  .PerformanceInformationContentEnd {
     justify-content: center;
   }
 }
@@ -130,12 +123,12 @@
 }
 
 @media (min-width: 992px) {
-  .visibilityProductInfo_center{
+  .visibilityProductInfo_center {
     display: block;
   }
 
-  .visibilityProductInfo_start, .visibilityProductInfo_end{
-    display: none!important;
+  .visibilityProductInfo_start, .visibilityProductInfo_end {
+    display: none !important;
   }
 }
 
@@ -177,4 +170,14 @@
 
 @media (min-width: 1200px) {
 
+}
+
+@media (max-width: 576px) {
+  .PerformanceInformationContentStart {
+    justify-content: center;
+  }
+
+  .PerformanceInformationContentEnd {
+    justify-content: center;
+  }
 }

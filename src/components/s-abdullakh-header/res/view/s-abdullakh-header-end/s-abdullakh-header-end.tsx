@@ -24,7 +24,9 @@ export class SAbdullakhHeaderEnd implements ComponentInterface {
         onClick={() => {
           this.clickOnHeader.emit(this.phoneNumber)
         }}>
-        {this.phoneNumber}
+        <a href="tel:79956068462">
+          {this.phoneNumber}
+        </a>
       </div>
     );
   }

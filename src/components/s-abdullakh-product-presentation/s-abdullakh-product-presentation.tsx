@@ -17,6 +17,11 @@ export class SAbdullakhProductPresentation implements ComponentInterface {
    * */
   @Event() clickOnProductPresentation: EventEmitter;
 
+  /**
+   *  Вызов модального окна формы
+   * */
+  @Event() openForm: EventEmitter;
+
   render() {
     return (
       <div class="container">

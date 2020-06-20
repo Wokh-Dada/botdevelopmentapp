@@ -22,12 +22,18 @@ export class SAbdullakhProductPresentationTitle implements ComponentInterface {
    * */
   @Event() clickOnProductPresentation: EventEmitter;
 
+  /**
+   *  Вызов модального окна формы
+   * */
+  @Event() openForm: EventEmitter;
+
+
   render() {
     return (
       <div class="presentationTitleBlock">
         <div class="presentationTitleInBlock">
           <div
-            class="presentationTitle"
+            class="presentationTitle animate__animated animate__bounceInLeft animate__delay-700ms"
             innerHTML={markdown.toHTML(this.arr.text)}
             onClick={() => this.clickOnProductPresentation.emit(this.arr.text)}>
 
@@ -41,13 +47,17 @@ export class SAbdullakhProductPresentationTitle implements ComponentInterface {
             </div>
           </div>
           <div class="d-lg-none d-block">
-            <s-abdullakh-product-presentation-img img={this.img} />
+            <s-abdullakh-product-presentation-img img={this.img}/>
           </div>
-          <div class="presentationTitlePrice" onClick={() => this.clickOnProductPresentation.emit(this.arr.price)}>
+          <div class="presentationTitlePrice animate__animated animate__bounceInLeft animate__delay-400ms"
+               onClick={() => this.clickOnProductPresentation.emit(this.arr.price)}>
             {this.arr.behindText}<span> {this.arr.price}</span>
           </div>
-          <div class="presentationBtnBlock">
-            <button class="presentationBtn" onClick={() => this.clickOnProductPresentation.emit(this.arr.btnText)}>
+          <div class="presentationBtnBlock animate__animated animate__bounceInUp animate__delay-1.2s">
+            <button class="presentationBtn" onClick={() => {
+              this.clickOnProductPresentation.emit(this.arr.btnText);
+              this.openForm.emit()
+            }}>
               {this.arr.btnText}
             </button>
           </div>

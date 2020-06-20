@@ -34,6 +34,14 @@ export namespace Components {
          */
         "Consultation": SSAbdullakhConsultation;
     }
+    interface SAbdullakhForm {
+        "arr": any;
+    }
+    interface SAbdullakhFormClose {
+    }
+    interface SAbdullakhFormCommunication {
+        "formCommunication": any;
+    }
     interface SAbdullakhHeader {
         /**
           * объект с массивом меню и string для подкомпонентов header-start header-end
@@ -164,6 +172,24 @@ declare global {
         prototype: HTMLSAbdullakhConsultationElement;
         new (): HTMLSAbdullakhConsultationElement;
     };
+    interface HTMLSAbdullakhFormElement extends Components.SAbdullakhForm, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhFormElement: {
+        prototype: HTMLSAbdullakhFormElement;
+        new (): HTMLSAbdullakhFormElement;
+    };
+    interface HTMLSAbdullakhFormCloseElement extends Components.SAbdullakhFormClose, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhFormCloseElement: {
+        prototype: HTMLSAbdullakhFormCloseElement;
+        new (): HTMLSAbdullakhFormCloseElement;
+    };
+    interface HTMLSAbdullakhFormCommunicationElement extends Components.SAbdullakhFormCommunication, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhFormCommunicationElement: {
+        prototype: HTMLSAbdullakhFormCommunicationElement;
+        new (): HTMLSAbdullakhFormCommunicationElement;
+    };
     interface HTMLSAbdullakhHeaderElement extends Components.SAbdullakhHeader, HTMLStencilElement {
     }
     var HTMLSAbdullakhHeaderElement: {
@@ -265,6 +291,9 @@ declare global {
         "s-abdullakh-benefits-bots": HTMLSAbdullakhBenefitsBotsElement;
         "s-abdullakh-benefits-bots-block": HTMLSAbdullakhBenefitsBotsBlockElement;
         "s-abdullakh-consultation": HTMLSAbdullakhConsultationElement;
+        "s-abdullakh-form": HTMLSAbdullakhFormElement;
+        "s-abdullakh-form-close": HTMLSAbdullakhFormCloseElement;
+        "s-abdullakh-form-communication": HTMLSAbdullakhFormCommunicationElement;
         "s-abdullakh-header": HTMLSAbdullakhHeaderElement;
         "s-abdullakh-header-center": HTMLSAbdullakhHeaderCenterElement;
         "s-abdullakh-header-end": HTMLSAbdullakhHeaderEndElement;
@@ -315,6 +344,26 @@ declare namespace LocalJSX {
           * клик по элементам компонента Consultation
          */
         "onClickOnConsultation"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
+    }
+    interface SAbdullakhForm {
+        "arr"?: any;
+    }
+    interface SAbdullakhFormClose {
+        /**
+          * Закрытие модального окна формы
+         */
+        "onCloseForm"?: (event: CustomEvent<any>) => void;
+    }
+    interface SAbdullakhFormCommunication {
+        "formCommunication"?: any;
+        /**
+          * Закрытие модального окна формы
+         */
+        "onCloseForm"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhHeader {
         /**
@@ -365,6 +414,10 @@ declare namespace LocalJSX {
           * клик по элементам компонента PerformanceInformation
          */
         "onClickOnPerformanceInformation"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhPerformanceInformationList {
         /**
@@ -389,6 +442,10 @@ declare namespace LocalJSX {
           * клик по элементам компонента ProductInformation
          */
         "onClickOnProductInformation"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhProductInformationBlocks {
         /**
@@ -399,6 +456,10 @@ declare namespace LocalJSX {
           * клик по элементам компонента ProductInformation
          */
         "onClickOnProductInformation"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhProductPresentation {
         /**
@@ -409,6 +470,10 @@ declare namespace LocalJSX {
           * клик по элементам компонента ProductPresentation
          */
         "onClickOnProductPresentation"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhProductPresentationImg {
         /**
@@ -433,6 +498,10 @@ declare namespace LocalJSX {
           * клик по элементам компонента ProductPresentation подкомпонента ProductPresentationTitle
          */
         "onClickOnProductPresentation"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhTariffs {
         /**
@@ -443,6 +512,10 @@ declare namespace LocalJSX {
           * клик по элементам компонента Tariffs
          */
         "onClickOnTariffs"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhTariffsInfoBlocks {
         /**
@@ -453,6 +526,10 @@ declare namespace LocalJSX {
           * клик по элементам компонента Tariffs
          */
         "onClickOnTariffs"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhTransitionCreateBot {
         /**
@@ -463,6 +540,10 @@ declare namespace LocalJSX {
           * клик по элементам компонента TransitionCreateBot
          */
         "onClickOnTransitionCreateBot"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhTransitionCreateBotFollow {
         /**
@@ -489,6 +570,9 @@ declare namespace LocalJSX {
         "s-abdullakh-benefits-bots": SAbdullakhBenefitsBots;
         "s-abdullakh-benefits-bots-block": SAbdullakhBenefitsBotsBlock;
         "s-abdullakh-consultation": SAbdullakhConsultation;
+        "s-abdullakh-form": SAbdullakhForm;
+        "s-abdullakh-form-close": SAbdullakhFormClose;
+        "s-abdullakh-form-communication": SAbdullakhFormCommunication;
         "s-abdullakh-header": SAbdullakhHeader;
         "s-abdullakh-header-center": SAbdullakhHeaderCenter;
         "s-abdullakh-header-end": SAbdullakhHeaderEnd;
@@ -515,6 +599,9 @@ declare module "@stencil/core" {
             "s-abdullakh-benefits-bots": LocalJSX.SAbdullakhBenefitsBots & JSXBase.HTMLAttributes<HTMLSAbdullakhBenefitsBotsElement>;
             "s-abdullakh-benefits-bots-block": LocalJSX.SAbdullakhBenefitsBotsBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhBenefitsBotsBlockElement>;
             "s-abdullakh-consultation": LocalJSX.SAbdullakhConsultation & JSXBase.HTMLAttributes<HTMLSAbdullakhConsultationElement>;
+            "s-abdullakh-form": LocalJSX.SAbdullakhForm & JSXBase.HTMLAttributes<HTMLSAbdullakhFormElement>;
+            "s-abdullakh-form-close": LocalJSX.SAbdullakhFormClose & JSXBase.HTMLAttributes<HTMLSAbdullakhFormCloseElement>;
+            "s-abdullakh-form-communication": LocalJSX.SAbdullakhFormCommunication & JSXBase.HTMLAttributes<HTMLSAbdullakhFormCommunicationElement>;
             "s-abdullakh-header": LocalJSX.SAbdullakhHeader & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderElement>;
             "s-abdullakh-header-center": LocalJSX.SAbdullakhHeaderCenter & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderCenterElement>;
             "s-abdullakh-header-end": LocalJSX.SAbdullakhHeaderEnd & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderEndElement>;

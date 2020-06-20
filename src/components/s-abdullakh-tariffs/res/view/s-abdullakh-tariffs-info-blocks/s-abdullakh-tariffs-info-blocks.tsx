@@ -16,14 +16,22 @@ export class SAbdullakhTariffsInfoBlocks implements ComponentInterface {
    * */
   @Event() clickOnTariffs: EventEmitter;
 
+  /**
+   *  Вызов модального окна формы
+   * */
+  @Event() openForm: EventEmitter;
+
   render() {
     return (
       <div class={blockClass(this.arr.class)}>
         <div class="Tariffs_info_block_outer_icon"
-             style={{backgroundImage: "url(" + this.arr.outerImg + ")"}} onClick={() => this.clickOnTariffs.emit(this.arr.outerImg)}>
+             style={{backgroundImage: "url(" + this.arr.outerImg + ")"}}
+             onClick={() => this.clickOnTariffs.emit(this.arr.outerImg)}>
+          {/*вывод внешней картинки из массива*/}
           <div class="Tariffs_info_block_inner_icon"
-               style={{backgroundImage: "url(" + this.arr.innerImg + ")"}} onClick={() => this.clickOnTariffs.emit(this.arr.innerImg)}>
-
+               style={{backgroundImage: "url(" + this.arr.innerImg + ")"}}
+               onClick={() => this.clickOnTariffs.emit(this.arr.innerImg)}>
+            {/*вывод внутренней картинки из массива*/}
           </div>
         </div>
         <div class="Tariffs_info_block_title" onClick={() => this.clickOnTariffs.emit(this.arr.title)}>
@@ -36,7 +44,10 @@ export class SAbdullakhTariffsInfoBlocks implements ComponentInterface {
           {this.arr.priceText}
         </div>
         <div class="Tariffs_info_btnBlock">
-          <button class="Tariffs_info_btn" onClick={() => this.clickOnTariffs.emit(this.arr.btnText)}>
+          <button class="Tariffs_info_btn" onClick={() => {
+            this.clickOnTariffs.emit(this.arr.btnText);
+            this.openForm.emit();
+          }}>
             {this.arr.btnText}
           </button>
         </div>

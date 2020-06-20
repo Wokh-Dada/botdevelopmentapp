@@ -16,22 +16,30 @@ export class SAbdullakhTariffs implements ComponentInterface {
    * */
   @Event() clickOnTariffs: EventEmitter;
 
+  /**
+   *  Вызов модального окна формы
+   * */
+  @Event() openForm: EventEmitter;
+
   render() {
     return (
       <section class="Tariffs_section">
+        {/*анимация*/}
         <div class="dinamicImg" style={{backgroundImage: "url(" + this.Tariffs.dinamicImg + ")"}}
              onClick={() => this.clickOnTariffs.emit(this.Tariffs.dinamicImg)}>
-          <span onClick={() => this.clickOnTariffs.emit(this.Tariffs.dinamicText)}>
-            {this.Tariffs.dinamicText}
-          </span>
+          {/*вывод из массива картинки*/}
         </div>
+        <span class="dollar" onClick={() => this.clickOnTariffs.emit(this.Tariffs.dinamicText)}>
+          {this.Tariffs.dinamicText}
+        </span>
+        {/*анимация*/}
         <div class="container">
           <div class="Tariffs_title" onClick={() => this.clickOnTariffs.emit(this.Tariffs.title)}>
             {this.Tariffs.title}
           </div>
           <div class="Tariffs_info_blocks_bckgrnd" style={{backgroundImage: "url(" + this.Tariffs.bckgrndImg + ")"}}
                onClick={() => this.clickOnTariffs.emit(this.Tariffs.bckgrndImg)}>
-            <div class="Tariffs_info_blocks" >
+            <div class="Tariffs_info_blocks">
               <TariffsInfoBlocks arr={this.Tariffs.infoBlock}/>
             </div>
           </div>

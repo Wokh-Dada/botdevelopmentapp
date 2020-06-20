@@ -17,6 +17,7 @@
 | Event                 | Description                               | Type               |
 | --------------------- | ----------------------------------------- | ------------------ |
 | `clickOnConsultation` | клик по элементам компонента Consultation | `CustomEvent<any>` |
+| `openForm`            | Вызов модального окна формы               | `CustomEvent<any>` |
 
 
 ## Dependencies

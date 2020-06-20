@@ -17,6 +17,7 @@
 | Event            | Description                          | Type               |
 | ---------------- | ------------------------------------ | ------------------ |
 | `clickOnTariffs` | клик по элементам компонента Tariffs | `CustomEvent<any>` |
+| `openForm`       | Вызов модального окна формы          | `CustomEvent<any>` |
 
 
 ## Dependencies

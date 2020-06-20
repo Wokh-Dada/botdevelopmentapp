@@ -1,3 +1,21 @@
+export const formCommunication = {
+  id: '1',
+  formInterviewText: [
+    {
+      nameInterview: 'Как вас зовут',
+      businessInterview: 'У вас уже есть бизнес',
+      businessSelect: [
+        {id: 1, select: 'Да', selected: true},
+        {id: 2, select: 'Планирую открыть', selected: false},
+        {id: 3, select: 'Нет', selected: false},
+      ],
+      websiteInterview: 'Ссылка на ваш сайт (если есть)',
+      numberInterview: 'Ваш номер',
+      btnText: 'Создать бота'
+    }
+  ]
+};
+
 export const header = {
   id: 'header',
   logoUrl: "https://static.tildacdn.com/tild3532-3833-4936-a237-616331303266/5.jpg",

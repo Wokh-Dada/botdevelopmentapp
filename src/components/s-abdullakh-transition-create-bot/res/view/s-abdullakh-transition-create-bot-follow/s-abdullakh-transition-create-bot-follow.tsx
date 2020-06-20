@@ -21,14 +21,16 @@ export class SAbdullakhTransitionCreateBotFollow implements ComponentInterface {
       <div class="transitionCreateBotTextBlock">
         <div class="innerCreateBotTextBlock">
           <div class="transitionCreateBotText" innerHTML={this.arr.text}
-               onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.text)}>
-
+               onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.text)}
+          >
+            {/*вызов html разметки из массива*/}
           </div>
           <div class="transitionCreateBotBtnBlock">
             <div class="CreateBotBtnBlock-border">
             <button class="transitionCreateBotBtn" innerHTML={this.arr.btnText}
-                    onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.btnText)}>
-
+                    onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.btnText)}
+            >
+              {/*вызов текста массива*/}
             </button>
             </div>
           </div>

@@ -17,6 +17,11 @@ export class SAbdullakhTransitionCreateBot implements ComponentInterface {
    * */
   @Event() clickOnTransitionCreateBot: EventEmitter;
 
+  /**
+   *  Вызов модального окна формы
+   * */
+  @Event() openForm: EventEmitter;
+
   render() {
     return (
       <section class="transitionCreateBot">

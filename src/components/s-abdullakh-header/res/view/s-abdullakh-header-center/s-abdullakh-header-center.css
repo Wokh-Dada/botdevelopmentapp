@@ -24,6 +24,41 @@
   border-style: solid;
 }
 
+.navbar_item a:hover {
+  color: #242323;
+  text-decoration: none;
+}
+
+.menu_line {
+  width: 30px;
+  height: 3px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  /*transition: 500ms;*/
+}
+
+.navbar_item:hover .menu_line {
+  opacity: 1;
+  animation-name: menuLine;
+  animation-duration: 150ms;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menuLine {
+  0% {
+    transform: translate(10px);;
+  }
+  50% {
+    transform: translate(30px);;
+  }
+  100% {
+    transform: translate(50px);;
+  }
+}
+
 @media (max-width: 479px) {
   .my_navbar {
     justify-content: center;

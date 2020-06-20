@@ -9,6 +9,11 @@
   padding: 20px 28px;
 }
 
+.phone_number a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (min-width: 576px) {
 
 }

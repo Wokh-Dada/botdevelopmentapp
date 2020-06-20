@@ -17,6 +17,11 @@ export class SAbdullakhConsultation implements ComponentInterface {
    * */
   @Event() clickOnConsultation: EventEmitter;
 
+  /**
+   *  Вызов модального окна формы
+   * */
+  @Event() openForm: EventEmitter;
+
   render() {
     return (
       <section class="Consultation">
@@ -27,7 +32,7 @@ export class SAbdullakhConsultation implements ComponentInterface {
                 class="Consultation_img"
                 style={{backgroundImage: "url(" + this.Consultation.imgUrl + ")"}}
                 onClick={() => this.clickOnConsultation.emit(this.Consultation.imgUrl)}>
-
+                {/*вывод картинки из массива*/}
               </div>
             </div>
             <div class="col-lg-6 col-12 mt-5 pt-5">
@@ -39,11 +44,14 @@ export class SAbdullakhConsultation implements ComponentInterface {
                 </div>
                 <div class="Consultation_text" innerHTML={this.Consultation.text}
                      onClick={() => this.clickOnConsultation.emit(this.Consultation.text)}>
-
+                  {/*вывод HTML разметки из массива*/}
                 </div>
                 <div class="Consultation_btn_block">
                   <button class="Consultation_btn"
-                          onClick={() => this.clickOnConsultation.emit(this.Consultation.btnText)}>
+                          onClick={() => {
+                            this.clickOnConsultation.emit(this.Consultation.btnText);
+                            this.openForm.emit();
+                          }}>
                     {this.Consultation.btnText}
                   </button>
                 </div>

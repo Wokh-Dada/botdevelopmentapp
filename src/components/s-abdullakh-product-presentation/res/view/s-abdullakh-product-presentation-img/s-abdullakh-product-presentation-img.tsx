@@ -21,15 +21,16 @@ export class SAbdullakhProductPresentationImg implements ComponentInterface {
       <div
         class="presentationImg"
         style={{backgroundImage: "url(" + this.img.imgUrl + ")"}}
-        onClick={() => this.clickOnProductPresentation.emit(this.img)}>
-        <IconBlock arr={this.img.icon} />
+        onClick={() => this.clickOnProductPresentation.emit(this.img)}
+      >
+        <IconBlock arr={this.img.icon}/>
       </div>
     );
   }
 }
 
 /*
-* компонентная функция для вывода элементов ProductPresentationTitle
+* компонентная функция для вывода картинок-иконок в product-presentation-img
  */
 const IconBlock = (props) => {
   return props.arr.map((item) => {
@@ -42,12 +43,12 @@ const IconBlock = (props) => {
 }
 
 /*
-* функция для присваивания класса бутстрап
+* функция присваивания класса для вывода картинки иконки
  */
 function iconClass(x) {
   switch (x) {
     case 'whatsApp':
-      return 'whats  animate__animated animate__pulse';
+      return 'whats';
 
     case 'telegram':
       return 'telega';

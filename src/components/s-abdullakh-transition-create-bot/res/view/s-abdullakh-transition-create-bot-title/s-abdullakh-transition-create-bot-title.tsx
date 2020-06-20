@@ -19,18 +19,18 @@ export class SAbdullakhTransitionCreateBotTitle implements ComponentInterface {
   render() {
     return (
       <div class="transitionCreateBotImgPosition">
-        <div
-          class="transitionCreateBotImg"
-          style={{backgroundImage: "url(" + this.arr.imgUrl + ")"}}
-          onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.imgUrl)}>
-
+        <div class="transitionCreateBotImg"
+             style={{backgroundImage: "url(" + this.arr.imgUrl + ")"}}
+             onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.imgUrl)}
+        >
+          {/*вызов картинки из массива*/}
         </div>
         <div class="transitionCreateBotTitleBlock">
-          <div
-            class="transitionCreateBotTitle"
-            innerHTML={this.arr.title}
-            onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.title)}>
-
+          <div class="transitionCreateBotTitle"
+               innerHTML={this.arr.title}
+               onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.title)}
+          >
+            {/*вызов html разметки из массива*/}
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 {
   "name": "s-abdullakh-botdevelopmentapp",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -27,6 +27,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "markdown": "^0.5.0"
+    "markdown": "^0.5.0",
+    "wow.js": "^1.2.2"
   }
 }

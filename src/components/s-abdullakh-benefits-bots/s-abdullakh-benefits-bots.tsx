@@ -19,7 +19,7 @@ export class SAbdullakhBenefitsBots implements ComponentInterface {
 
   render() {
     return (
-      <section class="BenefitsBots">
+      <section class="BenefitsBots" id="benefitsBots">
         <div class="container">
           <div class="BenefitsBotsTitleBlock">
             <div class="BenefitsBotsTitle" onClick={() => this.clickOnBenefitsBots.emit(this.BenefitsBots.title)}>
@@ -27,7 +27,7 @@ export class SAbdullakhBenefitsBots implements ComponentInterface {
             </div>
           </div>
           <div class="row">
-            <BotsInfoBlocks arr={this.BenefitsBots.infoBlock} />
+            <BotsInfoBlocks arr={this.BenefitsBots.infoBlock}/>
           </div>
         </div>
       </section>
@@ -36,7 +36,7 @@ export class SAbdullakhBenefitsBots implements ComponentInterface {
 }
 
 /*
-* компонентная функция для вывода элементов news-main-block
+* компонентная функция для вывода блоков подкомпонента BenefitsBotsBlock компонента BenefitsBots
  */
 const BotsInfoBlocks = (props) => {
   return props.arr.map((item) => {

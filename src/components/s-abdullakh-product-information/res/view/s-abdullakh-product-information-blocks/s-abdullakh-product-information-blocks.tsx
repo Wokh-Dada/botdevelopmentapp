@@ -16,31 +16,39 @@ export class SAbdullakhProductInformationBlocks implements ComponentInterface {
    * */
   @Event() clickOnProductInformation: EventEmitter;
 
+  /**
+   *  Вызов модального окна формы
+   * */
+  @Event() openForm: EventEmitter;
+
 
   render() {
     return (
       <div class="ProductInfoBlock">
         <div>
-          <div class="ProductInfoBlockOuterImgBlock">
-            <div
-              class="ProductInfoBlockOuterImg"
+          <div class="ProductInfoBlockOuterImgBlock animate__animated animate__bounceInUp">
+            <div class="ProductInfoBlockOuterImg"
               style={{backgroundImage: "url(" + this.arr.outerImg + ")"}}
-              onClick={() => this.clickOnProductInformation.emit(this.arr.outerImg)}>
-
-              <div
-                class="ProductInfoBlockInnerImg"
+              onClick={() => this.clickOnProductInformation.emit(this.arr.outerImg)}
+            >
+              {/*вывод внешней background картинки*/}
+              <div class="ProductInfoBlockInnerImg"
                 style={{backgroundImage: "url(" + this.arr.innerImg + ")"}}
-                onClick={() => this.clickOnProductInformation.emit(this.arr.innerImg)}>
-
+                onClick={() => this.clickOnProductInformation.emit(this.arr.innerImg)}
+              >
+                {/*вывод внутренней background картинки*/}
               </div>
             </div>
           </div>
-          <div class="ProductInfoTextBlock" innerHTML={this.arr.text}
+          <div class="ProductInfoTextBlock animate__animated animate__bounceInUp" innerHTML={this.arr.text}
                onClick={() => this.clickOnProductInformation.emit(this.arr.text)}>
-
+            {/*вывод текста из массива в HTML разметке*/}
           </div>
-          <div class="ProductInfoBtnBlock">
-            <button class="ProductInfoBtn" onClick={() => this.clickOnProductInformation.emit(this.arr.btnText)}>
+          <div class="ProductInfoBtnBlock animate__animated animate__bounceInUp">
+            <button class="ProductInfoBtn" onClick={() => {
+              this.clickOnProductInformation.emit(this.arr.btnText);
+              this.openForm.emit()
+            }}>
               {this.arr.btnText}
             </button>
           </div>
