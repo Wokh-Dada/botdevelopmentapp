@@ -1,6 +1,7 @@
 .PerformanceInformation {
   padding: 260px 0 150px 0;
   display: flex;
+  position: relative;
 }
 
 .PerformanceInformationTitleBlock {

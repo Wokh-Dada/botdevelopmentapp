@@ -33,7 +33,7 @@ export class SAbdullakhProductPresentationTitle implements ComponentInterface {
       <div class="presentationTitleBlock">
         <div class="presentationTitleInBlock">
           <div
-            class="presentationTitle animate__animated animate__bounceInLeft animate__delay-700ms"
+            class="presentationTitle animate__animated animate__fadeInLeft"
             innerHTML={markdown.toHTML(this.arr.text)}
             onClick={() => this.clickOnProductPresentation.emit(this.arr.text)}>
 
@@ -49,11 +49,11 @@ export class SAbdullakhProductPresentationTitle implements ComponentInterface {
           <div class="d-lg-none d-block">
             <s-abdullakh-product-presentation-img img={this.img}/>
           </div>
-          <div class="presentationTitlePrice animate__animated animate__bounceInLeft animate__delay-400ms"
+          <div class="presentationTitlePrice animate__animated animate__fadeInLeft"
                onClick={() => this.clickOnProductPresentation.emit(this.arr.price)}>
             {this.arr.behindText}<span> {this.arr.price}</span>
           </div>
-          <div class="presentationBtnBlock animate__animated animate__bounceInUp animate__delay-1.2s">
+          <div class="presentationBtnBlock animate__animated animate__fadeInUpBig">
             <button class="presentationBtn" onClick={() => {
               this.clickOnProductPresentation.emit(this.arr.btnText);
               this.openForm.emit()

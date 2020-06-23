@@ -1,6 +1,7 @@
 .BenefitsBotsBlockPosition{
   display: flex;
   justify-content: center;
+  animation-delay: 1s;
 }
 
 .BenefitsBotsBlock{

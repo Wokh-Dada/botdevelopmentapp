@@ -25,7 +25,8 @@ export class SAbdullakhProductInformation implements ComponentInterface {
   render() {
     return (
       <div class="container ProductInformation" id="productInformation">
-        <div class="ProductInfoTitle animate__animated animate__bounceInRight" onClick={() => this.clickOnProductInformation.emit(this.ProductInformation.title)}>
+        <div class="ProductInfoTitle wow animate__animated animate__fadeInRightBig"
+             onClick={() => this.clickOnProductInformation.emit(this.ProductInformation.title)}>
           {this.ProductInformation.title}
         </div>
         <div class="row justify-content-center">

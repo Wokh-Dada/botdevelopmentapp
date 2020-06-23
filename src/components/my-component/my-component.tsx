@@ -1,8 +1,7 @@
 import {Component, h, State} from '@stencil/core';
 import {
-  BenefitsBots, Consultation, formCommunication,
-  header, PerformanceandBenefitsbckgrnd,
-  PerformanceInformation,
+  Consultation, formCommunication,
+  header, PerformanceAndBenefits,
   ProductInformation,
   ProductPresentation, Tariffs,
   TransitionCreateBot
@@ -50,22 +49,11 @@ export class MyComponent {
           onClickOnTransitionCreateBot={(event) => this.clickOnTransitionCreateBot(event)}
           onOpenForm={() => this.openForm()}/>
 
-        <div class="PerformanceandBenefitsbckgrnd"
-             style={{backgroundImage: "url(" + PerformanceandBenefitsbckgrnd + ")"}}
-             onClick={(event) => this.PerformanceandBenefitsbckgrnd(event)}
-        >
-
-          <s-abdullakh-performance-information
-            PerformanceInformation={PerformanceInformation}
-            onClickOnPerformanceInformation={(event) => this.clickOnPerformanceInformation(event)}
+          <s-abdullakh-performance-and-benefits
+            PerformanceAndBenefits = {PerformanceAndBenefits}
+            onClickOnPerformanceAndBenefits={(event) => this.clickOnPerformanceAndBenefits(event)}
             onOpenForm={() => this.openForm()}
           />
-          <s-abdullakh-benefits-bots
-            BenefitsBots={BenefitsBots}
-            onClickOnBenefitsBots={(event) => this.clickOnBenefitsBots(event)}
-          />
-
-        </div>
 
         <s-abdullakh-consultation
           Consultation={Consultation}
@@ -126,24 +114,10 @@ export class MyComponent {
   }
 
   /**
-   * клик по элементам блока PerformanceandBenefitsbckgrnd
+   * клик по элементам компонента PerformanceAndBenefits
    */
-  public PerformanceandBenefitsbckgrnd({detail}) {
-    return console.log("PerformanceandBenefitsbckgrnd:", detail);
-  }
-
-  /**
-   * клик по элементам компонента PerformanceInformation
-   */
-  public clickOnPerformanceInformation({detail}) {
+  public clickOnPerformanceAndBenefits({detail}) {
     return console.log("PerformanceInformation:", detail);
-  }
-
-  /**
-   * клик по элементам компонента BenefitsBots
-   */
-  public clickOnBenefitsBots({detail}) {
-    return console.log("BenefitsBots:", detail);
   }
 
   /**

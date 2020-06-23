@@ -18,7 +18,7 @@ export class SAbdullakhBenefitsBotsBlock implements ComponentInterface {
 
   render() {
     return (
-      <div class="BenefitsBotsBlockPosition">
+      <div class="BenefitsBotsBlockPosition wow animate__animated animate__backInUp ">
         <div class="BenefitsBotsBlock">
           <div class="BenefitsBotsBlock_imgBlock">
             <div class="BenefitsBotsBlock_outer_img" style={{backgroundImage: "url(" + this.arr.outerImg + ")"}}

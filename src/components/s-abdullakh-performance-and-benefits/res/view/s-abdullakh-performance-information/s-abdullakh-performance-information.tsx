@@ -9,17 +9,17 @@ import {SSAbdullakhPerformanceInformation} from "./interface/common.interface";
 export class SAbdullakhPerformanceInformation implements ComponentInterface {
   /**
    * массив для вывода элементов PerformanceInformation
-   * */
+   **/
   @Prop() PerformanceInformation: SSAbdullakhPerformanceInformation;
 
   /**
    * клик по элементам компонента PerformanceInformation
-   * */
+   **/
   @Event() clickOnPerformanceInformation: EventEmitter;
 
   /**
-   *  Вызов модального окна формы
-   * */
+   * Вызов модального окна формы
+   **/
   @Event() openForm: EventEmitter;
 
   render() {
@@ -27,36 +27,36 @@ export class SAbdullakhPerformanceInformation implements ComponentInterface {
       <section class="PerformanceInformation" id="performanceInformation">
         <div class='container'>
           <div class="PerformanceInformationTitleBlock">
-            <div class="PerformanceInformationTitle"
+            <div class="PerformanceInformationTitle wow animate__animated animate__backInUp"
                  onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.title)}
             >
               {this.PerformanceInformation.title}
             </div>
           </div>
           <div class="PerformanceInformationContentBlock">
-            <div class="PerformanceInformationContent">
+            <div class="PerformanceInformationContent wow animate__animated animate__backInUp">
               <div class="PerformanceInformationContentStart">
                 <s-abdullakh-performance-information-list PerformanceInformation={this.PerformanceInformation.right}
                                                           endText={this.PerformanceInformation.ContentRightEndText}
                 />
-                <div class="PerformanceInformationContentCenter visibilityProductInfo_start"
-                     style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
-                     onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
+                <div
+                  class="PerformanceInformationContentCenter visibilityProductInfo_start"
+                  style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
+                  onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
                 >
 
                 </div>
               </div>
-              <div class="PerformanceInformationContentCenter visibilityProductInfo_center"
+              <div class="PerformanceInformationContentCenter visibilityProductInfo_center wow animate__animated animate__fadeInDownBig"
                    style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
                    onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
               >
 
               </div>
               <div class="PerformanceInformationContentEnd">
-                <div class="PerformanceInformationContentCenter  visibilityProductInfo_end"
+                <div class="PerformanceInformationContentCenter visibilityProductInfo_end"
                      style={{backgroundImage: "url(" + this.PerformanceInformation.imgUrl + ")"}}
-                     onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}
-                >
+                     onClick={() => this.clickOnPerformanceInformation.emit(this.PerformanceInformation.imgUrl)}>
 
                 </div>
                 <s-abdullakh-performance-information-list PerformanceInformation={this.PerformanceInformation.left}

@@ -38,16 +38,18 @@ export class SAbdullakhConsultation implements ComponentInterface {
             <div class="col-lg-6 col-12 mt-5 pt-5">
               <div class="Consultation_advertising_link_block">
                 <div class="Consultation_title_block">
-                  <div class="Consultatio_title" onClick={() => this.clickOnConsultation.emit(this.Consultation.title)}>
+                  <div class="Consultatio_title wow animate__animated animate__backInUp"
+                       onClick={() => this.clickOnConsultation.emit(this.Consultation.title)}>
                     {this.Consultation.title}
                   </div>
                 </div>
-                <div class="Consultation_text" innerHTML={this.Consultation.text}
+                <div class="Consultation_text wow animate__animated animate__backInUp"
+                     innerHTML={this.Consultation.text}
                      onClick={() => this.clickOnConsultation.emit(this.Consultation.text)}>
                   {/*вывод HTML разметки из массива*/}
                 </div>
                 <div class="Consultation_btn_block">
-                  <button class="Consultation_btn"
+                  <button class="Consultation_btn wow animate__animated animate__backInUp"
                           onClick={() => {
                             this.clickOnConsultation.emit(this.Consultation.btnText);
                             this.openForm.emit();

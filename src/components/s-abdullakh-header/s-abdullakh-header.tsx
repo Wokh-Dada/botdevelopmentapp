@@ -23,10 +23,10 @@ export class SAbdullakhHeader implements ComponentInterface {
       <header>
         <div class="container mt-2">
           <div class="header_menu">
-            <div class="HeaderStart wow backInDown">
+            <div class="HeaderStart wow animate__animated animate__backInDown">
               <s-abdullakh-header-start logo={this.header.logoUrl}/>
             </div>
-            <div class="HeaderCenter animate__animated animate__backInDown animate__delay-500ms">
+            <div class="HeaderCenter animate__animated animate__backInDown animate__delay-1s">
               <nav class="my_navbar">
                 <ItemLink arr={this.header.menu}/>
                 <div class="d-block d-md-none">
@@ -34,7 +34,7 @@ export class SAbdullakhHeader implements ComponentInterface {
                 </div>
               </nav>
             </div>
-            <div class="HeaderEnd d-md-block d-none animate__animated animate__backInDown animate__delay-1s">
+            <div class="HeaderEnd d-md-block d-none animate__animated animate__backInDown animate__delay-2s">
               <s-abdullakh-header-end phoneNumber={this.header.phoneNumber}/>
             </div>
           </div>

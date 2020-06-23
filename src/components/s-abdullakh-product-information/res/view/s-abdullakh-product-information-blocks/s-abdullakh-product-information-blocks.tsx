@@ -26,25 +26,25 @@ export class SAbdullakhProductInformationBlocks implements ComponentInterface {
     return (
       <div class="ProductInfoBlock">
         <div>
-          <div class="ProductInfoBlockOuterImgBlock animate__animated animate__bounceInUp">
+          <div class="ProductInfoBlockOuterImgBlock wow animate__animated animate__fadeInUpBig">
             <div class="ProductInfoBlockOuterImg"
-              style={{backgroundImage: "url(" + this.arr.outerImg + ")"}}
-              onClick={() => this.clickOnProductInformation.emit(this.arr.outerImg)}
+                 style={{backgroundImage: "url(" + this.arr.outerImg + ")"}}
+                 onClick={() => this.clickOnProductInformation.emit(this.arr.outerImg)}
             >
               {/*вывод внешней background картинки*/}
               <div class="ProductInfoBlockInnerImg"
-                style={{backgroundImage: "url(" + this.arr.innerImg + ")"}}
-                onClick={() => this.clickOnProductInformation.emit(this.arr.innerImg)}
+                   style={{backgroundImage: "url(" + this.arr.innerImg + ")"}}
+                   onClick={() => this.clickOnProductInformation.emit(this.arr.innerImg)}
               >
                 {/*вывод внутренней background картинки*/}
               </div>
             </div>
           </div>
-          <div class="ProductInfoTextBlock animate__animated animate__bounceInUp" innerHTML={this.arr.text}
+          <div class="ProductInfoTextBlock wow animate__animated animate__fadeInUpBig" innerHTML={this.arr.text}
                onClick={() => this.clickOnProductInformation.emit(this.arr.text)}>
             {/*вывод текста из массива в HTML разметке*/}
           </div>
-          <div class="ProductInfoBtnBlock animate__animated animate__bounceInUp">
+          <div class="ProductInfoBtnBlock wow animate__animated animate__fadeInUpBig">
             <button class="ProductInfoBtn" onClick={() => {
               this.clickOnProductInformation.emit(this.arr.btnText);
               this.openForm.emit()

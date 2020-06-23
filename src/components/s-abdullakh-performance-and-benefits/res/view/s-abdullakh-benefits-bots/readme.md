@@ -23,11 +23,11 @@
 
 ### Used by
 
- - [my-component](../my-component)
+ - [my-component](../../../../my-component)
 
 ### Depends on
 
-- [s-abdullakh-benefits-bots-block](./res/view/s-abdullakh-benefits-bots-block)
+- [s-abdullakh-benefits-bots-block](res/view/s-abdullakh-benefits-bots-block)
 
 ### Graph
 ```mermaid

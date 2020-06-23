@@ -1,8 +1,15 @@
+.transitionCreateBotImgPosition{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
 .transitionCreateBotImg {
   width: 540px;
   height: 317px;
   background-size: cover;
   background-position: center;
+  transform: translateX(-65%);
 }
 
 .transitionCreateBotTitleBlock {

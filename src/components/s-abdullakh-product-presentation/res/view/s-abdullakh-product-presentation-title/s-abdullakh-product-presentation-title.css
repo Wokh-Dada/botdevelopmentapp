@@ -15,6 +15,10 @@
   line-height: 1;
 }
 
+.presentationTitle{
+  animation-delay: 500ms;
+}
+
 .presentationTitleUnderlineBlock {
   display: flex;
   justify-content: flex-end;
@@ -33,10 +37,15 @@
   line-height: 1;
   color: #ffd000;
   margin: 25px 0;
+  animation-delay: 100ms;
 }
 
 .presentationTitlePrice span {
   font-weight: 700;
+}
+
+.presentationBtnBlock{
+  animation-delay: 1s;
 }
 
 .presentationBtn {

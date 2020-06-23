@@ -21,7 +21,7 @@ export class SAbdullakhBenefitsBots implements ComponentInterface {
     return (
       <section class="BenefitsBots" id="benefitsBots">
         <div class="container">
-          <div class="BenefitsBotsTitleBlock">
+          <div class="BenefitsBotsTitleBlock wow animate__animated animate__backInUp">
             <div class="BenefitsBotsTitle" onClick={() => this.clickOnBenefitsBots.emit(this.BenefitsBots.title)}>
               {this.BenefitsBots.title}
             </div>
@@ -36,7 +36,7 @@ export class SAbdullakhBenefitsBots implements ComponentInterface {
 }
 
 /*
-* компонентная функция для вывода блоков подкомпонента BenefitsBotsBlock компонента BenefitsBots
+* компонентная функция для вывода блоков подкомпонента BenefitsBots компонента BenefitsBots
  */
 const BotsInfoBlocks = (props) => {
   return props.arr.map((item) => {

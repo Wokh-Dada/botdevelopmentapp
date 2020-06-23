@@ -5,11 +5,11 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { SSAbdullakhBenefitsBots, } from "./components/s-abdullakh-benefits-bots/interface/common.interface";
+import { SSAbdullakhBenefitsBots, } from "./components/s-abdullakh-performance-and-benefits/res/view/s-abdullakh-benefits-bots/interface/common.interface";
 import { SSAbdullakhConsultation, } from "./components/s-abdullakh-consultation/interface/common.interface";
 import { AbdullakhHeader, } from "./components/s-abdullakh-header/interface/common.interface";
 import { AbdullakhHeaderCenter, } from "./components/s-abdullakh-header/res/view/s-abdullakh-header-center/interface/common.interface";
-import { SSAbdullakhPerformanceInformation, } from "./components/s-abdullakh-performance-information/interface/common.interface";
+import { SSAbdullakhPerformanceInformation, } from "./components/s-abdullakh-performance-and-benefits/res/view/s-abdullakh-performance-information/interface/common.interface";
 import { SSAbdullakhProductInformation, } from "./components/s-abdullakh-product-information/interface/common.interface";
 import { SSAbdullakhProductPresentation, } from "./components/s-abdullakh-product-presentation/interface/common.interface";
 import { SSAbdullakhTransitionCreateBot, } from "./components/s-abdullakh-transition-create-bot/interface/common.interface";
@@ -65,6 +65,12 @@ export namespace Components {
           * объект с url logo
          */
         "logo": any;
+    }
+    interface SAbdullakhPerformanceAndBenefits {
+        /**
+          * объект с массивами компонентов PerformanceInformation, BenefitsBots
+         */
+        "PerformanceAndBenefits": any;
     }
     interface SAbdullakhPerformanceInformation {
         /**
@@ -214,6 +220,12 @@ declare global {
         prototype: HTMLSAbdullakhHeaderStartElement;
         new (): HTMLSAbdullakhHeaderStartElement;
     };
+    interface HTMLSAbdullakhPerformanceAndBenefitsElement extends Components.SAbdullakhPerformanceAndBenefits, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhPerformanceAndBenefitsElement: {
+        prototype: HTMLSAbdullakhPerformanceAndBenefitsElement;
+        new (): HTMLSAbdullakhPerformanceAndBenefitsElement;
+    };
     interface HTMLSAbdullakhPerformanceInformationElement extends Components.SAbdullakhPerformanceInformation, HTMLStencilElement {
     }
     var HTMLSAbdullakhPerformanceInformationElement: {
@@ -298,6 +310,7 @@ declare global {
         "s-abdullakh-header-center": HTMLSAbdullakhHeaderCenterElement;
         "s-abdullakh-header-end": HTMLSAbdullakhHeaderEndElement;
         "s-abdullakh-header-start": HTMLSAbdullakhHeaderStartElement;
+        "s-abdullakh-performance-and-benefits": HTMLSAbdullakhPerformanceAndBenefitsElement;
         "s-abdullakh-performance-information": HTMLSAbdullakhPerformanceInformationElement;
         "s-abdullakh-performance-information-list": HTMLSAbdullakhPerformanceInformationListElement;
         "s-abdullakh-product-information": HTMLSAbdullakhProductInformationElement;
@@ -404,6 +417,20 @@ declare namespace LocalJSX {
           * клик по элементy HeaderStart компонента header
          */
         "onClickOnHeader"?: (event: CustomEvent<any>) => void;
+    }
+    interface SAbdullakhPerformanceAndBenefits {
+        /**
+          * объект с массивами компонентов PerformanceInformation, BenefitsBots
+         */
+        "PerformanceAndBenefits"?: any;
+        /**
+          * клик по элементам компонента PerformanceAndBenefits
+         */
+        "onClickOnPerformanceAndBenefits"?: (event: CustomEvent<any>) => void;
+        /**
+          * открытие формы связи
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhPerformanceInformation {
         /**
@@ -577,6 +604,7 @@ declare namespace LocalJSX {
         "s-abdullakh-header-center": SAbdullakhHeaderCenter;
         "s-abdullakh-header-end": SAbdullakhHeaderEnd;
         "s-abdullakh-header-start": SAbdullakhHeaderStart;
+        "s-abdullakh-performance-and-benefits": SAbdullakhPerformanceAndBenefits;
         "s-abdullakh-performance-information": SAbdullakhPerformanceInformation;
         "s-abdullakh-performance-information-list": SAbdullakhPerformanceInformationList;
         "s-abdullakh-product-information": SAbdullakhProductInformation;
@@ -606,6 +634,7 @@ declare module "@stencil/core" {
             "s-abdullakh-header-center": LocalJSX.SAbdullakhHeaderCenter & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderCenterElement>;
             "s-abdullakh-header-end": LocalJSX.SAbdullakhHeaderEnd & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderEndElement>;
             "s-abdullakh-header-start": LocalJSX.SAbdullakhHeaderStart & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderStartElement>;
+            "s-abdullakh-performance-and-benefits": LocalJSX.SAbdullakhPerformanceAndBenefits & JSXBase.HTMLAttributes<HTMLSAbdullakhPerformanceAndBenefitsElement>;
             "s-abdullakh-performance-information": LocalJSX.SAbdullakhPerformanceInformation & JSXBase.HTMLAttributes<HTMLSAbdullakhPerformanceInformationElement>;
             "s-abdullakh-performance-information-list": LocalJSX.SAbdullakhPerformanceInformationList & JSXBase.HTMLAttributes<HTMLSAbdullakhPerformanceInformationListElement>;
             "s-abdullakh-product-information": LocalJSX.SAbdullakhProductInformation & JSXBase.HTMLAttributes<HTMLSAbdullakhProductInformationElement>;

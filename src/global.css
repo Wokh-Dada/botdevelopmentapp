@@ -28,17 +28,20 @@ button:not(:disabled) {
   outline: inherit;
 }
 
-.PerformanceandBenefitsbckgrnd{
-  width: 100%;
-  height: 1395px;
-  background-size: cover;
-  background-position: center;
-}
-
 @keyframes mypulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1.2); }
+  0% { transform: scale(1.05); }
+  2% { transform: scale(1.1); }
+  4% { transform: scale(1.15); }
+  6% { transform: scale(1.2); }
+  8% { transform: scale(1.25); }
+  10% { transform: scale(1.3); }
+  12% { transform: scale(1.2); }
+  14% { transform: scale(1.15); }
+  16% { transform: scale(1.1); }
+  18% { transform: scale(1.05); }
+  20% { transform: scale(1); }
+  25% { transform: scale(1); }
+  100% { transform: scale(1); }
 }
 
 @media (min-width: 576px) {

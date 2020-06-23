@@ -26,20 +26,25 @@
   justify-content: flex-end;
 }
 
-.CreateBotBtnBlock-border{
+.CreateBotBtnBlock-border {
+  width: 314px;
+  height: 59px;
   border-style: solid;
   border-width: 2px;
   border-radius: 30px;
   background-position: center center;
   border-color: #ffd000;
   padding: 5px;
-  animation-name: mypulse;
-  animation-duration: 1s;
-  animation-timing-function: ease;
+  animation-name: pulseBorder;
+  animation-duration: 2s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
 .transitionCreateBotBtn {
+  position: absolute;
+  bottom: 9px;
+  right: 22px;
   width: 300px;
   height: 45px;
   color: #ffffff !important;
@@ -62,8 +67,63 @@
   color: #3d3636 !important;
 }
 
+@keyframes pulseBorder {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.05);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.10);
+    opacity: 0.4;
+  }
+  75% {
+    transform: scale(1.15);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1.20);
+    opacity: 0
+  }
+}
+
+@media (max-width: 1145px) {
+    .transitionCreateBotBtn {
+      bottom: 17px;
+    }
+}
+
+@media (max-width: 1097px) {
+  .transitionCreateBotBtn {
+    bottom: 25px;
+  }
+}
+
 @media (max-width: 992px) {
   .transitionCreateBotBtnBlock {
     justify-content: center;
+  }
+
+  .transitionCreateBotBtn {
+    bottom: 7px;
+    right: 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  .transitionCreateBotBtn {
+    bottom: 7px;
+    right: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .transitionCreateBotBtn {
+    position: relative;
+    bottom: -51px;
+    right: -7px;
   }
 }

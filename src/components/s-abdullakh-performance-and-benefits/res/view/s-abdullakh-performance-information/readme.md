@@ -24,11 +24,11 @@
 
 ### Used by
 
- - [my-component](../my-component)
+ - [my-component](../../../../my-component)
 
 ### Depends on
 
-- [s-abdullakh-performance-information-list](./res/view/s-abdullakh-performance-information-list)
+- [s-abdullakh-performance-information-list](res/view/s-abdullakh-performance-information-list)
 
 ### Graph
 ```mermaid

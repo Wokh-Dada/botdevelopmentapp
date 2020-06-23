@@ -20,6 +20,7 @@ export class SAbdullakhProductPresentationImg implements ComponentInterface {
     return (
       <div
         class="presentationImg"
+        id="presentationImg"
         style={{backgroundImage: "url(" + this.img.imgUrl + ")"}}
         onClick={() => this.clickOnProductPresentation.emit(this.img)}
       >
@@ -35,12 +36,13 @@ export class SAbdullakhProductPresentationImg implements ComponentInterface {
 const IconBlock = (props) => {
   return props.arr.map((item) => {
     return (
-      <div class={iconClass(item.id)} style={{backgroundImage: "url("+ item.img +")"}}>
+      <div class={iconClass(item.id)} id={iconClass(item.id)} style={{backgroundImage: "url(" + item.img + ")"}}>
 
       </div>
     );
   })
 }
+
 
 /*
 * функция присваивания класса для вывода картинки иконки
@@ -48,7 +50,7 @@ const IconBlock = (props) => {
 function iconClass(x) {
   switch (x) {
     case 'whatsApp':
-      return 'whats';
+      return `whats`;
 
     case 'telegram':
       return 'telega';

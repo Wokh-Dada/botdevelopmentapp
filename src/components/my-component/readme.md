@@ -14,8 +14,8 @@
 - [s-abdullakh-product-presentation](../s-abdullakh-product-presentation)
 - [s-abdullakh-product-information](../s-abdullakh-product-information)
 - [s-abdullakh-transition-create-bot](../s-abdullakh-transition-create-bot)
-- [s-abdullakh-performance-information](../s-abdullakh-performance-information)
-- [s-abdullakh-benefits-bots](../s-abdullakh-benefits-bots)
+- [s-abdullakh-performance-information](../s-abdullakh-performance-and-benefits/res/view/s-abdullakh-performance-information)
+- [s-abdullakh-benefits-bots](../s-abdullakh-performance-and-benefits/res/view/s-abdullakh-benefits-bots)
 - [s-abdullakh-consultation](../s-abdullakh-consultation)
 - [s-abdullakh-tariffs](../s-abdullakh-tariffs)
 
@@ -32,6 +32,7 @@ graph TD;
   my-component --> s-abdullakh-consultation
   my-component --> s-abdullakh-tariffs
   s-abdullakh-form-communication --> s-abdullakh-form-close
+  s-abdullakh-form-communication --> s-abdullakh-form
   s-abdullakh-header --> s-abdullakh-header-start
   s-abdullakh-header --> s-abdullakh-header-end
   s-abdullakh-header --> s-abdullakh-header-center
