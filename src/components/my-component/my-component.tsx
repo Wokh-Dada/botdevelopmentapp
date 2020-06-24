@@ -36,8 +36,7 @@ export class MyComponent {
 
         <s-abdullakh-product-presentation ProductPresentation={ProductPresentation}
                                           onClickOnProductPresentation={(event) => this.clickOnProductPresentation(event)}
-                                          onOpenForm={() => this.openForm()}
-        />
+                                          onOpenForm={() => this.openForm()}/>
 
         <s-abdullakh-product-information
           ProductInformation={ProductInformation}
@@ -52,20 +51,17 @@ export class MyComponent {
           <s-abdullakh-performance-and-benefits
             PerformanceAndBenefits = {PerformanceAndBenefits}
             onClickOnPerformanceAndBenefits={(event) => this.clickOnPerformanceAndBenefits(event)}
-            onOpenForm={() => this.openForm()}
-          />
+            onOpenForm={() => this.openForm()}/>
 
         <s-abdullakh-consultation
           Consultation={Consultation}
           onClickOnConsultation={(event) => this.clickOnConsultation(event)}
-          onOpenForm={() => this.openForm()}
-        />
+          onOpenForm={() => this.openForm()}/>
 
         <s-abdullakh-tariffs
           Tariffs={Tariffs}
           onClickOnTariffs={(event) => this.clickOnTariffs(event)}
-          onOpenForm={() => this.openForm()}
-        />
+          onOpenForm={() => this.openForm()}/>
 
       </div>
     );

@@ -7,7 +7,7 @@ import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@sten
 })
 export class SAbdullakhTariffsInfoBlocks implements ComponentInterface {
   /**
-   * данные переданные методом map компоненту Tariffs
+   * данные переданные методом map компоненту TariffsBlocks
    * */
   @Prop() arr: any;
 

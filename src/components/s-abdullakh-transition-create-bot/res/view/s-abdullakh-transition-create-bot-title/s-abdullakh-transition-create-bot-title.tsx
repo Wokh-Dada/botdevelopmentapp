@@ -21,25 +21,24 @@ export class SAbdullakhTransitionCreateBotTitle implements ComponentInterface {
    * */
   creatBotImg: HTMLElement;
 
-
-
-
   render() {
+    /**
+     * вызов функции анимации блока transitionCreateBotImg при скроле
+     * */
     this.scrollX()
+
     return (
       <div class="transitionCreateBotImgPosition">
         <div class="transitionCreateBotImg"
              style={{backgroundImage: "url(" + this.arr.imgUrl + ")"}}
              onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.imgUrl)}
-             ref={(el) => this.creatBotImg = el}
-        >
+             ref={(el) => this.creatBotImg = el}>
           {/*вызов картинки из массива*/}
         </div>
         <div class="transitionCreateBotTitleBlock">
           <div class="transitionCreateBotTitle"
                innerHTML={this.arr.title}
-               onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.title)}
-          >
+               onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.title)}>
             {/*вызов html разметки из массива*/}
           </div>
         </div>

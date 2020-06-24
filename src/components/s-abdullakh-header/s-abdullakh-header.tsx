@@ -18,7 +18,6 @@ export class SAbdullakhHeader implements ComponentInterface {
   @Event() clickOnHeader: EventEmitter;
 
   render() {
-
     return (
       <header>
         <div class="container mt-2">
@@ -26,7 +25,7 @@ export class SAbdullakhHeader implements ComponentInterface {
             <div class="HeaderStart wow animate__animated animate__backInDown">
               <s-abdullakh-header-start logo={this.header.logoUrl}/>
             </div>
-            <div class="HeaderCenter animate__animated animate__backInDown animate__delay-1s">
+            <div class="HeaderCenter animate__animated animate__backInDown">
               <nav class="my_navbar">
                 <ItemLink arr={this.header.menu}/>
                 <div class="d-block d-md-none">
@@ -34,7 +33,7 @@ export class SAbdullakhHeader implements ComponentInterface {
                 </div>
               </nav>
             </div>
-            <div class="HeaderEnd d-md-block d-none animate__animated animate__backInDown animate__delay-2s">
+            <div class="HeaderEnd d-md-block d-none animate__animated animate__backInDown">
               <s-abdullakh-header-end phoneNumber={this.header.phoneNumber}/>
             </div>
           </div>

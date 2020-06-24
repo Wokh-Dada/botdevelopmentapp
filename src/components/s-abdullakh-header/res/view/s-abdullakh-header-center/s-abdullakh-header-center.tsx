@@ -37,6 +37,9 @@ export class SAbdullakhHeaderCenter implements ComponentInterface {
 
 }
 
+/**
+ * функция для присваисвания href объекта
+ * */
 function hrefBlock(x) {
   switch (x) {
     case 'Возможности':

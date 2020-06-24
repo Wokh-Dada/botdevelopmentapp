@@ -7,7 +7,9 @@ import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@sten
   shadow: false,
 })
 export class SAbdullakhFormCommunication implements ComponentInterface {
-
+  /**
+   * данные компонента FormCommunication
+   */
   @Prop() formCommunication: any;
 
   /**

@@ -14,8 +14,7 @@
 - [s-abdullakh-product-presentation](../s-abdullakh-product-presentation)
 - [s-abdullakh-product-information](../s-abdullakh-product-information)
 - [s-abdullakh-transition-create-bot](../s-abdullakh-transition-create-bot)
-- [s-abdullakh-performance-information](../s-abdullakh-performance-and-benefits/res/view/s-abdullakh-performance-information)
-- [s-abdullakh-benefits-bots](../s-abdullakh-performance-and-benefits/res/view/s-abdullakh-benefits-bots)
+- [s-abdullakh-performance-and-benefits](../s-abdullakh-performance-and-benefits)
 - [s-abdullakh-consultation](../s-abdullakh-consultation)
 - [s-abdullakh-tariffs](../s-abdullakh-tariffs)
 
@@ -27,8 +26,7 @@ graph TD;
   my-component --> s-abdullakh-product-presentation
   my-component --> s-abdullakh-product-information
   my-component --> s-abdullakh-transition-create-bot
-  my-component --> s-abdullakh-performance-information
-  my-component --> s-abdullakh-benefits-bots
+  my-component --> s-abdullakh-performance-and-benefits
   my-component --> s-abdullakh-consultation
   my-component --> s-abdullakh-tariffs
   s-abdullakh-form-communication --> s-abdullakh-form-close
@@ -42,6 +40,8 @@ graph TD;
   s-abdullakh-product-information --> s-abdullakh-product-information-blocks
   s-abdullakh-transition-create-bot --> s-abdullakh-transition-create-bot-title
   s-abdullakh-transition-create-bot --> s-abdullakh-transition-create-bot-follow
+  s-abdullakh-performance-and-benefits --> s-abdullakh-performance-information
+  s-abdullakh-performance-and-benefits --> s-abdullakh-benefits-bots
   s-abdullakh-performance-information --> s-abdullakh-performance-information-list
   s-abdullakh-benefits-bots --> s-abdullakh-benefits-bots-block
   s-abdullakh-tariffs --> s-abdullakh-tariffs-info-blocks

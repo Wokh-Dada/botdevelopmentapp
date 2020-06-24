@@ -27,6 +27,7 @@
 }
 
 .CreateBotBtnBlock-border {
+  cursor: pointer;
   width: 314px;
   height: 59px;
   border-style: solid;

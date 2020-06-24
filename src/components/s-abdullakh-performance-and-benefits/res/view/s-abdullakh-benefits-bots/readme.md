@@ -23,17 +23,17 @@
 
 ### Used by
 
- - [my-component](../../../../my-component)
+ - [s-abdullakh-performance-and-benefits](../../..)
 
 ### Depends on
 
-- [s-abdullakh-benefits-bots-block](res/view/s-abdullakh-benefits-bots-block)
+- [s-abdullakh-benefits-bots-block](./res/view/s-abdullakh-benefits-bots-block)
 
 ### Graph
 ```mermaid
 graph TD;
   s-abdullakh-benefits-bots --> s-abdullakh-benefits-bots-block
-  my-component --> s-abdullakh-benefits-bots
+  s-abdullakh-performance-and-benefits --> s-abdullakh-benefits-bots
   style s-abdullakh-benefits-bots fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

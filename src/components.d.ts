@@ -35,11 +35,17 @@ export namespace Components {
         "Consultation": SSAbdullakhConsultation;
     }
     interface SAbdullakhForm {
+        /**
+          * данные из массива для компонента Form
+         */
         "arr": any;
     }
     interface SAbdullakhFormClose {
     }
     interface SAbdullakhFormCommunication {
+        /**
+          * данные компонента FormCommunication
+         */
         "formCommunication": any;
     }
     interface SAbdullakhHeader {
@@ -130,7 +136,7 @@ export namespace Components {
     }
     interface SAbdullakhTariffsInfoBlocks {
         /**
-          * данные переданные методом map компоненту Tariffs
+          * данные переданные методом map компоненту TariffsBlocks
          */
         "arr": any;
     }
@@ -363,6 +369,9 @@ declare namespace LocalJSX {
         "onOpenForm"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhForm {
+        /**
+          * данные из массива для компонента Form
+         */
         "arr"?: any;
     }
     interface SAbdullakhFormClose {
@@ -372,6 +381,9 @@ declare namespace LocalJSX {
         "onCloseForm"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhFormCommunication {
+        /**
+          * данные компонента FormCommunication
+         */
         "formCommunication"?: any;
         /**
           * Закрытие модального окна формы
@@ -414,7 +426,7 @@ declare namespace LocalJSX {
          */
         "logo"?: any;
         /**
-          * клик по элементy HeaderStart компонента header
+          * клик по элементу HeaderStart компонента header
          */
         "onClickOnHeader"?: (event: CustomEvent<any>) => void;
     }
@@ -546,7 +558,7 @@ declare namespace LocalJSX {
     }
     interface SAbdullakhTariffsInfoBlocks {
         /**
-          * данные переданные методом map компоненту Tariffs
+          * данные переданные методом map компоненту TariffsBlocks
          */
         "arr"?: any;
         /**

@@ -7,7 +7,9 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
   shadow: false,
 })
 export class SAbdullakhForm implements ComponentInterface {
-
+  /**
+   * данные из массива для компонента Form
+   */
   @Prop() arr: any;
 
   render() {

@@ -23,20 +23,20 @@ export class SAbdullakhPerformanceAndBenefits implements ComponentInterface {
 
   render() {
     return (
-      <section class="h-100" >
-        <div class="PerformanceandBenefitsbckgrnd" style={{backgroundImage: "url(" + this.PerformanceAndBenefits.PerformanceandBenefitsbckgrnd + ")"}}>
-
+      <section class="h-100">
+        <div class="PerformanceandBenefitsbckgrnd"
+             style={{backgroundImage: "url(" + this.PerformanceAndBenefits.PerformanceandBenefitsbckgrnd + ")"}}>
+          {/*background для компонента PerformanceAndBenefits*/}
         </div>
         <PerformanceInformation arr={this.PerformanceAndBenefits.PerformanceInformation}/>
         <BenefitsBots arr={this.PerformanceAndBenefits.BenefitsBots}/>
-
       </section>
     );
   }
 }
 
 /*
-* компонентная функция для вывода элементов news-main-block
+* компонентная функция для вывода элементов компонента PerformanceInformation
  */
 const PerformanceInformation = (props) => {
   return props.arr.map((item) => {
@@ -47,7 +47,7 @@ const PerformanceInformation = (props) => {
 }
 
 /*
-* компонентная функция для вывода элементов news-main-block
+* компонентная функция для вывода элементов компонента BenefitsBots
  */
 const BenefitsBots = (props) => {
   return props.arr.map((item) => {

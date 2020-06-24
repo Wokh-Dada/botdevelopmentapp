@@ -26,14 +26,14 @@ export class SAbdullakhTransitionCreateBotFollow implements ComponentInterface {
             {/*вызов html разметки из массива*/}
           </div>
           <div class="transitionCreateBotBtnBlock">
-            <div >
+            <div>
               <button class="transitionCreateBotBtn" innerHTML={this.arr.btnText}
                       onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.btnText)}
               >
                 {/*вызов текста массива*/}
               </button>
-              <div class="CreateBotBtnBlock-border">
-
+              <div class="CreateBotBtnBlock-border" onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.btnText)}>
+                {/*анимация border вокруг button*/}
               </div>
             </div>
           </div>

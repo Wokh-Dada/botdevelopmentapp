@@ -3,6 +3,19 @@
   justify-content: space-around;
 }
 
+.HeaderStart{
+  animation-delay: 200ms;
+
+}
+
+.HeaderCenter{
+  animation-delay: 400ms;
+}
+
+.HeaderEnd{
+  animation-delay: 800ms;
+}
+
 @media (max-width: 479px) {
   .header_menu {
     flex-direction: column;

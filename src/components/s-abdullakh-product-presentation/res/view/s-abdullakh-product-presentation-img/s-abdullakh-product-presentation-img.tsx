@@ -37,7 +37,7 @@ const IconBlock = (props) => {
   return props.arr.map((item) => {
     return (
       <div class={iconClass(item.id)} id={iconClass(item.id)} style={{backgroundImage: "url(" + item.img + ")"}}>
-
+        {/*background social icon img*/}
       </div>
     );
   })

@@ -12,7 +12,7 @@ export class SAbdullakhHeaderStart implements ComponentInterface {
   @Prop() logo: any;
 
   /**
-   * клик по элементy HeaderStart компонента header
+   * клик по элементу HeaderStart компонента header
    * */
   @Event() clickOnHeader: EventEmitter;
 

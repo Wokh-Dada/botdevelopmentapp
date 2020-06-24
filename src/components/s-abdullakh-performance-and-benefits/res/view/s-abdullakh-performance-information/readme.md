@@ -24,17 +24,17 @@
 
 ### Used by
 
- - [my-component](../../../../my-component)
+ - [s-abdullakh-performance-and-benefits](../../..)
 
 ### Depends on
 
-- [s-abdullakh-performance-information-list](res/view/s-abdullakh-performance-information-list)
+- [s-abdullakh-performance-information-list](./res/view/s-abdullakh-performance-information-list)
 
 ### Graph
 ```mermaid
 graph TD;
   s-abdullakh-performance-information --> s-abdullakh-performance-information-list
-  my-component --> s-abdullakh-performance-information
+  s-abdullakh-performance-and-benefits --> s-abdullakh-performance-information
   style s-abdullakh-performance-information fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

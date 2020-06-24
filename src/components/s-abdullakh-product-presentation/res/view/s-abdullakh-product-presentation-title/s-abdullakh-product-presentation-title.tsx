@@ -36,13 +36,12 @@ export class SAbdullakhProductPresentationTitle implements ComponentInterface {
             class="presentationTitle animate__animated animate__fadeInLeft"
             innerHTML={markdown.toHTML(this.arr.text)}
             onClick={() => this.clickOnProductPresentation.emit(this.arr.text)}>
-
+            {/*вывод текста из массива через маркдаун*/}
             <div class="presentationTitleUnderlineBlock">
-              <div
-                class="presentationTitleUnderline"
-                style={{backgroundImage: "url(" + this.arr.imgUrl + ")"}}
-                onClick={() => this.clickOnProductPresentation.emit(this.arr.imgUr)}>
-
+              <div class="presentationTitleUnderline"
+                   style={{backgroundImage: "url(" + this.arr.imgUrl + ")"}}
+                   onClick={() => this.clickOnProductPresentation.emit(this.arr.imgUr)}>
+                {/*background Underline line img*/}
               </div>
             </div>
           </div>
