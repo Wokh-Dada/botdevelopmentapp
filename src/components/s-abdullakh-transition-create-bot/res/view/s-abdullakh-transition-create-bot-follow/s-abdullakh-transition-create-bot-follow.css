@@ -123,8 +123,13 @@
 
 @media (max-width: 576px) {
   .transitionCreateBotBtn {
+    width: 250px;
     position: relative;
     bottom: -51px;
     right: -7px;
+  }
+
+  .CreateBotBtnBlock-border{
+    width: 270px;
   }
 }

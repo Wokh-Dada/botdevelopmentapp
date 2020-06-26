@@ -59,18 +59,9 @@
   }
 }
 
-@media (max-width: 479px) {
-  .my_navbar {
-    justify-content: center;
-  }
-}
+/*медиа скрин запросыЫ*/
 
-@media (min-width: 576px) {
-
-}
-
-@media (min-width: 768px) {
-
+@media (min-width: 1200px) {
 }
 
 @media (max-width: 992px) {
@@ -83,5 +74,20 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (max-width: 479px) {
+  .my_navbar {
+    justify-content: center;
+  }
+
+  .navbar_item a {
+    font-size: 8px;
+  }
 }

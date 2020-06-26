@@ -1,12 +1,14 @@
-.Consultation{
+.Consultation {
   margin: 200px 0 0 0;
 }
 
-.Consultation_img{
+.Consultation_img {
   width: 480px;
   height: 352px;
   background-size: cover;
   background-position: center;
+  transform: translateX(-120%);
+  transition: 300ms;
 }
 
 .Consultation_advertising_link_block {
@@ -38,7 +40,7 @@
   text-align: center;
 }
 
-.Consultation_text{
+.Consultation_text {
   text-align: center;
   width: 250px;
   margin: 30px;
@@ -47,13 +49,13 @@
 .Consultation_btn {
   width: 310px;
   height: 55px;
-  color: #fff!important;
+  color: #fff !important;
   font-size: 14px;
   line-height: 1.55;
   font-weight: 700;
   border-width: 1px;
   border-radius: 30px;
-  background-color: #ffd000!important;
+  background-color: #ffd000 !important;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
@@ -61,42 +63,39 @@
   box-shadow: 2px 2px 2px 1px rgba(130, 127, 127, 0.2);
 }
 
-.Consultation_btn:hover{
+.Consultation_btn:hover {
   background-color: #ffdd33;
-  color: #323145!important;
+  color: #323145 !important;
 }
 
-@media (max-width: 576px) {
 
-  .Consultation_img{
-    width: 300px;
-    height: 230px;
-  }
-
-  .Consultation_title_block {
-width: 300px;
-    height: 80px;
-  }
-
-  .Consultatio_title {
-    font-size: 30px;
-  }
-
+@media (max-width: 1200px) {
 }
 
-@media (min-width: 576px) {
-  .Consultation_img{
+@media (min-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .Consultation_img {
     width: 380px;
     height: 279px;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 576px) {
 
-}
+  .Consultation_img {
+    width: 300px;
+    height: 230px;
+  }
 
-@media (max-width: 992px) {
-}
+  .Consultation_title_block {
+    width: 212px;
+    height: 76px;
+  }
 
-@media (min-width: 1200px) {
+  .Consultatio_title {
+    font-size: 20px;
+  }
+
 }

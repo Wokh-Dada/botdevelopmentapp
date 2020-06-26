@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type  | Default     |
-| -------- | --------- | ----------- | ----- | ----------- |
-| `arr`    | `arr`     |             | `any` | `undefined` |
+| Property | Attribute | Description                           | Type  | Default     |
+| -------- | --------- | ------------------------------------- | ----- | ----------- |
+| `arr`    | `arr`     | данные из массива для компонента Form | `any` | `undefined` |
 
 
 ## Dependencies

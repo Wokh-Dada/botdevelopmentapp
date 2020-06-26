@@ -19,11 +19,11 @@ export class SAbdullakhHeaderCenter implements ComponentInterface {
 
   render() {
     return (
-      <div
-        class="navbar_item"
+      <div class="navbar_item"
         onClick={() => {
           this.clickOnHeader.emit(this.arr.linkName)
-        }}>
+        }}
+      >
         <a href={hrefBlock(this.arr.linkName)}>
           {this.arr.linkName}
         </a>

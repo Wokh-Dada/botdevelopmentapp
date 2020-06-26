@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property | Attribute | Description                                      | Type  | Default     |
-| -------- | --------- | ------------------------------------------------ | ----- | ----------- |
-| `arr`    | `arr`     | данные переданные методом map компоненту Tariffs | `any` | `undefined` |
+| Property | Attribute | Description                                            | Type  | Default     |
+| -------- | --------- | ------------------------------------------------------ | ----- | ----------- |
+| `arr`    | `arr`     | данные переданные методом map компоненту TariffsBlocks | `any` | `undefined` |
 
 
 ## Events

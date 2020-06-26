@@ -97,12 +97,8 @@
   color: #363232!important;
 }
 
-@media (min-width: 576px) {
 
-}
-
-@media (min-width: 768px) {
-
+@media (min-width: 1200px) {
 }
 
 @media (max-width: 992px) {
@@ -111,5 +107,12 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+  .Tariffs_info_block_big {
+    width: 300px;
+  }
 }

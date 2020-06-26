@@ -33,6 +33,10 @@ export namespace Components {
           * данные компонента Consultation
          */
         "Consultation": SSAbdullakhConsultation;
+        /**
+          * данные компонента Consultation
+         */
+        "gear": any;
     }
     interface SAbdullakhForm {
         /**
@@ -359,6 +363,10 @@ declare namespace LocalJSX {
           * данные компонента Consultation
          */
         "Consultation"?: SSAbdullakhConsultation;
+        /**
+          * данные компонента Consultation
+         */
+        "gear"?: any;
         /**
           * клик по элементам компонента Consultation
          */

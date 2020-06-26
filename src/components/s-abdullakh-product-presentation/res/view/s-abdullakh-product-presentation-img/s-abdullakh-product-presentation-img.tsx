@@ -18,8 +18,7 @@ export class SAbdullakhProductPresentationImg implements ComponentInterface {
 
   render() {
     return (
-      <div
-        class="presentationImg"
+      <div class="presentationImg"
         id="presentationImg"
         style={{backgroundImage: "url(" + this.img.imgUrl + ")"}}
         onClick={() => this.clickOnProductPresentation.emit(this.img)}

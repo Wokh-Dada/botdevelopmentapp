@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property            | Attribute            | Description | Type  | Default     |
-| ------------------- | -------------------- | ----------- | ----- | ----------- |
-| `formCommunication` | `form-communication` |             | `any` | `undefined` |
+| Property            | Attribute            | Description                         | Type  | Default     |
+| ------------------- | -------------------- | ----------------------------------- | ----- | ----------- |
+| `formCommunication` | `form-communication` | данные компонента FormCommunication | `any` | `undefined` |
 
 
 ## Events

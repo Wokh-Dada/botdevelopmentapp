@@ -56,7 +56,9 @@ export class MyComponent {
         <s-abdullakh-consultation
           Consultation={Consultation}
           onClickOnConsultation={(event) => this.clickOnConsultation(event)}
-          onOpenForm={() => this.openForm()}/>
+          onOpenForm={() => this.openForm()}
+
+        />
 
         <s-abdullakh-tariffs
           Tariffs={Tariffs}
@@ -132,10 +134,56 @@ export class MyComponent {
 
 }
 
+// document.onwheel = console.log('a')
+
 // /**
 //  * клик по элементам компонента header
 //  */
 // const clickOnPopup = () => {
 //   popupComplited = !popupComplited
 //
+// }
+// let a = document.getElementById('Consultation_img')
+// console.log(a)
+// consultantScrollY(a)
+//
+// function consultantScrollY(x) {
+//   document.onwheel = () => {
+//     let gear = window.scrollY;
+//     if (x === 'Consultation_img'){
+//       yScrollConsultant(x)
+//       x.style.transform = yScrollConsultant(gear);
+//       console.log('consultant', gear )
+//       function yScrollConsultant(x) {
+//         if (x <= 3400) {
+//           return "translateX(-110%)";
+//         } else if (x < 3458) {
+//           return "translateX(-100%)";
+//         }  else if (x < 3516) {
+//           return "translateX(-90%)";
+//         } else if (x < 3574) {
+//           return "translateX(-80%)";
+//         } else if (x < 3633) {
+//           return "translateX(-70%)";
+//         } else if (x < 3691) {
+//           return "translateX(-60%)";
+//         } else if (x < 3749) {
+//           return "translateX(-50%)";
+//         } else if (x < 3807) {
+//           return "translateX(-40%)";
+//         } else if (x < 3866) {
+//           return "translateX(-30%)";
+//         } else if (x < 3924) {
+//           return "translateX(-20%)";
+//         } else if (x < 3982) {
+//           return "translateX(-10%)";
+//         } else if (x < 4040) {
+//           return "translateX(0%)";
+//         } else if (x < 4100) {
+//           return "translateX(0%)";
+//         }
+//       }
+//     }
+//
+//   }
 // }

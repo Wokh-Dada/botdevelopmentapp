@@ -46,11 +46,11 @@
   border-color: transparent;
   border-style: solid;
   padding-bottom: 20px;
-  animation-delay: 300ms;
+  animation-delay: 200ms;
 }
 
 .ProductInfoBtnBlock{
-  animation-delay: 600ms;
+  animation-delay: 400ms;
 }
 
 .ProductInfoBtn {

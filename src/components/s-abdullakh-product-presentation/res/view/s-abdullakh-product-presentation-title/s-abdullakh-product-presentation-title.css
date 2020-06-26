@@ -15,7 +15,7 @@
   line-height: 1;
 }
 
-.presentationTitle{
+.presentationTitle {
   animation-delay: 500ms;
 }
 
@@ -44,14 +44,14 @@
   font-weight: 700;
 }
 
-.presentationBtnBlock{
+.presentationBtnBlock {
   animation-delay: 1s;
 }
 
 .presentationBtn {
   width: 280px;
   height: 55px;
-  color: #ffffff!important;
+  color: #ffffff !important;
   font-size: 14px;
   font-family: 'Montserrat', Arial, sans-serif;
   line-height: 1.55;
@@ -66,37 +66,29 @@
   box-shadow: 1px 1px 2px 2px rgba(199, 199, 199, 0.5);
 }
 
-.presentationBtn:hover{
+.presentationBtn:hover {
   background-color: #ffdd33;
   border-color: #c7c7c7;
-  color: #3d3333!important;
+  color: #3d3333 !important;
 }
 
-@media (max-width: 479px) {
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 992px) {
   .presentationTitle {
-    font-size: 30px;
+    font-size: 48px;
   }
-}
 
-@media (min-width: 479px) {
-  .presentationTitle {
-    font-size: 40px;
-  }
-}
-
-@media (min-width: 576px) {
-
-}
-
-@media (min-width: 768px) {
 }
 
 @media (max-width: 992px) {
-  .presentationTitleBlock{
+  .presentationTitleBlock {
     justify-content: center;
   }
 
-  .presentationTitle{
+  .presentationTitle {
     color: #353a4f;
     line-height: 1;
     font-weight: 700;
@@ -107,26 +99,46 @@
     justify-content: center;
   }
 
-  .presentationTitleUnderline{
+  .presentationTitleUnderline {
     width: 170px;
     height: 12px;
   }
 
-  .presentationTitlePrice{
+  .presentationTitlePrice {
     text-align: center;
   }
 
-  .presentationBtnBlock{
+  .presentationBtnBlock {
     text-align: center;
   }
 }
 
-@media (min-width: 992px) {
-  .presentationTitle{
-    font-size: 48px;
+@media (min-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .presentationTitlePrice {
+    font-size: 45px;
   }
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 479px) {
+  .presentationTitle {
+    font-size: 40px;
+    line-height: 0.6;
+  }
+}
+
+
+@media (max-width: 479px) {
+  .presentationTitle {
+    font-size: 30px;
+    line-height: 0.6;
+  }
+
+  .presentationTitleUnderline {
+    width: 140px;
+    height: 9px;
+  }
 }

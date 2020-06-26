@@ -16,7 +16,7 @@
 
 | Event           | Description                                    | Type               |
 | --------------- | ---------------------------------------------- | ------------------ |
-| `clickOnHeader` | клик по элементy HeaderStart компонента header | `CustomEvent<any>` |
+| `clickOnHeader` | клик по элементу HeaderStart компонента header | `CustomEvent<any>` |
 
 
 ## Dependencies
