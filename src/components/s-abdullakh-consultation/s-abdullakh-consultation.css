@@ -72,7 +72,11 @@
 @media (max-width: 1200px) {
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
+  .Consultation_img {
+    width: 380px;
+    height: 279px;
+  }
 }
 
 @media (max-width: 768px) {

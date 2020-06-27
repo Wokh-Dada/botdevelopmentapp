@@ -9,7 +9,7 @@
   height: 317px;
   background-size: cover;
   background-position: center;
-  transform: translateX(-65%);
+  transform: translateX(-120%);
   transition: 300ms;
 }
 
