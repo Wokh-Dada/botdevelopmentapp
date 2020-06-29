@@ -28,16 +28,26 @@ export class SAbdullakhConsultation implements ComponentInterface {
   @Event() openForm: EventEmitter;
 
   /**
+   * переменная для observe функции скрола
+   * */
+  observer: IntersectionObserver;
+
+  /**
+   * ref для подключения к родительскому блоку картинки
+   * */
+  consultantImgParent: HTMLElement;
+
+  /**
    * ref для подключения к картинке
    * */
   consultantImg: HTMLElement;
 
-  render() {
+ render() {
     return (
       <section class="Consultation">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-12 d-flex justify-content-center">
+            <div class="col-lg-6 col-12 d-flex justify-content-center" ref={(el) => this.consultantImgParent = el}>
               <div class="Consultation_img"
                    id="Consultation_img"
                    style={{backgroundImage: "url(" + this.Consultation.imgUrl + ")"}}
@@ -79,157 +89,44 @@ export class SAbdullakhConsultation implements ComponentInterface {
       </section>
     );
   }
-}
-
-
-window.addEventListener("wheel", () => {
-
-  yScrollConsultant(document.documentElement.clientWidth);
-
-  function yScrollConsultant(x) {
-    let gear = window.scrollY;
-    if (x > 995) {
-      scroll1200Width(gear)
-    } else if (x > 768) {
-      scroll992Width(gear)
-    } else if (x > 479) {
-      scroll768Width(gear)
-    } else if (x < 479) {
-      scroll479Width(gear)
-    }
-
-    /**
-     *функция анимации для экранов шириной до 995px
-     **/
-    function scroll1200Width(x) {
-      if (x < 3400) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-110%)";
-      } else if (x < 3458) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-100%)";
-      } else if (x < 3516) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-90%)";
-      } else if (x < 3574) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-80%)";
-      } else if (x < 3633) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-70%)";
-      } else if (x < 3691) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-60%)";
-      } else if (x < 3749) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-50%)";
-      } else if (x < 3807) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-40%)";
-      } else if (x < 3866) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-30%)";
-      } else if (x < 3924) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-20%)";
-      } else if (x < 3982) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-10%)";
-      } else if (x < 4040) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(0%)";
-      } else if (x < 4100) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(0%)";
-      }
-    }
-
-    /**
-     *функция анимации для экранов шириной до 768px
-     **/
-    function scroll992Width(x) {
-      if (x < 4600) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-110%)";
-      } else if (x < 4658) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-100%)";
-      } else if (x < 4716) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-90%)";
-      } else if (x < 4774) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-80%)";
-      } else if (x < 4832) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-70%)";
-      } else if (x < 4890) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-60%)";
-      } else if (x < 4948) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-50%)";
-      } else if (x < 5006) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-40%)";
-      } else if (x < 5064) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-30%)";
-      } else if (x < 5122) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-20%)";
-      } else if (x < 5180) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-10%)";
-      } else if (x < 5238) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(0%)";
-      } else if (x < 5296) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(0%)";
-      }
-    }
-
-    /**
-     *функция анимации для экранов шириной от 479px
-     **/
-    function scroll768Width(x) {
-      if (x < 5300) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-110%)";
-      } else if (x < 5355) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-100%)";
-      } else if (x < 5410) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-90%)";
-      } else if (x < 5465) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-80%)";
-      } else if (x < 5520) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-70%)";
-      } else if (x < 5575) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-60%)";
-      } else if (x < 5630) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-50%)";
-      } else if (x < 5685) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-40%)";
-      } else if (x < 5740) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-30%)";
-      } else if (x < 5795) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-20%)";
-      } else if (x < 5850) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-10%)";
-      } else if (x < 5905) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(0%)";
-      } else if (x < 5960) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(0%)";
-      }
-    }
-
-    /**
-     *функция анимации для экранов шириной до 479px
-     **/
-    function scroll479Width(x) {
-      if (x < 6400) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-110%)";
-      } else if (x < 6433) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-100%)";
-      } else if (x < 6466) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-90%)";
-      } else if (x < 6499) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-80%)";
-      } else if (x < 6532) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-70%)";
-      } else if (x < 6565) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-60%)";
-      } else if (x < 6598) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-50%)";
-      } else if (x < 6631) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-40%)";
-      } else if (x < 6665) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-30%)";
-      } else if (x < 6704) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-20%)";
-      } else if (x < 6738) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(-10%)";
-      } else if (x < 6772) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(0%)";
-      } else if (x < 6806) {
-        return document.getElementById('Consultation_img').style.transform = "translateX(0%)";
-      }
-    }
-
+  componentDidLoad() {
+    this.initAnimation();
   }
-})
+
+  disconnectedCallback() {
+    this.observer && this.observer.observe
+  }
+
+  /**
+   * функция для движения картинки во время скрола
+   * */
+  private initAnimation(){
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: [
+        0.1, 0.15,
+        0.2, 0.25,
+        0.3, 0.35,
+        0.4, 0.45,
+        0.5, 0.55,
+        0.6, 0.65,
+        0.7, 0.75,
+        0.8, 0.85,
+        0.9, 0.95,
+        1
+      ],
+    };
+    const callback = (entries: IntersectionObserverEntry[]) => {
+      const intersectionRatio = entries[0].intersectionRatio,
+        top = entries[0].boundingClientRect.top,
+        transformX = 120 - (120 * intersectionRatio);
+      if (top > 0){
+        return this.consultantImg.style.transform = `translateX(-${transformX}%)`;
+      }
+    };
+    this.observer = new IntersectionObserver(callback, options);
+    this.observer.observe(this.consultantImgParent);
+  };
+}
 
