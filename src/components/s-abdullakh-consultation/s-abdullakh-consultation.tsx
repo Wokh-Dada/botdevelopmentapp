@@ -119,8 +119,8 @@ export class SAbdullakhConsultation implements ComponentInterface {
     };
     const callback = (entries: IntersectionObserverEntry[]) => {
       const intersectionRatio = entries[0].intersectionRatio,
-        top = entries[0].boundingClientRect.top,
-        transformX = 120 - (120 * intersectionRatio);
+            top = entries[0].boundingClientRect.top,
+            transformX = 120 - (120 * intersectionRatio);
       if (top > 0){
         return this.consultantImg.style.transform = `translateX(-${transformX}%)`;
       }
