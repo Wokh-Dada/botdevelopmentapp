@@ -92,7 +92,7 @@ window.addEventListener("wheel", () => {
       scroll1200Width(gear)
     } else if (x > 768) {
       scroll992Width(gear)
-    } else if (x > 576) {
+    } else if (x > 479) {
       scroll768Width(gear)
     } else if (x < 479) {
       scroll479Width(gear)
@@ -165,7 +165,7 @@ window.addEventListener("wheel", () => {
     }
 
     /**
-     *функция анимации для экранов шириной от 768px
+     *функция анимации для экранов шириной от 479px
      **/
     function scroll768Width(x) {
       if (x < 5300) {
@@ -198,34 +198,34 @@ window.addEventListener("wheel", () => {
     }
 
     /**
-     *функция анимации для экранов шириной от 768px
+     *функция анимации для экранов шириной до 479px
      **/
     function scroll479Width(x) {
-      if (x < 5950) {
+      if (x < 6400) {
         return document.getElementById('Consultation_img').style.transform = "translateX(-110%)";
-      } else if (x < 5982) {
+      } else if (x < 6433) {
         return document.getElementById('Consultation_img').style.transform = "translateX(-100%)";
-      } else if (x < 6014) {
+      } else if (x < 6466) {
         return document.getElementById('Consultation_img').style.transform = "translateX(-90%)";
-      } else if (x < 6046) {
+      } else if (x < 6499) {
         return document.getElementById('Consultation_img').style.transform = "translateX(-80%)";
-      } else if (x < 6078) {
+      } else if (x < 6532) {
         return document.getElementById('Consultation_img').style.transform = "translateX(-70%)";
-      } else if (x < 6110) {
+      } else if (x < 6565) {
         return document.getElementById('Consultation_img').style.transform = "translateX(-60%)";
-      } else if (x < 6142) {
+      } else if (x < 6598) {
         return document.getElementById('Consultation_img').style.transform = "translateX(-50%)";
-      } else if (x < 6174) {
+      } else if (x < 6631) {
         return document.getElementById('Consultation_img').style.transform = "translateX(-40%)";
-      } else if (x < 6206) {
+      } else if (x < 6665) {
         return document.getElementById('Consultation_img').style.transform = "translateX(-30%)";
-      } else if (x < 6238) {
+      } else if (x < 6704) {
         return document.getElementById('Consultation_img').style.transform = "translateX(-20%)";
-      } else if (x < 6270) {
+      } else if (x < 6738) {
         return document.getElementById('Consultation_img').style.transform = "translateX(-10%)";
-      } else if (x < 6302) {
+      } else if (x < 6772) {
         return document.getElementById('Consultation_img').style.transform = "translateX(0%)";
-      } else if (x < 6334) {
+      } else if (x < 6806) {
         return document.getElementById('Consultation_img').style.transform = "translateX(0%)";
       }
     }

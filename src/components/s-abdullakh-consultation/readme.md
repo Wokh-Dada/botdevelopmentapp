@@ -10,6 +10,7 @@
 | Property       | Attribute | Description                    | Type                      | Default     |
 | -------------- | --------- | ------------------------------ | ------------------------- | ----------- |
 | `Consultation` | --        | данные компонента Consultation | `SSAbdullakhConsultation` | `undefined` |
+| `gear`         | `gear`    | данные компонента Consultation | `any`                     | `undefined` |
 
 
 ## Events
