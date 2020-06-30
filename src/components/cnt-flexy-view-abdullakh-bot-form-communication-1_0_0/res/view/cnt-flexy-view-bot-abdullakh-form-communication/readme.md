@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property            | Attribute            | Description                         | Type  | Default     |
-| ------------------- | -------------------- | ----------------------------------- | ----- | ----------- |
-| `formCommunication` | `form-communication` | данные компонента FormCommunication | `any` | `undefined` |
+| Property  | Attribute | Description                         | Type  | Default     |
+| --------- | --------- | ----------------------------------- | ----- | ----------- |
+| `payload` | `payload` | данные компонента FormCommunication | `any` | `undefined` |
 
 
 ## Events
@@ -23,20 +23,20 @@
 
 ### Used by
 
- - [my-component](../../../../my-component)
+ - [cnt-flexy-view-abdullakh-bot-form-communication-1_0_0](../../..)
 
 ### Depends on
 
-- [s-abdullakh-form-close](res/view/s-abdullakh-form-close)
-- [s-abdullakh-form](res/view/s-abdullakh-form-form)
+- [s-abdullakh-form-close](./res/view/s-abdullakh-form-close)
+- [s-abdullakh-form](./res/view/s-abdullakh-form-form)
 
 ### Graph
 ```mermaid
 graph TD;
-  s-abdullakh-form-communication --> s-abdullakh-form-close
-  s-abdullakh-form-communication --> s-abdullakh-form
-  my-component --> s-abdullakh-form-communication
-  style s-abdullakh-form-communication fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-bot-abdullakh-form-communication --> s-abdullakh-form-close
+  cnt-flexy-view-bot-abdullakh-form-communication --> s-abdullakh-form
+  cnt-flexy-view-abdullakh-bot-form-communication-1_0_0 --> cnt-flexy-view-bot-abdullakh-form-communication
+  style cnt-flexy-view-bot-abdullakh-form-communication fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

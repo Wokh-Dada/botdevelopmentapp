@@ -16,12 +16,12 @@
 
 ### Used by
 
- - [s-abdullakh-form-communication](../../../../../../../../../../../..)
+ - [cnt-flexy-view-bot-abdullakh-form-communication](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
-  s-abdullakh-form-communication --> s-abdullakh-form-close
+  cnt-flexy-view-bot-abdullakh-form-communication --> s-abdullakh-form-close
   style s-abdullakh-form-close fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

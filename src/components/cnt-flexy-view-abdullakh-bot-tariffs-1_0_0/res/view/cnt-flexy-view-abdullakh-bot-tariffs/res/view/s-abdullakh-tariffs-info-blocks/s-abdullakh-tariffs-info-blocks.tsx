@@ -1,4 +1,5 @@
 import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
+import {StorageAbdullakhBot} from "../../../../../../../../utils/utils";
 
 @Component({
   tag: 's-abdullakh-tariffs-info-blocks',
@@ -25,11 +26,11 @@ export class SAbdullakhTariffsInfoBlocks implements ComponentInterface {
     return (
       <div class={blockClass(this.arr.class)}>
         <div class="Tariffs_info_block_outer_icon"
-             style={{backgroundImage: "url(" + this.arr.outerImg + ")"}}
+             style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.arr.outerImg + ")"}}
              onClick={() => this.clickOnTariffs.emit(this.arr.outerImg)}>
           {/*вывод внешней картинки из массива*/}
           <div class="Tariffs_info_block_inner_icon"
-               style={{backgroundImage: "url(" + this.arr.innerImg + ")"}}
+               style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.arr.innerImg + ")"}}
                onClick={() => this.clickOnTariffs.emit(this.arr.innerImg)}>
             {/*вывод внутренней картинки из массива*/}
           </div>

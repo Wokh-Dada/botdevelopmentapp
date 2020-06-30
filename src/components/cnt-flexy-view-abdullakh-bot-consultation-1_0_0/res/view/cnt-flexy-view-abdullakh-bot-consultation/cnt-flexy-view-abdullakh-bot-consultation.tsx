@@ -1,21 +1,17 @@
 import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
 import {SSAbdullakhConsultation} from "./interface/common.interface";
+import {StorageAbdullakhBot} from "../../../../../utils/utils";
 
 @Component({
   tag: 'cnt-flexy-view-abdullakh-bot-consultation',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-consultation.css',
   shadow: false,
 })
-export class CntFlexyViewAbdullakhConsultation implements ComponentInterface {
+export class CntFlexyViewAbdullakhBotConsultation implements ComponentInterface {
   /**
    * данные компонента Consultation
    * */
   @Prop() payload: SSAbdullakhConsultation;
-
-  /**
-   * данные компонента Consultation
-   * */
-  @Prop() gear: any;
 
   /**
    * клик по элементам компонента Consultation
@@ -43,6 +39,7 @@ export class CntFlexyViewAbdullakhConsultation implements ComponentInterface {
   consultantImg: HTMLElement;
 
  render() {
+   console.log(StorageAbdullakhBot.prefix)
     return (
       <section class="Consultation">
         <div class="container">
@@ -50,7 +47,7 @@ export class CntFlexyViewAbdullakhConsultation implements ComponentInterface {
             <div class="col-lg-6 col-12 d-flex justify-content-center" ref={(el) => this.consultantImgParent = el}>
               <div class="Consultation_img"
                    id="Consultation_img"
-                   style={{backgroundImage: "url(" + this.payload.imgUrl + ")"}}
+                   style={{backgroundImage: "url(" + StorageAbdullakhBot.prefix + this.payload.imgUrl + ")"}}
                    onClick={() => this.clickOnConsultation.emit(this.payload.imgUrl)}
                    ref={(el) => this.consultantImg = el}
               >

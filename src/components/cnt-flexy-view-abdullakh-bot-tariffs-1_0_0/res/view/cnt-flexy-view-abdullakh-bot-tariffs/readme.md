@@ -9,7 +9,7 @@
 
 | Property  | Attribute | Description               | Type  | Default     |
 | --------- | --------- | ------------------------- | ----- | ----------- |
-| `Tariffs` | `tariffs` | данные компонента Tariffs | `any` | `undefined` |
+| `payload` | `payload` | данные компонента Tariffs | `any` | `undefined` |
 
 
 ## Events
@@ -24,18 +24,18 @@
 
 ### Used by
 
- - [my-component](../../../../my-component)
+ - [cnt-flexy-view-abdullakh-bot-tariffs-1_0_0](../../..)
 
 ### Depends on
 
-- [s-abdullakh-tariffs-info-blocks](res/view/s-abdullakh-tariffs-info-blocks)
+- [s-abdullakh-tariffs-info-blocks](./res/view/s-abdullakh-tariffs-info-blocks)
 
 ### Graph
 ```mermaid
 graph TD;
-  s-abdullakh-tariffs --> s-abdullakh-tariffs-info-blocks
-  my-component --> s-abdullakh-tariffs
-  style s-abdullakh-tariffs fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-abdullakh-bot-tariffs --> s-abdullakh-tariffs-info-blocks
+  cnt-flexy-view-abdullakh-bot-tariffs-1_0_0 --> cnt-flexy-view-abdullakh-bot-tariffs
+  style cnt-flexy-view-abdullakh-bot-tariffs fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

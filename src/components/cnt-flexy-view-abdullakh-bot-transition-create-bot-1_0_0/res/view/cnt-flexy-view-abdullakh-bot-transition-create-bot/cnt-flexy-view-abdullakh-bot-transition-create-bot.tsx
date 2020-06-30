@@ -6,7 +6,7 @@ import {SSAbdullakhTransitionCreateBot} from "./interface/common.interface";
   styleUrl: 'cnt-flexy-view-abdullakh-bot-transition-create-bot.css',
   shadow: false,
 })
-export class CntFlexyViewAbdullakhTransitionCreateBot implements ComponentInterface {
+export class CntFlexyViewAbdullakhBotTransitionCreateBot implements ComponentInterface {
   /**
    * массив для вывода элементов TransitionCreateBot
    * */

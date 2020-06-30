@@ -7,10 +7,9 @@
 
 ## Properties
 
-| Property       | Attribute | Description                    | Type                      | Default     |
-| -------------- | --------- | ------------------------------ | ------------------------- | ----------- |
-| `Consultation` | --        | данные компонента Consultation | `SSAbdullakhConsultation` | `undefined` |
-| `gear`         | `gear`    | данные компонента Consultation | `any`                     | `undefined` |
+| Property  | Attribute | Description                    | Type                      | Default     |
+| --------- | --------- | ------------------------------ | ------------------------- | ----------- |
+| `payload` | --        | данные компонента Consultation | `SSAbdullakhConsultation` | `undefined` |
 
 
 ## Events
@@ -25,13 +24,13 @@
 
 ### Used by
 
- - [my-component](../../../../my-component)
+ - [cnt-flexy-view-abdullakh-bot-consultation-1_0_0](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
-  my-component --> s-abdullakh-consultation
-  style s-abdullakh-consultation fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-abdullakh-bot-consultation-1_0_0 --> cnt-flexy-view-abdullakh-bot-consultation
+  style cnt-flexy-view-abdullakh-bot-consultation fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

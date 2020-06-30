@@ -18,23 +18,23 @@ export const formCommunication = {
 
 export const header = {
   id: 'header',
-  logoUrl: "https://static.tildacdn.com/tild3532-3833-4936-a237-616331303266/5.jpg",
+  logoUrl: "5.jpg",
   phoneNumber: '+7 995 606 84 62',
   menu: [
-    {id: 1, linkName: 'Возможности'},
-    {id: 2, linkName: 'Преимущества'},
-    {id: 3, linkName: 'Для кого'}
+    {id: 1, linkName: 'Возможности', menuLine: 'menuLine.svg'},
+    {id: 2, linkName: 'Преимущества', menuLine: 'menuLine.svg'},
+    {id: 3, linkName: 'Для кого', menuLine: 'menuLine.svg'},
   ]
 };
 
 export const ProductPresentation = {
-  imgUrl: "https://static.tildacdn.com/tild6438-3564-4763-b064-353463373538/phone.svg",
+  imgUrl: "phone.svg",
   icon: [
-    {id: 'whatsApp', img: 'https://static.tildacdn.com/tild6666-6137-4538-b264-353465333332/waaa.svg'},
-    {id: 'telegram', img: 'https://static.tildacdn.com/tild3638-6633-4764-a662-653739626663/telegram.png'},
-    {id: 'viber', img: 'https://static.tildacdn.com/tild3161-6165-4964-a137-616535383837/viber.png'},
-    {id: 'mes', img: 'https://static.tildacdn.com/tild6430-3636-4533-b661-613233343835/fb.svg'},
-    {id: 'vk', img: 'https://static.tildacdn.com/tild6465-3664-4032-a239-373162326538/vk.svg'},
+    {id: 'whatsApp', img: 'waaa.svg'},
+    {id: 'telegram', img: 'telegram.png'},
+    {id: 'viber', img: 'viber.png'},
+    {id: 'mes', img: 'fb.svg'},
+    {id: 'vk', img: 'vk.svg'},
   ],
   title: [
     {
@@ -43,7 +43,7 @@ export const ProductPresentation = {
         "Сделаем\n" +
         "\nчат-бота для\n" +
         "\nтвоего бизнеса\n",
-      imgUrl: "https://static.tildacdn.com/tild3435-6138-4434-b732-643736653037/Vector.svg",
+      imgUrl: "Vector.svg",
       behindText: 'за', price: '9 900 ₽',
       btnText: 'Создать бота'
     },
@@ -55,8 +55,8 @@ export const ProductInformation = {
   infoBlock: [
     {
       id: 1,
-      outerImg: 'https://static.tildacdn.com/tild3430-3262-4337-b730-313335633963/44.svg',
-      innerImg: 'https://static.tildacdn.com/tild3532-3939-4562-b663-663931636265/rocket_1.svg',
+      outerImg: 'productInfoImg_1.svg',
+      innerImg: 'rocket_1.svg',
       text: `
             Чат-бот может приводить вам
                 <strong>
@@ -68,8 +68,8 @@ export const ProductInformation = {
     },
     {
       id: 2,
-      outerImg: 'https://static.tildacdn.com/tild6630-3366-4334-b333-646634656662/Group_27.svg',
-      innerImg: 'https://static.tildacdn.com/tild3362-3036-4664-a637-396261393335/profit_1.svg',
+      outerImg: 'productInfoImg_2.svg',
+      innerImg: 'profit_1.svg',
       text: `
             Чат-бот может
               <strong>
@@ -81,8 +81,8 @@ export const ProductInformation = {
     },
     {
       id: 3,
-      outerImg: 'https://static.tildacdn.com/tild3430-3262-4337-b730-313335633963/44.svg',
-      innerImg: 'https://static.tildacdn.com/tild6438-3839-4237-b463-636463636537/training_1.svg',
+      outerImg: 'productInfoImg_3.svg',
+      innerImg: 'training_1.svg',
       text: `
             Чат-бот может
             <span style="color: rgb(255, 208, 0);">
@@ -98,8 +98,8 @@ export const ProductInformation = {
     },
     {
       id: 4,
-      outerImg: 'https://static.tildacdn.com/tild3430-3262-4337-b730-313335633963/44.svg',
-      innerImg: 'https://static.tildacdn.com/tild3833-3830-4664-a363-313436303033/chatbot_1.svg',
+      outerImg: 'productInfoImg_4.svg',
+      innerImg: 'chatbot_1.svg',
       text: `
             Чат-бот может выполнять роли секретаря, администратора,
             продавца. специалиста техподдержки,
@@ -119,8 +119,8 @@ export const ProductInformation = {
     },
     {
       id: 5,
-      outerImg: 'https://static.tildacdn.com/tild3430-3262-4337-b730-313335633963/44.svg',
-      innerImg: 'https://static.tildacdn.com/tild3333-3336-4335-b164-356134623438/plane_1.svg',
+      outerImg: 'productInfoImg_5.svg',
+      innerImg: 'plane_1.svg',
       text: `
             Чат-бот может рассылать вашим клиентам полезную
             информацию, подготовить их к покупке,
@@ -139,7 +139,7 @@ export const TransitionCreateBot = {
   title: [
     {
       id: 1,
-      imgUrl: "https://static.tildacdn.com/tild6161-3938-4737-a531-663931386535/undraw_chat_bot_kli5.svg",
+      imgUrl: "undraw_chat_bot_kli5.svg",
       title:
         `Создай <br/> своего бота`
     },
@@ -163,10 +163,10 @@ export const TransitionCreateBot = {
 
 
 export const PerformanceAndBenefits = {
-  PerformanceandBenefitsbckgrnd: 'https://static.tildacdn.com/tild3838-6433-4637-a435-313133666535/bg.svg',
+  PerformanceandBenefitsbckgrnd: 'bg.svg',
   PerformanceInformation: [
     {
-      imgUrl: 'https://static.tildacdn.com/tild3566-3665-4163-b435-653234346164/phone.svg',
+      imgUrl: 'perfomansInfoImg.svg',
       title: 'Где использование ботов будет наиболее эффективным.',
       ContentRightEndText: 'ВАШ БИЗНЕС',
       ContentLeftEndText: 'ВАШ БИЗНЕС',
@@ -287,43 +287,43 @@ export const PerformanceAndBenefits = {
       infoBlock: [
         {
           id: 1,
-          outerImg: 'https://static.tildacdn.com/tild3730-6136-4538-b535-333639386533/Ellipse_12.svg',
-          innerImg: 'https://static.tildacdn.com/tild6462-3862-4966-a361-363238616264/1.svg',
+          outerImg: 'Ellipse_12.svg',
+          innerImg: '1.svg',
           title: 'Низкая цена',
           text: 'Бот поможет оптимизировать затраты на сотрудников'
         },
         {
           id: 2,
-          outerImg: 'https://static.tildacdn.com/tild3730-6136-4538-b535-333639386533/Ellipse_12.svg',
-          innerImg: 'https://static.tildacdn.com/tild3466-3337-4139-b261-353162653833/2.svg',
+          outerImg: 'Ellipse_12.svg',
+          innerImg: '2.svg',
           title: 'Рост конверсии',
           text: 'Бот увеличивает приток клиентов с сайта, и привлекает новых клиентов'
         },
         {
           id: 3,
-          outerImg: 'https://static.tildacdn.com/tild3730-6136-4538-b535-333639386533/Ellipse_12.svg',
-          innerImg: 'https://static.tildacdn.com/tild3434-3466-4665-b634-666564303434/3.svg',
+          outerImg: 'Ellipse_12.svg',
+          innerImg: '3.svg',
           title: 'Работает 24/7',
           text: 'Бот не отдыхает, не обедает, не спит'
         },
         {
           id: 4,
-          outerImg: 'https://static.tildacdn.com/tild3730-6136-4538-b535-333639386533/Ellipse_12.svg',
-          innerImg: 'https://static.tildacdn.com/tild6335-3332-4338-b232-383161306137/10.svg',
+          outerImg: 'Ellipse_12.svg',
+          innerImg: '10.svg',
           title: 'Высокая скорость работы',
           text: 'Бот отвечает моментально'
         },
         {
           id: 5,
-          outerImg: 'https://static.tildacdn.com/tild3730-6136-4538-b535-333639386533/Ellipse_12.svg',
-          innerImg: 'https://static.tildacdn.com/tild3636-3263-4330-b131-666462653465/5.svg',
+          outerImg: 'Ellipse_12.svg',
+          innerImg: '5.svg',
           title: 'Простое обслуживание',
           text: 'Бота легко дорабатывать и обновлять'
         },
         {
           id: 6,
-          outerImg: 'https://static.tildacdn.com/tild3730-6136-4538-b535-333639386533/Ellipse_12.svg',
-          innerImg: 'https://static.tildacdn.com/tild6537-6631-4335-b334-306266373339/6.svg',
+          outerImg: 'Ellipse_12.svg',
+          innerImg: '6.svg',
           title: 'Автоматизация рутины',
           text: 'Бот экономит ваше время автоматически выполняя любые типовые задачи'
         },
@@ -333,7 +333,7 @@ export const PerformanceAndBenefits = {
 }
 
 export const Consultation = {
-  imgUrl: 'https://static.tildacdn.com/tild6436-6430-4061-a561-343031666633/undraw_moving_forwar.svg',
+  imgUrl: 'undraw_moving_forwar.svg',
   title: 'Бесплатная консультация',
   text: `
         Расскажем какой
@@ -351,15 +351,15 @@ export const Consultation = {
 };
 
 export const Tariffs = {
-  dinamicImg: 'https://static.tildacdn.com/tild6132-6539-4561-b838-663866306265/Vector.svg',
+  dinamicImg: 'tariffsDinamicImg.svg',
   dinamicText: '$',
   title: "Тарифы",
-  bckgrndImg: 'https://static.tildacdn.com/tild3962-3166-4338-a434-383631623131/undraw_work_chat_erd.svg',
+  bckgrndImg: 'undraw_work_chat_erd.svg',
   infoBlock: [
     {
       id: 1,
-      outerImg: 'https://static.tildacdn.com/tild3433-3861-4062-a230-656534333436/Ellipse_11.svg',
-      innerImg: 'https://static.tildacdn.com/tild6237-3161-4162-b332-623865363564/boy_1.svg',
+      outerImg: 'Ellipse_11.svg',
+      innerImg: 'boy_1.svg',
       class: 'small',
       title: 'Чат-бот визитка',
       text: 'Чат-бот который поможет вашим клиентам познакомится с вашим бизнесом, узнать информацию о оказываемых услугах.',
@@ -368,8 +368,8 @@ export const Tariffs = {
     },
     {
       id: 2,
-      outerImg: 'https://static.tildacdn.com/tild3433-3861-4062-a230-656534333436/Ellipse_11.svg',
-      innerImg: 'https://static.tildacdn.com/tild6366-6131-4761-b338-623963616534/icons8-chuck-norris-.png',
+      outerImg: 'Ellipse_11.svg',
+      innerImg: 'icons8-chuck-norris-.png',
       class: 'big',
       title: 'Чат-бот лидогенератор',
       text: 'Помогает обрабатывать запросы клиентов в мессенджерах.\n' +
@@ -379,8 +379,8 @@ export const Tariffs = {
     },
     {
       id: 3,
-      outerImg: 'https://static.tildacdn.com/tild3433-3861-4062-a230-656534333436/Ellipse_11.svg',
-      innerImg: 'https://static.tildacdn.com/tild3138-3537-4766-a237-383331316461/darth.svg',
+      outerImg: 'Ellipse_11.svg',
+      innerImg: 'darth.svg',
       class: 'small',
       title: 'Чат-бот магазин',
       text: 'Чат-бот знакомит покупателя с ассортиментом товаров\n.' +

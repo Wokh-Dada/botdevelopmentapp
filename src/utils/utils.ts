@@ -6,3 +6,7 @@ export function format(first: string, middle: string, last: string): string {
     (last ? ` ${last}` : '')
   );
 }
+
+export class StorageAbdullakhBot {
+  public static prefix: string;
+}

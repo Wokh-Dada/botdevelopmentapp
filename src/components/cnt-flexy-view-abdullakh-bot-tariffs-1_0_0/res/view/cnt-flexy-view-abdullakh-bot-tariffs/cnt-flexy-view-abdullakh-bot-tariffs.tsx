@@ -1,11 +1,12 @@
 import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
+import {StorageAbdullakhBot} from "../../../../../utils/utils";
 
 @Component({
   tag: 'cnt-flexy-view-abdullakh-bot-tariffs',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-tariffs.css',
   shadow: false,
 })
-export class CntFlexyViewAbdullakhTariffs implements ComponentInterface {
+export class CntFlexyViewAbdullakhBotTariffs implements ComponentInterface {
   /**
    * данные компонента Tariffs
    * */
@@ -25,9 +26,9 @@ export class CntFlexyViewAbdullakhTariffs implements ComponentInterface {
     return (
       <section class="Tariffs_section">
         {/*анимация*/}
-        <div class="dinamicImg" style={{backgroundImage: "url(" + this.payload.dinamicImg + ")"}}
+        <div class="dinamicImg" style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.payload.dinamicImg + ")"}}
              onClick={() => this.clickOnTariffs.emit(this.payload.dinamicImg)}>
-          {/*вывод из массива картинки*/}
+          {/*вывод из массива картинки */}
         </div>
         <span class="dollar" onClick={() => this.clickOnTariffs.emit(this.payload.dinamicText)}>
           {this.payload.dinamicText}
@@ -37,7 +38,7 @@ export class CntFlexyViewAbdullakhTariffs implements ComponentInterface {
           <div class="Tariffs_title" onClick={() => this.clickOnTariffs.emit(this.payload.title)}>
             {this.payload.title}
           </div>
-          <div class="Tariffs_info_blocks_bckgrnd" style={{backgroundImage: "url(" + this.payload.bckgrndImg + ")"}}
+          <div class="Tariffs_info_blocks_bckgrnd" style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.payload.bckgrndImg + ")"}}
                onClick={() => this.clickOnTariffs.emit(this.payload.bckgrndImg)}>
             <div class="Tariffs_info_blocks">
               <TariffsInfoBlocks arr={this.payload.infoBlock}/>

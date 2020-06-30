@@ -23,12 +23,12 @@
 
 ### Used by
 
- - [s-abdullakh-transition-create-bot](../../..)
+ - [cnt-flexy-view-abdullakh-bot-transition-create-bot](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
-  s-abdullakh-transition-create-bot --> s-abdullakh-transition-create-bot-title
+  cnt-flexy-view-abdullakh-bot-transition-create-bot --> s-abdullakh-transition-create-bot-title
   style s-abdullakh-transition-create-bot-title fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
