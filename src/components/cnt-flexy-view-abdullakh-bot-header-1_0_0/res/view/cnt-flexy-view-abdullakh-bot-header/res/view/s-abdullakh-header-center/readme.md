@@ -23,12 +23,12 @@
 
 ### Used by
 
- - [cnt-flexy-view-bot-abdullakh-header](../../..)
+ - [cnt-flexy-view-abdullakh-bot-header](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-bot-abdullakh-header --> s-abdullakh-header-center
+  cnt-flexy-view-abdullakh-bot-header --> s-abdullakh-header-center
   style s-abdullakh-header-center fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

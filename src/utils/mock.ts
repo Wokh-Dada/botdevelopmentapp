@@ -330,7 +330,7 @@ export const PerformanceAndBenefits = {
       ]
     }
   ]
-}
+};
 
 export const Consultation = {
   imgUrl: 'undraw_moving_forwar.svg',

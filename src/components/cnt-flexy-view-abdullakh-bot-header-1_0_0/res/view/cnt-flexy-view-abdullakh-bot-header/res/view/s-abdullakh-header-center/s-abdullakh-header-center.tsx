@@ -19,7 +19,6 @@ export class SAbdullakhHeaderCenter implements ComponentInterface {
   @Event() clickOnHeader: EventEmitter;
 
   render() {
-    console.log(this.arr)
     return (
       <div class="navbar_item"
         onClick={() => {

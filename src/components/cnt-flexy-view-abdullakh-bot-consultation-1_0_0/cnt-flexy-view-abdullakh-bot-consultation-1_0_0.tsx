@@ -24,7 +24,6 @@ export class CntFlexyViewAbdullakhBotConsultation1_0_0 implements ComponentInter
   }
 
   render() {
-    console.log(StorageAbdullakhBot.prefix)
     return (
       <cnt-flexy-view-abdullakh-bot-consultation
         payload={this.payload}

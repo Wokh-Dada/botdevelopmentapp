@@ -7,9 +7,10 @@
 
 ## Properties
 
-| Property  | Attribute | Description                                                         | Type  | Default     |
-| --------- | --------- | ------------------------------------------------------------------- | ----- | ----------- |
-| `payload` | `payload` | объект с массивами компонентов PerformanceInformation, BenefitsBots | `any` | `undefined` |
+| Property       | Attribute        | Description                                                         | Type     | Default     |
+| -------------- | ---------------- | ------------------------------------------------------------------- | -------- | ----------- |
+| `pathToAssets` | `path-to-assets` |                                                                     | `string` | `undefined` |
+| `payload`      | `payload`        | объект с массивами компонентов PerformanceInformation, BenefitsBots | `any`    | `undefined` |
 
 
 ## Events

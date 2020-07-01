@@ -7,9 +7,10 @@
 
 ## Properties
 
-| Property  | Attribute | Description                         | Type  | Default     |
-| --------- | --------- | ----------------------------------- | ----- | ----------- |
-| `payload` | `payload` | данные компонента FormCommunication | `any` | `undefined` |
+| Property       | Attribute        | Description                         | Type     | Default     |
+| -------------- | ---------------- | ----------------------------------- | -------- | ----------- |
+| `pathToAssets` | `path-to-assets` |                                     | `string` | `undefined` |
+| `payload`      | `payload`        | данные компонента FormCommunication | `any`    | `undefined` |
 
 
 ## Events

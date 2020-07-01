@@ -25,7 +25,7 @@
 
 ### Used by
 
- - [cnt-flexy-view-bot-abdullakh-product-presentation](../../..)
+ - [cnt-flexy-view-abdullakh-bot-product-presentation](../../..)
 
 ### Depends on
 
@@ -35,7 +35,7 @@
 ```mermaid
 graph TD;
   s-abdullakh-product-presentation-title --> s-abdullakh-product-presentation-img
-  cnt-flexy-view-bot-abdullakh-product-presentation --> s-abdullakh-product-presentation-title
+  cnt-flexy-view-abdullakh-bot-product-presentation --> s-abdullakh-product-presentation-title
   style s-abdullakh-product-presentation-title fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

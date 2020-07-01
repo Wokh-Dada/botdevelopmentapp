@@ -24,7 +24,7 @@
 
 ### Used by
 
- - [cnt-flexy-view-bot-abdullakh-product-presentation-1_0_0](../../..)
+ - [cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0](../../..)
 
 ### Depends on
 
@@ -34,11 +34,11 @@
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-bot-abdullakh-product-presentation --> s-abdullakh-product-presentation-img
-  cnt-flexy-view-bot-abdullakh-product-presentation --> s-abdullakh-product-presentation-title
+  cnt-flexy-view-abdullakh-bot-product-presentation --> s-abdullakh-product-presentation-img
+  cnt-flexy-view-abdullakh-bot-product-presentation --> s-abdullakh-product-presentation-title
   s-abdullakh-product-presentation-title --> s-abdullakh-product-presentation-img
-  cnt-flexy-view-bot-abdullakh-product-presentation-1_0_0 --> cnt-flexy-view-bot-abdullakh-product-presentation
-  style cnt-flexy-view-bot-abdullakh-product-presentation fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0 --> cnt-flexy-view-abdullakh-bot-product-presentation
+  style cnt-flexy-view-abdullakh-bot-product-presentation fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

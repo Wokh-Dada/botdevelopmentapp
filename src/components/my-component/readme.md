@@ -10,8 +10,8 @@
 ### Depends on
 
 - [cnt-flexy-view-abdullakh-bot-form-communication-1_0_0](../cnt-flexy-view-abdullakh-bot-form-communication-1_0_0)
-- [cnt-flexy-view-bot-abdullakh-header-1_0_0](../cnt-flexy-view-abdullakh-bot-header-1_0_0)
-- [cnt-flexy-view-bot-abdullakh-product-presentation-1_0_0](../cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0)
+- [cnt-flexy-view-abdullakh-bot-header-1_0_0](../cnt-flexy-view-abdullakh-bot-header-1_0_0)
+- [cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0](../cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0)
 - [cnt-flexy-view-abdullakh-bot-product-information-1_0_0](../cnt-flexy-view-abdullakh-bot-product-information-1_0_0)
 - [cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0](../cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0)
 - [cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0](../cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0)
@@ -22,8 +22,8 @@
 ```mermaid
 graph TD;
   my-component --> cnt-flexy-view-abdullakh-bot-form-communication-1_0_0
-  my-component --> cnt-flexy-view-bot-abdullakh-header-1_0_0
-  my-component --> cnt-flexy-view-bot-abdullakh-product-presentation-1_0_0
+  my-component --> cnt-flexy-view-abdullakh-bot-header-1_0_0
+  my-component --> cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0
   my-component --> cnt-flexy-view-abdullakh-bot-product-information-1_0_0
   my-component --> cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0
   my-component --> cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0
@@ -32,13 +32,13 @@ graph TD;
   cnt-flexy-view-abdullakh-bot-form-communication-1_0_0 --> cnt-flexy-view-bot-abdullakh-form-communication
   cnt-flexy-view-bot-abdullakh-form-communication --> s-abdullakh-form-close
   cnt-flexy-view-bot-abdullakh-form-communication --> s-abdullakh-form
-  cnt-flexy-view-bot-abdullakh-header-1_0_0 --> cnt-flexy-view-bot-abdullakh-header
-  cnt-flexy-view-bot-abdullakh-header --> s-abdullakh-header-start
-  cnt-flexy-view-bot-abdullakh-header --> s-abdullakh-header-end
-  cnt-flexy-view-bot-abdullakh-header --> s-abdullakh-header-center
-  cnt-flexy-view-bot-abdullakh-product-presentation-1_0_0 --> cnt-flexy-view-bot-abdullakh-product-presentation
-  cnt-flexy-view-bot-abdullakh-product-presentation --> s-abdullakh-product-presentation-img
-  cnt-flexy-view-bot-abdullakh-product-presentation --> s-abdullakh-product-presentation-title
+  cnt-flexy-view-abdullakh-bot-header-1_0_0 --> cnt-flexy-view-abdullakh-bot-header
+  cnt-flexy-view-abdullakh-bot-header --> s-abdullakh-header-start
+  cnt-flexy-view-abdullakh-bot-header --> s-abdullakh-header-end
+  cnt-flexy-view-abdullakh-bot-header --> s-abdullakh-header-center
+  cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0 --> cnt-flexy-view-abdullakh-bot-product-presentation
+  cnt-flexy-view-abdullakh-bot-product-presentation --> s-abdullakh-product-presentation-img
+  cnt-flexy-view-abdullakh-bot-product-presentation --> s-abdullakh-product-presentation-title
   s-abdullakh-product-presentation-title --> s-abdullakh-product-presentation-img
   cnt-flexy-view-abdullakh-bot-product-information-1_0_0 --> cnt-flexy-view-abdullakh-bot-product-information
   cnt-flexy-view-abdullakh-bot-product-information --> cnt-flexy-view-abdullakh-bot-product-information-blocks

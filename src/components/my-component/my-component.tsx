@@ -19,6 +19,9 @@ export class MyComponent {
    */
   @State() popupComplited: boolean;
 
+  /**
+   * временный префикс ссылки для картинок
+   */
   public testPathToAssets =
     "https://cdn.ramman.net/flexy-view/abdullakh/bot/assets/";
 

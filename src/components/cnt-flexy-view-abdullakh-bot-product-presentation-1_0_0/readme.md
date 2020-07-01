@@ -7,9 +7,10 @@
 
 ## Properties
 
-| Property  | Attribute | Description                                          | Type  | Default     |
-| --------- | --------- | ---------------------------------------------------- | ----- | ----------- |
-| `payload` | `payload` | массив для вывода элементов ProductPresentationTitle | `any` | `undefined` |
+| Property       | Attribute        | Description                                          | Type     | Default     |
+| -------------- | ---------------- | ---------------------------------------------------- | -------- | ----------- |
+| `pathToAssets` | `path-to-assets` |                                                      | `string` | `undefined` |
+| `payload`      | `payload`        | массив для вывода элементов ProductPresentationTitle | `any`    | `undefined` |
 
 
 ## Events
@@ -27,17 +28,17 @@
 
 ### Depends on
 
-- [cnt-flexy-view-bot-abdullakh-product-presentation](res/view/cnt-flexy-view-abdullakh-bot-product-presentation)
+- [cnt-flexy-view-abdullakh-bot-product-presentation](./res/view/cnt-flexy-view-abdullakh-bot-product-presentation)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-bot-abdullakh-product-presentation-1_0_0 --> cnt-flexy-view-bot-abdullakh-product-presentation
-  cnt-flexy-view-bot-abdullakh-product-presentation --> s-abdullakh-product-presentation-img
-  cnt-flexy-view-bot-abdullakh-product-presentation --> s-abdullakh-product-presentation-title
+  cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0 --> cnt-flexy-view-abdullakh-bot-product-presentation
+  cnt-flexy-view-abdullakh-bot-product-presentation --> s-abdullakh-product-presentation-img
+  cnt-flexy-view-abdullakh-bot-product-presentation --> s-abdullakh-product-presentation-title
   s-abdullakh-product-presentation-title --> s-abdullakh-product-presentation-img
-  my-component --> cnt-flexy-view-bot-abdullakh-product-presentation-1_0_0
-  style cnt-flexy-view-bot-abdullakh-product-presentation-1_0_0 fill:#f9f,stroke:#333,stroke-width:4px
+  my-component --> cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0
+  style cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0 fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

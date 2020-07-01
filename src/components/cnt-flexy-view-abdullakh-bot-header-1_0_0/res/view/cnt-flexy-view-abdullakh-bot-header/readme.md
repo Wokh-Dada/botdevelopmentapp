@@ -23,7 +23,7 @@
 
 ### Used by
 
- - [cnt-flexy-view-bot-abdullakh-header-1_0_0](../../..)
+ - [cnt-flexy-view-abdullakh-bot-header-1_0_0](../../..)
 
 ### Depends on
 
@@ -34,11 +34,11 @@
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-bot-abdullakh-header --> s-abdullakh-header-start
-  cnt-flexy-view-bot-abdullakh-header --> s-abdullakh-header-end
-  cnt-flexy-view-bot-abdullakh-header --> s-abdullakh-header-center
-  cnt-flexy-view-bot-abdullakh-header-1_0_0 --> cnt-flexy-view-bot-abdullakh-header
-  style cnt-flexy-view-bot-abdullakh-header fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-abdullakh-bot-header --> s-abdullakh-header-start
+  cnt-flexy-view-abdullakh-bot-header --> s-abdullakh-header-end
+  cnt-flexy-view-abdullakh-bot-header --> s-abdullakh-header-center
+  cnt-flexy-view-abdullakh-bot-header-1_0_0 --> cnt-flexy-view-abdullakh-bot-header
+  style cnt-flexy-view-abdullakh-bot-header fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

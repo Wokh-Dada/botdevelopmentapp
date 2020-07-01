@@ -24,6 +24,7 @@ export class CntFlexyViewAbdullakhBotTransitionCreateBot1_0_0 implements Compone
   }
 
   render() {
+    console.log(this.pathToAssets)
     return (
       <cnt-flexy-view-abdullakh-bot-transition-create-bot
         payload={this.payload}

@@ -39,7 +39,6 @@ export class CntFlexyViewAbdullakhBotConsultation implements ComponentInterface 
   consultantImg: HTMLElement;
 
  render() {
-   console.log(StorageAbdullakhBot.prefix)
     return (
       <section class="Consultation">
         <div class="container">
