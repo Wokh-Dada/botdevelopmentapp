@@ -28,14 +28,14 @@
 
 ### Depends on
 
-- [s-abdullakh-transition-create-bot-title](./res/view/s-abdullakh-transition-create-bot-title)
-- [s-abdullakh-transition-create-bot-follow](./res/view/s-abdullakh-transition-create-bot-follow)
+- [cnt-flexy-view-abdullakh-bot-transition-create-bot-title](./res/view/cnt-flexy-view-abdullakh-bot-transition-create-bot-title)
+- [cnt-flexy-view-abdullakh-bot-transition-create-bot-follow](./res/view/cnt-flexy-view-abdullakh-bot-transition-create-bot-follow)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-abdullakh-bot-transition-create-bot --> s-abdullakh-transition-create-bot-title
-  cnt-flexy-view-abdullakh-bot-transition-create-bot --> s-abdullakh-transition-create-bot-follow
+  cnt-flexy-view-abdullakh-bot-transition-create-bot --> cnt-flexy-view-abdullakh-bot-transition-create-bot-title
+  cnt-flexy-view-abdullakh-bot-transition-create-bot --> cnt-flexy-view-abdullakh-bot-transition-create-bot-follow
   cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0 --> cnt-flexy-view-abdullakh-bot-transition-create-bot
   style cnt-flexy-view-abdullakh-bot-transition-create-bot fill:#f9f,stroke:#333,stroke-width:4px
 ```

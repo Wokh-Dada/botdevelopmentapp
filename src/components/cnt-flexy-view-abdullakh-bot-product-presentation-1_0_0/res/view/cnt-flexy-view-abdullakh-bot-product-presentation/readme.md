@@ -28,15 +28,14 @@
 
 ### Depends on
 
-- [s-abdullakh-product-presentation-img](./res/view/s-abdullakh-product-presentation-img)
-- [s-abdullakh-product-presentation-title](./res/view/s-abdullakh-product-presentation-title)
+- [cnt-flexy-view-abdullakh-bot-product-presentation-img](./res/view/cnt-flexy-view-abdullakh-bot-product-presentation-img)
+- [cnt-flexy-view-abdullakh-bot-product-presentation-title](./res/view/cnt-flexy-view-abdullakh-bot-product-presentation-title)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-abdullakh-bot-product-presentation --> s-abdullakh-product-presentation-img
-  cnt-flexy-view-abdullakh-bot-product-presentation --> s-abdullakh-product-presentation-title
-  s-abdullakh-product-presentation-title --> s-abdullakh-product-presentation-img
+  cnt-flexy-view-abdullakh-bot-product-presentation --> cnt-flexy-view-abdullakh-bot-product-presentation-img
+  cnt-flexy-view-abdullakh-bot-product-presentation --> cnt-flexy-view-abdullakh-bot-product-presentation-title
   cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0 --> cnt-flexy-view-abdullakh-bot-product-presentation
   style cnt-flexy-view-abdullakh-bot-product-presentation fill:#f9f,stroke:#333,stroke-width:4px
 ```

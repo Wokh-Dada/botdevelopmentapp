@@ -34,7 +34,7 @@
 ```mermaid
 graph TD;
   cnt-flexy-view-abdullakh-bot-tariffs-1_0_0 --> cnt-flexy-view-abdullakh-bot-tariffs
-  cnt-flexy-view-abdullakh-bot-tariffs --> s-abdullakh-tariffs-info-blocks
+  cnt-flexy-view-abdullakh-bot-tariffs --> cnt-flexy-view-abdullakh-bot-tariffs-info-blocks
   my-component --> cnt-flexy-view-abdullakh-bot-tariffs-1_0_0
   style cnt-flexy-view-abdullakh-bot-tariffs-1_0_0 fill:#f9f,stroke:#333,stroke-width:4px
 ```

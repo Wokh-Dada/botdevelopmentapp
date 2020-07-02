@@ -46,7 +46,7 @@ export class CntFlexyViewAbdullakhBotTransitionCreateBot implements ComponentInt
 const CreateBotTitle = (props) => {
   return props.arr.map((item) => {
     return (
-      <s-abdullakh-transition-create-bot-title arr={item}/>
+      <cnt-flexy-view-abdullakh-bot-transition-create-bot-title arr={item}/>
     );
   })
 }
@@ -57,7 +57,7 @@ const CreateBotTitle = (props) => {
 const CreateBotFollow = (props) => {
   return props.arr.map((item) => {
     return (
-      <s-abdullakh-transition-create-bot-follow arr={item}/>
+      <cnt-flexy-view-abdullakh-bot-transition-create-bot-follow arr={item}/>
     );
   })
 }

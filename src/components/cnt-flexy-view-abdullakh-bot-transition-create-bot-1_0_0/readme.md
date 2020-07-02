@@ -34,8 +34,8 @@
 ```mermaid
 graph TD;
   cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0 --> cnt-flexy-view-abdullakh-bot-transition-create-bot
-  cnt-flexy-view-abdullakh-bot-transition-create-bot --> s-abdullakh-transition-create-bot-title
-  cnt-flexy-view-abdullakh-bot-transition-create-bot --> s-abdullakh-transition-create-bot-follow
+  cnt-flexy-view-abdullakh-bot-transition-create-bot --> cnt-flexy-view-abdullakh-bot-transition-create-bot-title
+  cnt-flexy-view-abdullakh-bot-transition-create-bot --> cnt-flexy-view-abdullakh-bot-transition-create-bot-follow
   my-component --> cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0
   style cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0 fill:#f9f,stroke:#333,stroke-width:4px
 ```

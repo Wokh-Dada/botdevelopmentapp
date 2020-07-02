@@ -5,15 +5,27 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { SSAbdullakhBenefitsBots, } from "./components/cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-performance-and-benefits/res/view/cnt-flexy-view-abdullakh-bot-benefits-bots/interface/common.interface";
 import { SSAbdullakhConsultation, } from "./components/cnt-flexy-view-abdullakh-bot-consultation-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-consultation/interface/common.interface";
 import { CntFlexyViewCategoryForOwnerItemInterface, } from "./components/cnt-flexy-view-abdullakh-bot-header-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-header/interface/common.interface";
+import { AbdullakhHeaderCenter, } from "./components/cnt-flexy-view-abdullakh-bot-header-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-header/res/view/cnt-flexy-view-abdullakh-bot-header-center/interface/common.interface";
+import { SSAbdullakhPerformanceInformation, } from "./components/cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-performance-and-benefits/res/view/cnt-flexy-view-abdullakh-bot-performance-information/interface/common.interface";
 import { SSAbdullakhProductInformation, } from "./components/cnt-flexy-view-abdullakh-bot-product-information-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-product-information/interface/common.interface";
 import { SSAbdullakhProductPresentation, } from "./components/cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-product-presentation/interface/common.interface";
 import { SSAbdullakhTransitionCreateBot, } from "./components/cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-transition-create-bot/interface/common.interface";
-import { SSAbdullakhBenefitsBots, } from "./components/cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-performance-and-benefits/res/view/s-abdullakh-benefits-bots/interface/common.interface";
-import { AbdullakhHeaderCenter, } from "./components/cnt-flexy-view-abdullakh-bot-header-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-header/res/view/s-abdullakh-header-center/interface/common.interface";
-import { SSAbdullakhPerformanceInformation, } from "./components/cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-performance-and-benefits/res/view/s-abdullakh-performance-information/interface/common.interface";
 export namespace Components {
+    interface CntFlexyViewAbdullakhBotBenefitsBots {
+        /**
+          * объект с массивом и данными BenefitsBots
+         */
+        "BenefitsBots": SSAbdullakhBenefitsBots;
+    }
+    interface CntFlexyViewAbdullakhBotBenefitsBotsBlock {
+        /**
+          * данные переданные методом map компоненту BenefitsBotsBlock
+         */
+        "arr": any;
+    }
     interface CntFlexyViewAbdullakhBotConsultation {
         /**
           * данные компонента Consultation
@@ -24,6 +36,20 @@ export namespace Components {
         "pathToAssets": string;
         /**
           * данные компонента Consultation
+         */
+        "payload": any;
+    }
+    interface CntFlexyViewAbdullakhBotForm {
+        /**
+          * данные из массива для компонента Form
+         */
+        "arr": any;
+    }
+    interface CntFlexyViewAbdullakhBotFormClose {
+    }
+    interface CntFlexyViewAbdullakhBotFormCommunication {
+        /**
+          * данные компонента FormCommunication
          */
         "payload": any;
     }
@@ -47,6 +73,24 @@ export namespace Components {
         "categories": any;
         "pathToAssets": string;
     }
+    interface CntFlexyViewAbdullakhBotHeaderCenter {
+        /**
+          * объект с данными и для элементов меню
+         */
+        "arr": AbdullakhHeaderCenter;
+    }
+    interface CntFlexyViewAbdullakhBotHeaderEnd {
+        /**
+          * number
+         */
+        "phoneNumber": string;
+    }
+    interface CntFlexyViewAbdullakhBotHeaderStart {
+        /**
+          * объект с url logo
+         */
+        "logo": any;
+    }
     interface CntFlexyViewAbdullakhBotPerformanceAndBenefits {
         /**
           * объект с массивами компонентов PerformanceInformation, BenefitsBots
@@ -59,6 +103,22 @@ export namespace Components {
           * объект с массивами компонентов PerformanceInformation, BenefitsBots
          */
         "payload": any;
+    }
+    interface CntFlexyViewAbdullakhBotPerformanceInformation {
+        /**
+          * массив для вывода элементов PerformanceInformation
+         */
+        "PerformanceInformation": SSAbdullakhPerformanceInformation;
+    }
+    interface CntFlexyViewAbdullakhBotPerformanceInformationList {
+        /**
+          * объект с массивом и данными PerformanceInformationList
+         */
+        "PerformanceInformation": any;
+        /**
+          * объект с массивом и данными PerformanceInformationList
+         */
+        "endText": string;
     }
     interface CntFlexyViewAbdullakhBotProductInformation {
         /**
@@ -92,6 +152,22 @@ export namespace Components {
          */
         "payload": any;
     }
+    interface CntFlexyViewAbdullakhBotProductPresentationImg {
+        /**
+          * массив для вывода url img в компоненете ProductPresentationImg
+         */
+        "img": any;
+    }
+    interface CntFlexyViewAbdullakhBotProductPresentationTitle {
+        /**
+          * массив для вывода элементов ProductPresentationTitle
+         */
+        "arr": any;
+        /**
+          * массив для вывода элементов ProductPresentationTitle
+         */
+        "img": string;
+    }
     interface CntFlexyViewAbdullakhBotTariffs {
         /**
           * данные компонента Tariffs
@@ -104,6 +180,12 @@ export namespace Components {
           * данные компонента Tariffs
          */
         "payload": any;
+    }
+    interface CntFlexyViewAbdullakhBotTariffsInfoBlocks {
+        /**
+          * данные переданные методом map компоненту TariffsBlocks
+         */
+        "arr": any;
     }
     interface CntFlexyViewAbdullakhBotTransitionCreateBot {
         /**
@@ -118,104 +200,34 @@ export namespace Components {
          */
         "payload": any;
     }
-    interface CntFlexyViewBotAbdullakhFormCommunication {
-        /**
-          * данные компонента FormCommunication
-         */
-        "payload": any;
-    }
-    interface MyComponent {
-    }
-    interface SAbdullakhBenefitsBots {
-        /**
-          * объект с массивом и данными BenefitsBots
-         */
-        "BenefitsBots": SSAbdullakhBenefitsBots;
-    }
-    interface SAbdullakhBenefitsBotsBlock {
-        /**
-          * данные переданные методом map компоненту BenefitsBotsBlock
-         */
-        "arr": any;
-    }
-    interface SAbdullakhForm {
-        /**
-          * данные из массива для компонента Form
-         */
-        "arr": any;
-    }
-    interface SAbdullakhFormClose {
-    }
-    interface SAbdullakhHeaderCenter {
-        /**
-          * объект с данными и для элементов меню
-         */
-        "arr": AbdullakhHeaderCenter;
-    }
-    interface SAbdullakhHeaderEnd {
-        /**
-          * number
-         */
-        "phoneNumber": string;
-    }
-    interface SAbdullakhHeaderStart {
-        /**
-          * объект с url logo
-         */
-        "logo": any;
-    }
-    interface SAbdullakhPerformanceInformation {
-        /**
-          * массив для вывода элементов PerformanceInformation
-         */
-        "PerformanceInformation": SSAbdullakhPerformanceInformation;
-    }
-    interface SAbdullakhPerformanceInformationList {
-        /**
-          * объект с массивом и данными PerformanceInformationList
-         */
-        "PerformanceInformation": any;
-        /**
-          * объект с массивом и данными PerformanceInformationList
-         */
-        "endText": string;
-    }
-    interface SAbdullakhProductPresentationImg {
-        /**
-          * массив для вывода url img в компоненете ProductPresentationImg
-         */
-        "img": any;
-    }
-    interface SAbdullakhProductPresentationTitle {
-        /**
-          * массив для вывода элементов ProductPresentationTitle
-         */
-        "arr": any;
-        /**
-          * массив для вывода элементов ProductPresentationTitle
-         */
-        "img": string;
-    }
-    interface SAbdullakhTariffsInfoBlocks {
-        /**
-          * данные переданные методом map компоненту TariffsBlocks
-         */
-        "arr": any;
-    }
-    interface SAbdullakhTransitionCreateBotFollow {
+    interface CntFlexyViewAbdullakhBotTransitionCreateBotFollow {
         /**
           * массив для вывода элементов подкомпонента TransitionCreateBotFollow компонента TransitionCreateBot
          */
         "arr": any;
     }
-    interface SAbdullakhTransitionCreateBotTitle {
+    interface CntFlexyViewAbdullakhBotTransitionCreateBotTitle {
         /**
           * массив для вывода элементов подкомпонента TransitionCreateBotTitle компонента TransitionCreateBot
          */
         "arr": any;
     }
+    interface MyComponent {
+    }
 }
 declare global {
+    interface HTMLCntFlexyViewAbdullakhBotBenefitsBotsElement extends Components.CntFlexyViewAbdullakhBotBenefitsBots, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotBenefitsBotsElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotBenefitsBotsElement;
+        new (): HTMLCntFlexyViewAbdullakhBotBenefitsBotsElement;
+    };
+    interface HTMLCntFlexyViewAbdullakhBotBenefitsBotsBlockElement extends Components.CntFlexyViewAbdullakhBotBenefitsBotsBlock, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotBenefitsBotsBlockElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotBenefitsBotsBlockElement;
+        new (): HTMLCntFlexyViewAbdullakhBotBenefitsBotsBlockElement;
+    };
     interface HTMLCntFlexyViewAbdullakhBotConsultationElement extends Components.CntFlexyViewAbdullakhBotConsultation, HTMLStencilElement {
     }
     var HTMLCntFlexyViewAbdullakhBotConsultationElement: {
@@ -227,6 +239,24 @@ declare global {
     var HTMLCntFlexyViewAbdullakhBotConsultation1_0_0Element: {
         prototype: HTMLCntFlexyViewAbdullakhBotConsultation1_0_0Element;
         new (): HTMLCntFlexyViewAbdullakhBotConsultation1_0_0Element;
+    };
+    interface HTMLCntFlexyViewAbdullakhBotFormElement extends Components.CntFlexyViewAbdullakhBotForm, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotFormElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotFormElement;
+        new (): HTMLCntFlexyViewAbdullakhBotFormElement;
+    };
+    interface HTMLCntFlexyViewAbdullakhBotFormCloseElement extends Components.CntFlexyViewAbdullakhBotFormClose, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotFormCloseElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotFormCloseElement;
+        new (): HTMLCntFlexyViewAbdullakhBotFormCloseElement;
+    };
+    interface HTMLCntFlexyViewAbdullakhBotFormCommunicationElement extends Components.CntFlexyViewAbdullakhBotFormCommunication, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotFormCommunicationElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotFormCommunicationElement;
+        new (): HTMLCntFlexyViewAbdullakhBotFormCommunicationElement;
     };
     interface HTMLCntFlexyViewAbdullakhBotFormCommunication1_0_0Element extends Components.CntFlexyViewAbdullakhBotFormCommunication1_0_0, HTMLStencilElement {
     }
@@ -246,6 +276,24 @@ declare global {
         prototype: HTMLCntFlexyViewAbdullakhBotHeader1_0_0Element;
         new (): HTMLCntFlexyViewAbdullakhBotHeader1_0_0Element;
     };
+    interface HTMLCntFlexyViewAbdullakhBotHeaderCenterElement extends Components.CntFlexyViewAbdullakhBotHeaderCenter, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotHeaderCenterElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotHeaderCenterElement;
+        new (): HTMLCntFlexyViewAbdullakhBotHeaderCenterElement;
+    };
+    interface HTMLCntFlexyViewAbdullakhBotHeaderEndElement extends Components.CntFlexyViewAbdullakhBotHeaderEnd, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotHeaderEndElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotHeaderEndElement;
+        new (): HTMLCntFlexyViewAbdullakhBotHeaderEndElement;
+    };
+    interface HTMLCntFlexyViewAbdullakhBotHeaderStartElement extends Components.CntFlexyViewAbdullakhBotHeaderStart, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotHeaderStartElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotHeaderStartElement;
+        new (): HTMLCntFlexyViewAbdullakhBotHeaderStartElement;
+    };
     interface HTMLCntFlexyViewAbdullakhBotPerformanceAndBenefitsElement extends Components.CntFlexyViewAbdullakhBotPerformanceAndBenefits, HTMLStencilElement {
     }
     var HTMLCntFlexyViewAbdullakhBotPerformanceAndBenefitsElement: {
@@ -257,6 +305,18 @@ declare global {
     var HTMLCntFlexyViewAbdullakhBotPerformanceAndBenefits1_0_0Element: {
         prototype: HTMLCntFlexyViewAbdullakhBotPerformanceAndBenefits1_0_0Element;
         new (): HTMLCntFlexyViewAbdullakhBotPerformanceAndBenefits1_0_0Element;
+    };
+    interface HTMLCntFlexyViewAbdullakhBotPerformanceInformationElement extends Components.CntFlexyViewAbdullakhBotPerformanceInformation, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotPerformanceInformationElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotPerformanceInformationElement;
+        new (): HTMLCntFlexyViewAbdullakhBotPerformanceInformationElement;
+    };
+    interface HTMLCntFlexyViewAbdullakhBotPerformanceInformationListElement extends Components.CntFlexyViewAbdullakhBotPerformanceInformationList, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotPerformanceInformationListElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotPerformanceInformationListElement;
+        new (): HTMLCntFlexyViewAbdullakhBotPerformanceInformationListElement;
     };
     interface HTMLCntFlexyViewAbdullakhBotProductInformationElement extends Components.CntFlexyViewAbdullakhBotProductInformation, HTMLStencilElement {
     }
@@ -288,6 +348,18 @@ declare global {
         prototype: HTMLCntFlexyViewAbdullakhBotProductPresentation1_0_0Element;
         new (): HTMLCntFlexyViewAbdullakhBotProductPresentation1_0_0Element;
     };
+    interface HTMLCntFlexyViewAbdullakhBotProductPresentationImgElement extends Components.CntFlexyViewAbdullakhBotProductPresentationImg, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotProductPresentationImgElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotProductPresentationImgElement;
+        new (): HTMLCntFlexyViewAbdullakhBotProductPresentationImgElement;
+    };
+    interface HTMLCntFlexyViewAbdullakhBotProductPresentationTitleElement extends Components.CntFlexyViewAbdullakhBotProductPresentationTitle, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotProductPresentationTitleElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotProductPresentationTitleElement;
+        new (): HTMLCntFlexyViewAbdullakhBotProductPresentationTitleElement;
+    };
     interface HTMLCntFlexyViewAbdullakhBotTariffsElement extends Components.CntFlexyViewAbdullakhBotTariffs, HTMLStencilElement {
     }
     var HTMLCntFlexyViewAbdullakhBotTariffsElement: {
@@ -299,6 +371,12 @@ declare global {
     var HTMLCntFlexyViewAbdullakhBotTariffs1_0_0Element: {
         prototype: HTMLCntFlexyViewAbdullakhBotTariffs1_0_0Element;
         new (): HTMLCntFlexyViewAbdullakhBotTariffs1_0_0Element;
+    };
+    interface HTMLCntFlexyViewAbdullakhBotTariffsInfoBlocksElement extends Components.CntFlexyViewAbdullakhBotTariffsInfoBlocks, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotTariffsInfoBlocksElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotTariffsInfoBlocksElement;
+        new (): HTMLCntFlexyViewAbdullakhBotTariffsInfoBlocksElement;
     };
     interface HTMLCntFlexyViewAbdullakhBotTransitionCreateBotElement extends Components.CntFlexyViewAbdullakhBotTransitionCreateBot, HTMLStencilElement {
     }
@@ -312,11 +390,17 @@ declare global {
         prototype: HTMLCntFlexyViewAbdullakhBotTransitionCreateBot1_0_0Element;
         new (): HTMLCntFlexyViewAbdullakhBotTransitionCreateBot1_0_0Element;
     };
-    interface HTMLCntFlexyViewBotAbdullakhFormCommunicationElement extends Components.CntFlexyViewBotAbdullakhFormCommunication, HTMLStencilElement {
+    interface HTMLCntFlexyViewAbdullakhBotTransitionCreateBotFollowElement extends Components.CntFlexyViewAbdullakhBotTransitionCreateBotFollow, HTMLStencilElement {
     }
-    var HTMLCntFlexyViewBotAbdullakhFormCommunicationElement: {
-        prototype: HTMLCntFlexyViewBotAbdullakhFormCommunicationElement;
-        new (): HTMLCntFlexyViewBotAbdullakhFormCommunicationElement;
+    var HTMLCntFlexyViewAbdullakhBotTransitionCreateBotFollowElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotTransitionCreateBotFollowElement;
+        new (): HTMLCntFlexyViewAbdullakhBotTransitionCreateBotFollowElement;
+    };
+    interface HTMLCntFlexyViewAbdullakhBotTransitionCreateBotTitleElement extends Components.CntFlexyViewAbdullakhBotTransitionCreateBotTitle, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotTransitionCreateBotTitleElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotTransitionCreateBotTitleElement;
+        new (): HTMLCntFlexyViewAbdullakhBotTransitionCreateBotTitleElement;
     };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
@@ -324,126 +408,62 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
-    interface HTMLSAbdullakhBenefitsBotsElement extends Components.SAbdullakhBenefitsBots, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhBenefitsBotsElement: {
-        prototype: HTMLSAbdullakhBenefitsBotsElement;
-        new (): HTMLSAbdullakhBenefitsBotsElement;
-    };
-    interface HTMLSAbdullakhBenefitsBotsBlockElement extends Components.SAbdullakhBenefitsBotsBlock, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhBenefitsBotsBlockElement: {
-        prototype: HTMLSAbdullakhBenefitsBotsBlockElement;
-        new (): HTMLSAbdullakhBenefitsBotsBlockElement;
-    };
-    interface HTMLSAbdullakhFormElement extends Components.SAbdullakhForm, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhFormElement: {
-        prototype: HTMLSAbdullakhFormElement;
-        new (): HTMLSAbdullakhFormElement;
-    };
-    interface HTMLSAbdullakhFormCloseElement extends Components.SAbdullakhFormClose, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhFormCloseElement: {
-        prototype: HTMLSAbdullakhFormCloseElement;
-        new (): HTMLSAbdullakhFormCloseElement;
-    };
-    interface HTMLSAbdullakhHeaderCenterElement extends Components.SAbdullakhHeaderCenter, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhHeaderCenterElement: {
-        prototype: HTMLSAbdullakhHeaderCenterElement;
-        new (): HTMLSAbdullakhHeaderCenterElement;
-    };
-    interface HTMLSAbdullakhHeaderEndElement extends Components.SAbdullakhHeaderEnd, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhHeaderEndElement: {
-        prototype: HTMLSAbdullakhHeaderEndElement;
-        new (): HTMLSAbdullakhHeaderEndElement;
-    };
-    interface HTMLSAbdullakhHeaderStartElement extends Components.SAbdullakhHeaderStart, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhHeaderStartElement: {
-        prototype: HTMLSAbdullakhHeaderStartElement;
-        new (): HTMLSAbdullakhHeaderStartElement;
-    };
-    interface HTMLSAbdullakhPerformanceInformationElement extends Components.SAbdullakhPerformanceInformation, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhPerformanceInformationElement: {
-        prototype: HTMLSAbdullakhPerformanceInformationElement;
-        new (): HTMLSAbdullakhPerformanceInformationElement;
-    };
-    interface HTMLSAbdullakhPerformanceInformationListElement extends Components.SAbdullakhPerformanceInformationList, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhPerformanceInformationListElement: {
-        prototype: HTMLSAbdullakhPerformanceInformationListElement;
-        new (): HTMLSAbdullakhPerformanceInformationListElement;
-    };
-    interface HTMLSAbdullakhProductPresentationImgElement extends Components.SAbdullakhProductPresentationImg, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhProductPresentationImgElement: {
-        prototype: HTMLSAbdullakhProductPresentationImgElement;
-        new (): HTMLSAbdullakhProductPresentationImgElement;
-    };
-    interface HTMLSAbdullakhProductPresentationTitleElement extends Components.SAbdullakhProductPresentationTitle, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhProductPresentationTitleElement: {
-        prototype: HTMLSAbdullakhProductPresentationTitleElement;
-        new (): HTMLSAbdullakhProductPresentationTitleElement;
-    };
-    interface HTMLSAbdullakhTariffsInfoBlocksElement extends Components.SAbdullakhTariffsInfoBlocks, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhTariffsInfoBlocksElement: {
-        prototype: HTMLSAbdullakhTariffsInfoBlocksElement;
-        new (): HTMLSAbdullakhTariffsInfoBlocksElement;
-    };
-    interface HTMLSAbdullakhTransitionCreateBotFollowElement extends Components.SAbdullakhTransitionCreateBotFollow, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhTransitionCreateBotFollowElement: {
-        prototype: HTMLSAbdullakhTransitionCreateBotFollowElement;
-        new (): HTMLSAbdullakhTransitionCreateBotFollowElement;
-    };
-    interface HTMLSAbdullakhTransitionCreateBotTitleElement extends Components.SAbdullakhTransitionCreateBotTitle, HTMLStencilElement {
-    }
-    var HTMLSAbdullakhTransitionCreateBotTitleElement: {
-        prototype: HTMLSAbdullakhTransitionCreateBotTitleElement;
-        new (): HTMLSAbdullakhTransitionCreateBotTitleElement;
-    };
     interface HTMLElementTagNameMap {
+        "cnt-flexy-view-abdullakh-bot-benefits-bots": HTMLCntFlexyViewAbdullakhBotBenefitsBotsElement;
+        "cnt-flexy-view-abdullakh-bot-benefits-bots-block": HTMLCntFlexyViewAbdullakhBotBenefitsBotsBlockElement;
         "cnt-flexy-view-abdullakh-bot-consultation": HTMLCntFlexyViewAbdullakhBotConsultationElement;
         "cnt-flexy-view-abdullakh-bot-consultation-1_0_0": HTMLCntFlexyViewAbdullakhBotConsultation1_0_0Element;
+        "cnt-flexy-view-abdullakh-bot-form": HTMLCntFlexyViewAbdullakhBotFormElement;
+        "cnt-flexy-view-abdullakh-bot-form-close": HTMLCntFlexyViewAbdullakhBotFormCloseElement;
+        "cnt-flexy-view-abdullakh-bot-form-communication": HTMLCntFlexyViewAbdullakhBotFormCommunicationElement;
         "cnt-flexy-view-abdullakh-bot-form-communication-1_0_0": HTMLCntFlexyViewAbdullakhBotFormCommunication1_0_0Element;
         "cnt-flexy-view-abdullakh-bot-header": HTMLCntFlexyViewAbdullakhBotHeaderElement;
         "cnt-flexy-view-abdullakh-bot-header-1_0_0": HTMLCntFlexyViewAbdullakhBotHeader1_0_0Element;
+        "cnt-flexy-view-abdullakh-bot-header-center": HTMLCntFlexyViewAbdullakhBotHeaderCenterElement;
+        "cnt-flexy-view-abdullakh-bot-header-end": HTMLCntFlexyViewAbdullakhBotHeaderEndElement;
+        "cnt-flexy-view-abdullakh-bot-header-start": HTMLCntFlexyViewAbdullakhBotHeaderStartElement;
         "cnt-flexy-view-abdullakh-bot-performance-and-benefits": HTMLCntFlexyViewAbdullakhBotPerformanceAndBenefitsElement;
         "cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0": HTMLCntFlexyViewAbdullakhBotPerformanceAndBenefits1_0_0Element;
+        "cnt-flexy-view-abdullakh-bot-performance-information": HTMLCntFlexyViewAbdullakhBotPerformanceInformationElement;
+        "cnt-flexy-view-abdullakh-bot-performance-information-list": HTMLCntFlexyViewAbdullakhBotPerformanceInformationListElement;
         "cnt-flexy-view-abdullakh-bot-product-information": HTMLCntFlexyViewAbdullakhBotProductInformationElement;
         "cnt-flexy-view-abdullakh-bot-product-information-1_0_0": HTMLCntFlexyViewAbdullakhBotProductInformation1_0_0Element;
         "cnt-flexy-view-abdullakh-bot-product-information-blocks": HTMLCntFlexyViewAbdullakhBotProductInformationBlocksElement;
         "cnt-flexy-view-abdullakh-bot-product-presentation": HTMLCntFlexyViewAbdullakhBotProductPresentationElement;
         "cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0": HTMLCntFlexyViewAbdullakhBotProductPresentation1_0_0Element;
+        "cnt-flexy-view-abdullakh-bot-product-presentation-img": HTMLCntFlexyViewAbdullakhBotProductPresentationImgElement;
+        "cnt-flexy-view-abdullakh-bot-product-presentation-title": HTMLCntFlexyViewAbdullakhBotProductPresentationTitleElement;
         "cnt-flexy-view-abdullakh-bot-tariffs": HTMLCntFlexyViewAbdullakhBotTariffsElement;
         "cnt-flexy-view-abdullakh-bot-tariffs-1_0_0": HTMLCntFlexyViewAbdullakhBotTariffs1_0_0Element;
+        "cnt-flexy-view-abdullakh-bot-tariffs-info-blocks": HTMLCntFlexyViewAbdullakhBotTariffsInfoBlocksElement;
         "cnt-flexy-view-abdullakh-bot-transition-create-bot": HTMLCntFlexyViewAbdullakhBotTransitionCreateBotElement;
         "cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0": HTMLCntFlexyViewAbdullakhBotTransitionCreateBot1_0_0Element;
-        "cnt-flexy-view-bot-abdullakh-form-communication": HTMLCntFlexyViewBotAbdullakhFormCommunicationElement;
+        "cnt-flexy-view-abdullakh-bot-transition-create-bot-follow": HTMLCntFlexyViewAbdullakhBotTransitionCreateBotFollowElement;
+        "cnt-flexy-view-abdullakh-bot-transition-create-bot-title": HTMLCntFlexyViewAbdullakhBotTransitionCreateBotTitleElement;
         "my-component": HTMLMyComponentElement;
-        "s-abdullakh-benefits-bots": HTMLSAbdullakhBenefitsBotsElement;
-        "s-abdullakh-benefits-bots-block": HTMLSAbdullakhBenefitsBotsBlockElement;
-        "s-abdullakh-form": HTMLSAbdullakhFormElement;
-        "s-abdullakh-form-close": HTMLSAbdullakhFormCloseElement;
-        "s-abdullakh-header-center": HTMLSAbdullakhHeaderCenterElement;
-        "s-abdullakh-header-end": HTMLSAbdullakhHeaderEndElement;
-        "s-abdullakh-header-start": HTMLSAbdullakhHeaderStartElement;
-        "s-abdullakh-performance-information": HTMLSAbdullakhPerformanceInformationElement;
-        "s-abdullakh-performance-information-list": HTMLSAbdullakhPerformanceInformationListElement;
-        "s-abdullakh-product-presentation-img": HTMLSAbdullakhProductPresentationImgElement;
-        "s-abdullakh-product-presentation-title": HTMLSAbdullakhProductPresentationTitleElement;
-        "s-abdullakh-tariffs-info-blocks": HTMLSAbdullakhTariffsInfoBlocksElement;
-        "s-abdullakh-transition-create-bot-follow": HTMLSAbdullakhTransitionCreateBotFollowElement;
-        "s-abdullakh-transition-create-bot-title": HTMLSAbdullakhTransitionCreateBotTitleElement;
     }
 }
 declare namespace LocalJSX {
+    interface CntFlexyViewAbdullakhBotBenefitsBots {
+        /**
+          * объект с массивом и данными BenefitsBots
+         */
+        "BenefitsBots"?: SSAbdullakhBenefitsBots;
+        /**
+          * клик по элементам компонента BenefitsBots
+         */
+        "onClickOnBenefitsBots"?: (event: CustomEvent<any>) => void;
+    }
+    interface CntFlexyViewAbdullakhBotBenefitsBotsBlock {
+        /**
+          * данные переданные методом map компоненту BenefitsBotsBlock
+         */
+        "arr"?: any;
+        /**
+          * клик по элементам компонента BenefitsBots
+         */
+        "onClickOnBenefitsBots"?: (event: CustomEvent<any>) => void;
+    }
     interface CntFlexyViewAbdullakhBotConsultation {
         /**
           * клик по элементам компонента Consultation
@@ -466,6 +486,28 @@ declare namespace LocalJSX {
         "pathToAssets"?: string;
         /**
           * данные компонента Consultation
+         */
+        "payload"?: any;
+    }
+    interface CntFlexyViewAbdullakhBotForm {
+        /**
+          * данные из массива для компонента Form
+         */
+        "arr"?: any;
+    }
+    interface CntFlexyViewAbdullakhBotFormClose {
+        /**
+          * Закрытие модального окна формы
+         */
+        "onCloseForm"?: (event: CustomEvent<any>) => void;
+    }
+    interface CntFlexyViewAbdullakhBotFormCommunication {
+        /**
+          * Закрытие модального окна формы
+         */
+        "onCloseForm"?: (event: CustomEvent<any>) => void;
+        /**
+          * данные компонента FormCommunication
          */
         "payload"?: any;
     }
@@ -497,6 +539,36 @@ declare namespace LocalJSX {
         "categories"?: any;
         "pathToAssets"?: string;
     }
+    interface CntFlexyViewAbdullakhBotHeaderCenter {
+        /**
+          * объект с данными и для элементов меню
+         */
+        "arr"?: AbdullakhHeaderCenter;
+        /**
+          * клик по элементу HeaderCenter (меню) компонента header
+         */
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
+    }
+    interface CntFlexyViewAbdullakhBotHeaderEnd {
+        /**
+          * клик по элементy HeaderEnd компонента header
+         */
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
+        /**
+          * number
+         */
+        "phoneNumber"?: string;
+    }
+    interface CntFlexyViewAbdullakhBotHeaderStart {
+        /**
+          * объект с url logo
+         */
+        "logo"?: any;
+        /**
+          * клик по элементу HeaderStart компонента header
+         */
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
+    }
     interface CntFlexyViewAbdullakhBotPerformanceAndBenefits {
         /**
           * клик по элементам компонента PerformanceAndBenefits
@@ -521,6 +593,34 @@ declare namespace LocalJSX {
           * объект с массивами компонентов PerformanceInformation, BenefitsBots
          */
         "payload"?: any;
+    }
+    interface CntFlexyViewAbdullakhBotPerformanceInformation {
+        /**
+          * массив для вывода элементов PerformanceInformation
+         */
+        "PerformanceInformation"?: SSAbdullakhPerformanceInformation;
+        /**
+          * клик по элементам компонента PerformanceInformation
+         */
+        "onClickOnPerformanceInformation"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
+    }
+    interface CntFlexyViewAbdullakhBotPerformanceInformationList {
+        /**
+          * объект с массивом и данными PerformanceInformationList
+         */
+        "PerformanceInformation"?: any;
+        /**
+          * объект с массивом и данными PerformanceInformationList
+         */
+        "endText"?: string;
+        /**
+          * клик по элементам компонента PerformanceInformation подкомпонента PerformanceInformationList
+         */
+        "onClickOnPerformanceInformation"?: (event: CustomEvent<any>) => void;
     }
     interface CntFlexyViewAbdullakhBotProductInformation {
         /**
@@ -586,6 +686,34 @@ declare namespace LocalJSX {
          */
         "payload"?: any;
     }
+    interface CntFlexyViewAbdullakhBotProductPresentationImg {
+        /**
+          * массив для вывода url img в компоненете ProductPresentationImg
+         */
+        "img"?: any;
+        /**
+          * клик по элементам подкомпонента ProductPresentationImg компонента ProductPresentation
+         */
+        "onClickOnProductPresentation"?: (event: CustomEvent<any>) => void;
+    }
+    interface CntFlexyViewAbdullakhBotProductPresentationTitle {
+        /**
+          * массив для вывода элементов ProductPresentationTitle
+         */
+        "arr"?: any;
+        /**
+          * массив для вывода элементов ProductPresentationTitle
+         */
+        "img"?: string;
+        /**
+          * клик по элементам компонента ProductPresentation подкомпонента ProductPresentationTitle
+         */
+        "onClickOnProductPresentation"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
+    }
     interface CntFlexyViewAbdullakhBotTariffs {
         /**
           * клик по элементам компонента Tariffs
@@ -610,6 +738,20 @@ declare namespace LocalJSX {
           * данные компонента Tariffs
          */
         "payload"?: any;
+    }
+    interface CntFlexyViewAbdullakhBotTariffsInfoBlocks {
+        /**
+          * данные переданные методом map компоненту TariffsBlocks
+         */
+        "arr"?: any;
+        /**
+          * клик по элементам компонента Tariffs
+         */
+        "onClickOnTariffs"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
     }
     interface CntFlexyViewAbdullakhBotTransitionCreateBot {
         /**
@@ -636,151 +778,7 @@ declare namespace LocalJSX {
          */
         "payload"?: any;
     }
-    interface CntFlexyViewBotAbdullakhFormCommunication {
-        /**
-          * Закрытие модального окна формы
-         */
-        "onCloseForm"?: (event: CustomEvent<any>) => void;
-        /**
-          * данные компонента FormCommunication
-         */
-        "payload"?: any;
-    }
-    interface MyComponent {
-    }
-    interface SAbdullakhBenefitsBots {
-        /**
-          * объект с массивом и данными BenefitsBots
-         */
-        "BenefitsBots"?: SSAbdullakhBenefitsBots;
-        /**
-          * клик по элементам компонента BenefitsBots
-         */
-        "onClickOnBenefitsBots"?: (event: CustomEvent<any>) => void;
-    }
-    interface SAbdullakhBenefitsBotsBlock {
-        /**
-          * данные переданные методом map компоненту BenefitsBotsBlock
-         */
-        "arr"?: any;
-        /**
-          * клик по элементам компонента BenefitsBots
-         */
-        "onClickOnBenefitsBots"?: (event: CustomEvent<any>) => void;
-    }
-    interface SAbdullakhForm {
-        /**
-          * данные из массива для компонента Form
-         */
-        "arr"?: any;
-    }
-    interface SAbdullakhFormClose {
-        /**
-          * Закрытие модального окна формы
-         */
-        "onCloseForm"?: (event: CustomEvent<any>) => void;
-    }
-    interface SAbdullakhHeaderCenter {
-        /**
-          * объект с данными и для элементов меню
-         */
-        "arr"?: AbdullakhHeaderCenter;
-        /**
-          * клик по элементу HeaderCenter (меню) компонента header
-         */
-        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
-    }
-    interface SAbdullakhHeaderEnd {
-        /**
-          * клик по элементy HeaderEnd компонента header
-         */
-        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
-        /**
-          * number
-         */
-        "phoneNumber"?: string;
-    }
-    interface SAbdullakhHeaderStart {
-        /**
-          * объект с url logo
-         */
-        "logo"?: any;
-        /**
-          * клик по элементу HeaderStart компонента header
-         */
-        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
-    }
-    interface SAbdullakhPerformanceInformation {
-        /**
-          * массив для вывода элементов PerformanceInformation
-         */
-        "PerformanceInformation"?: SSAbdullakhPerformanceInformation;
-        /**
-          * клик по элементам компонента PerformanceInformation
-         */
-        "onClickOnPerformanceInformation"?: (event: CustomEvent<any>) => void;
-        /**
-          * Вызов модального окна формы
-         */
-        "onOpenForm"?: (event: CustomEvent<any>) => void;
-    }
-    interface SAbdullakhPerformanceInformationList {
-        /**
-          * объект с массивом и данными PerformanceInformationList
-         */
-        "PerformanceInformation"?: any;
-        /**
-          * объект с массивом и данными PerformanceInformationList
-         */
-        "endText"?: string;
-        /**
-          * клик по элементам компонента PerformanceInformation подкомпонента PerformanceInformationList
-         */
-        "onClickOnPerformanceInformation"?: (event: CustomEvent<any>) => void;
-    }
-    interface SAbdullakhProductPresentationImg {
-        /**
-          * массив для вывода url img в компоненете ProductPresentationImg
-         */
-        "img"?: any;
-        /**
-          * клик по элементам подкомпонента ProductPresentationImg компонента ProductPresentation
-         */
-        "onClickOnProductPresentation"?: (event: CustomEvent<any>) => void;
-    }
-    interface SAbdullakhProductPresentationTitle {
-        /**
-          * массив для вывода элементов ProductPresentationTitle
-         */
-        "arr"?: any;
-        /**
-          * массив для вывода элементов ProductPresentationTitle
-         */
-        "img"?: string;
-        /**
-          * клик по элементам компонента ProductPresentation подкомпонента ProductPresentationTitle
-         */
-        "onClickOnProductPresentation"?: (event: CustomEvent<any>) => void;
-        /**
-          * Вызов модального окна формы
-         */
-        "onOpenForm"?: (event: CustomEvent<any>) => void;
-    }
-    interface SAbdullakhTariffsInfoBlocks {
-        /**
-          * данные переданные методом map компоненту TariffsBlocks
-         */
-        "arr"?: any;
-        /**
-          * клик по элементам компонента Tariffs
-         */
-        "onClickOnTariffs"?: (event: CustomEvent<any>) => void;
-        /**
-          * Вызов модального окна формы
-         */
-        "onOpenForm"?: (event: CustomEvent<any>) => void;
-    }
-    interface SAbdullakhTransitionCreateBotFollow {
+    interface CntFlexyViewAbdullakhBotTransitionCreateBotFollow {
         /**
           * массив для вывода элементов подкомпонента TransitionCreateBotFollow компонента TransitionCreateBot
          */
@@ -790,7 +788,7 @@ declare namespace LocalJSX {
          */
         "onClickOnTransitionCreateBot"?: (event: CustomEvent<any>) => void;
     }
-    interface SAbdullakhTransitionCreateBotTitle {
+    interface CntFlexyViewAbdullakhBotTransitionCreateBotTitle {
         /**
           * массив для вывода элементов подкомпонента TransitionCreateBotTitle компонента TransitionCreateBot
          */
@@ -800,77 +798,79 @@ declare namespace LocalJSX {
          */
         "onClickOnTransitionCreateBot"?: (event: CustomEvent<any>) => void;
     }
+    interface MyComponent {
+    }
     interface IntrinsicElements {
+        "cnt-flexy-view-abdullakh-bot-benefits-bots": CntFlexyViewAbdullakhBotBenefitsBots;
+        "cnt-flexy-view-abdullakh-bot-benefits-bots-block": CntFlexyViewAbdullakhBotBenefitsBotsBlock;
         "cnt-flexy-view-abdullakh-bot-consultation": CntFlexyViewAbdullakhBotConsultation;
         "cnt-flexy-view-abdullakh-bot-consultation-1_0_0": CntFlexyViewAbdullakhBotConsultation1_0_0;
+        "cnt-flexy-view-abdullakh-bot-form": CntFlexyViewAbdullakhBotForm;
+        "cnt-flexy-view-abdullakh-bot-form-close": CntFlexyViewAbdullakhBotFormClose;
+        "cnt-flexy-view-abdullakh-bot-form-communication": CntFlexyViewAbdullakhBotFormCommunication;
         "cnt-flexy-view-abdullakh-bot-form-communication-1_0_0": CntFlexyViewAbdullakhBotFormCommunication1_0_0;
         "cnt-flexy-view-abdullakh-bot-header": CntFlexyViewAbdullakhBotHeader;
         "cnt-flexy-view-abdullakh-bot-header-1_0_0": CntFlexyViewAbdullakhBotHeader1_0_0;
+        "cnt-flexy-view-abdullakh-bot-header-center": CntFlexyViewAbdullakhBotHeaderCenter;
+        "cnt-flexy-view-abdullakh-bot-header-end": CntFlexyViewAbdullakhBotHeaderEnd;
+        "cnt-flexy-view-abdullakh-bot-header-start": CntFlexyViewAbdullakhBotHeaderStart;
         "cnt-flexy-view-abdullakh-bot-performance-and-benefits": CntFlexyViewAbdullakhBotPerformanceAndBenefits;
         "cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0": CntFlexyViewAbdullakhBotPerformanceAndBenefits1_0_0;
+        "cnt-flexy-view-abdullakh-bot-performance-information": CntFlexyViewAbdullakhBotPerformanceInformation;
+        "cnt-flexy-view-abdullakh-bot-performance-information-list": CntFlexyViewAbdullakhBotPerformanceInformationList;
         "cnt-flexy-view-abdullakh-bot-product-information": CntFlexyViewAbdullakhBotProductInformation;
         "cnt-flexy-view-abdullakh-bot-product-information-1_0_0": CntFlexyViewAbdullakhBotProductInformation1_0_0;
         "cnt-flexy-view-abdullakh-bot-product-information-blocks": CntFlexyViewAbdullakhBotProductInformationBlocks;
         "cnt-flexy-view-abdullakh-bot-product-presentation": CntFlexyViewAbdullakhBotProductPresentation;
         "cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0": CntFlexyViewAbdullakhBotProductPresentation1_0_0;
+        "cnt-flexy-view-abdullakh-bot-product-presentation-img": CntFlexyViewAbdullakhBotProductPresentationImg;
+        "cnt-flexy-view-abdullakh-bot-product-presentation-title": CntFlexyViewAbdullakhBotProductPresentationTitle;
         "cnt-flexy-view-abdullakh-bot-tariffs": CntFlexyViewAbdullakhBotTariffs;
         "cnt-flexy-view-abdullakh-bot-tariffs-1_0_0": CntFlexyViewAbdullakhBotTariffs1_0_0;
+        "cnt-flexy-view-abdullakh-bot-tariffs-info-blocks": CntFlexyViewAbdullakhBotTariffsInfoBlocks;
         "cnt-flexy-view-abdullakh-bot-transition-create-bot": CntFlexyViewAbdullakhBotTransitionCreateBot;
         "cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0": CntFlexyViewAbdullakhBotTransitionCreateBot1_0_0;
-        "cnt-flexy-view-bot-abdullakh-form-communication": CntFlexyViewBotAbdullakhFormCommunication;
+        "cnt-flexy-view-abdullakh-bot-transition-create-bot-follow": CntFlexyViewAbdullakhBotTransitionCreateBotFollow;
+        "cnt-flexy-view-abdullakh-bot-transition-create-bot-title": CntFlexyViewAbdullakhBotTransitionCreateBotTitle;
         "my-component": MyComponent;
-        "s-abdullakh-benefits-bots": SAbdullakhBenefitsBots;
-        "s-abdullakh-benefits-bots-block": SAbdullakhBenefitsBotsBlock;
-        "s-abdullakh-form": SAbdullakhForm;
-        "s-abdullakh-form-close": SAbdullakhFormClose;
-        "s-abdullakh-header-center": SAbdullakhHeaderCenter;
-        "s-abdullakh-header-end": SAbdullakhHeaderEnd;
-        "s-abdullakh-header-start": SAbdullakhHeaderStart;
-        "s-abdullakh-performance-information": SAbdullakhPerformanceInformation;
-        "s-abdullakh-performance-information-list": SAbdullakhPerformanceInformationList;
-        "s-abdullakh-product-presentation-img": SAbdullakhProductPresentationImg;
-        "s-abdullakh-product-presentation-title": SAbdullakhProductPresentationTitle;
-        "s-abdullakh-tariffs-info-blocks": SAbdullakhTariffsInfoBlocks;
-        "s-abdullakh-transition-create-bot-follow": SAbdullakhTransitionCreateBotFollow;
-        "s-abdullakh-transition-create-bot-title": SAbdullakhTransitionCreateBotTitle;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "cnt-flexy-view-abdullakh-bot-benefits-bots": LocalJSX.CntFlexyViewAbdullakhBotBenefitsBots & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotBenefitsBotsElement>;
+            "cnt-flexy-view-abdullakh-bot-benefits-bots-block": LocalJSX.CntFlexyViewAbdullakhBotBenefitsBotsBlock & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotBenefitsBotsBlockElement>;
             "cnt-flexy-view-abdullakh-bot-consultation": LocalJSX.CntFlexyViewAbdullakhBotConsultation & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotConsultationElement>;
             "cnt-flexy-view-abdullakh-bot-consultation-1_0_0": LocalJSX.CntFlexyViewAbdullakhBotConsultation1_0_0 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotConsultation1_0_0Element>;
+            "cnt-flexy-view-abdullakh-bot-form": LocalJSX.CntFlexyViewAbdullakhBotForm & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotFormElement>;
+            "cnt-flexy-view-abdullakh-bot-form-close": LocalJSX.CntFlexyViewAbdullakhBotFormClose & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotFormCloseElement>;
+            "cnt-flexy-view-abdullakh-bot-form-communication": LocalJSX.CntFlexyViewAbdullakhBotFormCommunication & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotFormCommunicationElement>;
             "cnt-flexy-view-abdullakh-bot-form-communication-1_0_0": LocalJSX.CntFlexyViewAbdullakhBotFormCommunication1_0_0 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotFormCommunication1_0_0Element>;
             "cnt-flexy-view-abdullakh-bot-header": LocalJSX.CntFlexyViewAbdullakhBotHeader & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotHeaderElement>;
             "cnt-flexy-view-abdullakh-bot-header-1_0_0": LocalJSX.CntFlexyViewAbdullakhBotHeader1_0_0 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotHeader1_0_0Element>;
+            "cnt-flexy-view-abdullakh-bot-header-center": LocalJSX.CntFlexyViewAbdullakhBotHeaderCenter & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotHeaderCenterElement>;
+            "cnt-flexy-view-abdullakh-bot-header-end": LocalJSX.CntFlexyViewAbdullakhBotHeaderEnd & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotHeaderEndElement>;
+            "cnt-flexy-view-abdullakh-bot-header-start": LocalJSX.CntFlexyViewAbdullakhBotHeaderStart & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotHeaderStartElement>;
             "cnt-flexy-view-abdullakh-bot-performance-and-benefits": LocalJSX.CntFlexyViewAbdullakhBotPerformanceAndBenefits & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotPerformanceAndBenefitsElement>;
             "cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0": LocalJSX.CntFlexyViewAbdullakhBotPerformanceAndBenefits1_0_0 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotPerformanceAndBenefits1_0_0Element>;
+            "cnt-flexy-view-abdullakh-bot-performance-information": LocalJSX.CntFlexyViewAbdullakhBotPerformanceInformation & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotPerformanceInformationElement>;
+            "cnt-flexy-view-abdullakh-bot-performance-information-list": LocalJSX.CntFlexyViewAbdullakhBotPerformanceInformationList & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotPerformanceInformationListElement>;
             "cnt-flexy-view-abdullakh-bot-product-information": LocalJSX.CntFlexyViewAbdullakhBotProductInformation & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotProductInformationElement>;
             "cnt-flexy-view-abdullakh-bot-product-information-1_0_0": LocalJSX.CntFlexyViewAbdullakhBotProductInformation1_0_0 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotProductInformation1_0_0Element>;
             "cnt-flexy-view-abdullakh-bot-product-information-blocks": LocalJSX.CntFlexyViewAbdullakhBotProductInformationBlocks & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotProductInformationBlocksElement>;
             "cnt-flexy-view-abdullakh-bot-product-presentation": LocalJSX.CntFlexyViewAbdullakhBotProductPresentation & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotProductPresentationElement>;
             "cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0": LocalJSX.CntFlexyViewAbdullakhBotProductPresentation1_0_0 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotProductPresentation1_0_0Element>;
+            "cnt-flexy-view-abdullakh-bot-product-presentation-img": LocalJSX.CntFlexyViewAbdullakhBotProductPresentationImg & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotProductPresentationImgElement>;
+            "cnt-flexy-view-abdullakh-bot-product-presentation-title": LocalJSX.CntFlexyViewAbdullakhBotProductPresentationTitle & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotProductPresentationTitleElement>;
             "cnt-flexy-view-abdullakh-bot-tariffs": LocalJSX.CntFlexyViewAbdullakhBotTariffs & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotTariffsElement>;
             "cnt-flexy-view-abdullakh-bot-tariffs-1_0_0": LocalJSX.CntFlexyViewAbdullakhBotTariffs1_0_0 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotTariffs1_0_0Element>;
+            "cnt-flexy-view-abdullakh-bot-tariffs-info-blocks": LocalJSX.CntFlexyViewAbdullakhBotTariffsInfoBlocks & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotTariffsInfoBlocksElement>;
             "cnt-flexy-view-abdullakh-bot-transition-create-bot": LocalJSX.CntFlexyViewAbdullakhBotTransitionCreateBot & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotTransitionCreateBotElement>;
             "cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0": LocalJSX.CntFlexyViewAbdullakhBotTransitionCreateBot1_0_0 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotTransitionCreateBot1_0_0Element>;
-            "cnt-flexy-view-bot-abdullakh-form-communication": LocalJSX.CntFlexyViewBotAbdullakhFormCommunication & JSXBase.HTMLAttributes<HTMLCntFlexyViewBotAbdullakhFormCommunicationElement>;
+            "cnt-flexy-view-abdullakh-bot-transition-create-bot-follow": LocalJSX.CntFlexyViewAbdullakhBotTransitionCreateBotFollow & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotTransitionCreateBotFollowElement>;
+            "cnt-flexy-view-abdullakh-bot-transition-create-bot-title": LocalJSX.CntFlexyViewAbdullakhBotTransitionCreateBotTitle & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotTransitionCreateBotTitleElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
-            "s-abdullakh-benefits-bots": LocalJSX.SAbdullakhBenefitsBots & JSXBase.HTMLAttributes<HTMLSAbdullakhBenefitsBotsElement>;
-            "s-abdullakh-benefits-bots-block": LocalJSX.SAbdullakhBenefitsBotsBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhBenefitsBotsBlockElement>;
-            "s-abdullakh-form": LocalJSX.SAbdullakhForm & JSXBase.HTMLAttributes<HTMLSAbdullakhFormElement>;
-            "s-abdullakh-form-close": LocalJSX.SAbdullakhFormClose & JSXBase.HTMLAttributes<HTMLSAbdullakhFormCloseElement>;
-            "s-abdullakh-header-center": LocalJSX.SAbdullakhHeaderCenter & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderCenterElement>;
-            "s-abdullakh-header-end": LocalJSX.SAbdullakhHeaderEnd & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderEndElement>;
-            "s-abdullakh-header-start": LocalJSX.SAbdullakhHeaderStart & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderStartElement>;
-            "s-abdullakh-performance-information": LocalJSX.SAbdullakhPerformanceInformation & JSXBase.HTMLAttributes<HTMLSAbdullakhPerformanceInformationElement>;
-            "s-abdullakh-performance-information-list": LocalJSX.SAbdullakhPerformanceInformationList & JSXBase.HTMLAttributes<HTMLSAbdullakhPerformanceInformationListElement>;
-            "s-abdullakh-product-presentation-img": LocalJSX.SAbdullakhProductPresentationImg & JSXBase.HTMLAttributes<HTMLSAbdullakhProductPresentationImgElement>;
-            "s-abdullakh-product-presentation-title": LocalJSX.SAbdullakhProductPresentationTitle & JSXBase.HTMLAttributes<HTMLSAbdullakhProductPresentationTitleElement>;
-            "s-abdullakh-tariffs-info-blocks": LocalJSX.SAbdullakhTariffsInfoBlocks & JSXBase.HTMLAttributes<HTMLSAbdullakhTariffsInfoBlocksElement>;
-            "s-abdullakh-transition-create-bot-follow": LocalJSX.SAbdullakhTransitionCreateBotFollow & JSXBase.HTMLAttributes<HTMLSAbdullakhTransitionCreateBotFollowElement>;
-            "s-abdullakh-transition-create-bot-title": LocalJSX.SAbdullakhTransitionCreateBotTitle & JSXBase.HTMLAttributes<HTMLSAbdullakhTransitionCreateBotTitleElement>;
         }
     }
 }

@@ -26,7 +26,7 @@ export class CntFlexyViewAbdullakhBotPerformanceAndBenefits implements Component
     return (
       <section class="h-100">
         <div class="PerformanceandBenefitsbckgrnd"
-             style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.payload.PerformanceandBenefitsbckgrnd + ")"}}>
+             style={{backgroundImage: "url(" + StorageAbdullakhBot.prefix + this.payload.PerformanceandBenefitsbckgrnd + ")"}}>
           {/*background для компонента PerformanceAndBenefits*/}
         </div>
         <PerformanceInformation arr={this.payload.PerformanceInformation}/>
@@ -42,7 +42,7 @@ export class CntFlexyViewAbdullakhBotPerformanceAndBenefits implements Component
 const PerformanceInformation = (props) => {
   return props.arr.map((item) => {
     return (
-      <s-abdullakh-performance-information PerformanceInformation={item}/>
+      <cnt-flexy-view-abdullakh-bot-performance-information PerformanceInformation={item}/>
     );
   })
 }
@@ -53,7 +53,7 @@ const PerformanceInformation = (props) => {
 const BenefitsBots = (props) => {
   return props.arr.map((item) => {
     return (
-      <s-abdullakh-benefits-bots BenefitsBots={item}/>
+      <cnt-flexy-view-abdullakh-bot-benefits-bots BenefitsBots={item}/>
     );
   })
 }

@@ -1,0 +1,130 @@
+.presentationImg {
+  width: 520px;
+  height: 654px;
+  background-size: cover;
+  background-position: center;
+}
+
+.presentationImg:empty{
+  background-color: #f5f5fa;
+}
+
+.whats, .telega, .vider, .messgs, .vk {
+  background-size: cover;
+  background-position: center;
+  animation-name: mypulse;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+/*.whats, .telega, .vider, .messgs, .vk:empty{*/
+/*  background-color: #f5f5fa;*/
+/*}*/
+
+.whats {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 111px;
+  left: 320px;
+  animation-delay: 0s;
+}
+
+.telega {
+  width: 70px;
+  height: 73px;
+  position: relative;
+  top: 83px;
+  left: 412px;
+  animation-delay: 1s;
+}
+
+.vider {
+  width: 70px;
+  height: 73px;
+  position: relative;
+  top: 110px;
+  left: 452px;
+  animation-delay: 2s;
+}
+
+.messgs {
+  width: 65px;
+  height: 65px;
+  position: relative;
+  top: 139px;
+  left: 421px;
+  animation-delay: 3s;
+}
+
+.vk {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 111px;
+  left: 320px;
+  animation-delay: 4s;
+}
+
+@media (max-width: 576px) {
+  .presentationImg {
+    margin-top: 50px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+  .presentationImg {
+    width: 300px;
+    height: 378px;
+  }
+
+  .whats {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    top: 64px;
+    left: 180px;
+  }
+
+  .telega {
+    width: 50px;
+    height: 52px;
+    position: relative;
+    top: 32px;
+    left: 233px;
+  }
+
+  .vider {
+    width: 50px;
+    height: 52px;
+    position: relative;
+    top: 41px;
+    left: 253px;
+  }
+
+  .messgs {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 44px;
+    left: 239px;
+  }
+
+  .vk {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 20px;
+    left: 182px;
+  }
+}
+
+@media (min-width: 1200px) {
+}

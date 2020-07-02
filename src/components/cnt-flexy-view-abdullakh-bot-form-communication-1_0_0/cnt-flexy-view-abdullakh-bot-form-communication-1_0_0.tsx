@@ -27,7 +27,7 @@ export class CntFlexyViewAbdullakhBotFormCommunication1_0_0 implements Component
 
   render() {
     return (
-      <cnt-flexy-view-bot-abdullakh-form-communication
+      <cnt-flexy-view-abdullakh-bot-form-communication
         payload={formCommunication}
       />
     );

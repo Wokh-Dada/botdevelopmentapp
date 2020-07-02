@@ -161,9 +161,9 @@ export const TransitionCreateBot = {
   ]
 };
 
-
 export const PerformanceAndBenefits = {
   PerformanceandBenefitsbckgrnd: 'bg.svg',
+
   PerformanceInformation: [
     {
       imgUrl: 'perfomansInfoImg.svg',

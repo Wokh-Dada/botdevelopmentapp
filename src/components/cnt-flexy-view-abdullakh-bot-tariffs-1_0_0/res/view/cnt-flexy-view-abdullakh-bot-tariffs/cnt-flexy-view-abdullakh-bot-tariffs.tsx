@@ -56,7 +56,7 @@ export class CntFlexyViewAbdullakhBotTariffs implements ComponentInterface {
 const TariffsInfoBlocks = (props) => {
   return props.arr.map((item) => {
     return (
-      <s-abdullakh-tariffs-info-blocks arr={item}/>
+      <cnt-flexy-view-abdullakh-bot-tariffs-info-blocks arr={item}/>
     );
   })
 }

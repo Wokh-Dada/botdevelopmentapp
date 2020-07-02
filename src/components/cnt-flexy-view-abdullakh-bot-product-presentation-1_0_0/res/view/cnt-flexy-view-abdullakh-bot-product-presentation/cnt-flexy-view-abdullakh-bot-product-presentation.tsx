@@ -30,7 +30,7 @@ export class CntFlexyViewAbdullakhBotProductPresentation implements ComponentInt
             <PresentationTitle arr={this.payload.title} img={this.payload} />
           </div>
           <div class="col-lg-6 d-lg-flex d-none">
-            <s-abdullakh-product-presentation-img img={this.payload} />
+            <cnt-flexy-view-abdullakh-bot-product-presentation-img img={this.payload} />
           </div>
         </div>
       </div>
@@ -44,7 +44,7 @@ export class CntFlexyViewAbdullakhBotProductPresentation implements ComponentInt
 const PresentationTitle = (props) => {
   return props.arr.map((item) => {
     return (
-      <s-abdullakh-product-presentation-title arr={item} img={props.img} />
+      <cnt-flexy-view-abdullakh-bot-product-presentation-title arr={item} img={props.img} />
     );
   })
 }

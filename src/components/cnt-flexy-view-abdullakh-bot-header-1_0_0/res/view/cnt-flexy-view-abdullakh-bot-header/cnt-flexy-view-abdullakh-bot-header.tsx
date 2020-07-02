@@ -23,18 +23,18 @@ export class CntFlexyViewAbdullakhBotHeader implements ComponentInterface {
         <div class="container mt-2">
           <div class="header_menu">
             <div class="HeaderStart wow animate__animated animate__backInDown">
-              <s-abdullakh-header-start logo={this.categories.logoUrl}/>
+              <cnt-flexy-view-abdullakh-bot-header-start logo={this.categories.logoUrl}/>
             </div>
             <div class="HeaderCenter animate__animated animate__backInDown">
               <nav class="my_navbar">
                 <ItemLink arr={this.categories.menu}/>
                 <div class="d-block d-md-none">
-                  <s-abdullakh-header-end phoneNumber={this.categories.phoneNumber}/>
+                  <cnt-flexy-view-abdullakh-bot-header-end phoneNumber={this.categories.phoneNumber}/>
                 </div>
               </nav>
             </div>
             <div class="HeaderEnd d-md-block d-none animate__animated animate__backInDown">
-              <s-abdullakh-header-end phoneNumber={this.categories.phoneNumber}/>
+              <cnt-flexy-view-abdullakh-bot-header-end phoneNumber={this.categories.phoneNumber}/>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ export class CntFlexyViewAbdullakhBotHeader implements ComponentInterface {
 const ItemLink = (props) => {
   return props.arr.map((item) => {
     return (
-      <s-abdullakh-header-center arr={item}/>
+      <cnt-flexy-view-abdullakh-bot-header-center arr={item}/>
     );
   })
 }

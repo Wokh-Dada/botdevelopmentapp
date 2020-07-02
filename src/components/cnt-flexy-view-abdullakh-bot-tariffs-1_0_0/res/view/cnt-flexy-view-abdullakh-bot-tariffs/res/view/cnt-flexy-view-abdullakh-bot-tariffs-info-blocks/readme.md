@@ -1,4 +1,4 @@
-# s-abdullakh-tariffs
+# s-abdullakh-tariffs-info-blocks
 
 
 
@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property  | Attribute | Description               | Type  | Default     |
-| --------- | --------- | ------------------------- | ----- | ----------- |
-| `payload` | `payload` | данные компонента Tariffs | `any` | `undefined` |
+| Property | Attribute | Description                                            | Type  | Default     |
+| -------- | --------- | ------------------------------------------------------ | ----- | ----------- |
+| `arr`    | `arr`     | данные переданные методом map компоненту TariffsBlocks | `any` | `undefined` |
 
 
 ## Events
@@ -24,18 +24,13 @@
 
 ### Used by
 
- - [cnt-flexy-view-abdullakh-bot-tariffs-1_0_0](../../..)
-
-### Depends on
-
-- [cnt-flexy-view-abdullakh-bot-tariffs-info-blocks](./res/view/cnt-flexy-view-abdullakh-bot-tariffs-info-blocks)
+ - [cnt-flexy-view-abdullakh-bot-tariffs](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
   cnt-flexy-view-abdullakh-bot-tariffs --> cnt-flexy-view-abdullakh-bot-tariffs-info-blocks
-  cnt-flexy-view-abdullakh-bot-tariffs-1_0_0 --> cnt-flexy-view-abdullakh-bot-tariffs
-  style cnt-flexy-view-abdullakh-bot-tariffs fill:#f9f,stroke:#333,stroke-width:4px
+  style cnt-flexy-view-abdullakh-bot-tariffs-info-blocks fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------
