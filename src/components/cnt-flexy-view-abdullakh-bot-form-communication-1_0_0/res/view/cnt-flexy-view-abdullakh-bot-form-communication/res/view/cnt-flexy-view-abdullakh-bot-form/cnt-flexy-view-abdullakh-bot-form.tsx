@@ -47,10 +47,13 @@ export class CntFlexyViewAbdullakhBotForm implements ComponentInterface {
           </div>
           <div>
             <input class="inputSize" type="tel" placeholder="(999) 999-99-99"/>
+            <div>
+
+            </div>
           </div>
         </div>
         <div class="form_btn_block mt-4">
-          <button class="form_btn">
+          <button class="form_btn" disabled={true}>
             {this.arr.btnText})
           </button>
         </div>

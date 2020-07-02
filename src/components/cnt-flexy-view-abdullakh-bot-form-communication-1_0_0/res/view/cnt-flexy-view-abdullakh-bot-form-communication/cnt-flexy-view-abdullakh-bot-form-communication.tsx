@@ -17,10 +17,27 @@ export class CntFlexyViewAbdullakhBotFormCommunication implements ComponentInter
    */
   @Event() closeForm: EventEmitter;
 
+  /**
+   * ref для закрытия модального окна
+   */
+  ourModal: HTMLElement;
+
+  /**
+   * Вызов функции вывода меню при условии совпадения таргета клика с нужным узлом
+   */
+  public clickPopUp (event) {
+    console.log(event)
+    if (event.target === this.ourModal){
+      this.closeForm.emit()
+    }
+  };
+
   render() {
     return (
-      <div class="form_bckgrnd">
-        <cnt-flexy-view-abdullakh-bot-form-close/>
+      <div class="form_bckgrnd" >
+        <div class="closed" onClick={ (event) => this.clickPopUp(event)} ref={(el) => this.ourModal = el}>
+          <cnt-flexy-view-abdullakh-bot-form-close/>
+        </div>
         <div class="form_position">
           <div class="formBlock">
             <div class="mobile_form_line">
