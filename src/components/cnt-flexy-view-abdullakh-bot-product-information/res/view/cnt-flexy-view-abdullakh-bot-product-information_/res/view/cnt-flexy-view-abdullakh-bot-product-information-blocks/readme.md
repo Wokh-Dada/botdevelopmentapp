@@ -24,12 +24,12 @@
 
 ### Used by
 
- - [cnt-flexy-view-abdullakh-bot-product-information](../../..)
+ - [cnt-flexy-view-abdullakh-bot-product-information_](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-abdullakh-bot-product-information --> cnt-flexy-view-abdullakh-bot-product-information-blocks
+  cnt-flexy-view-abdullakh-bot-product-information_ --> cnt-flexy-view-abdullakh-bot-product-information-blocks
   style cnt-flexy-view-abdullakh-bot-product-information-blocks fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

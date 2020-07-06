@@ -24,12 +24,12 @@
 
 ### Used by
 
- - [cnt-flexy-view-abdullakh-bot-tariffs](../../..)
+ - [cnt-flexy-view-abdullakh-bot-tariffs_](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-abdullakh-bot-tariffs --> cnt-flexy-view-abdullakh-bot-tariffs-info-blocks
+  cnt-flexy-view-abdullakh-bot-tariffs_ --> cnt-flexy-view-abdullakh-bot-tariffs-info-blocks
   style cnt-flexy-view-abdullakh-bot-tariffs-info-blocks fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

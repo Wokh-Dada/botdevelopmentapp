@@ -24,7 +24,7 @@
 
 ### Used by
 
- - [cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0](../../..)
+ - [cnt-flexy-view-abdullakh-bot-transition-create-bot-1_01](../../..)
 
 ### Depends on
 
@@ -34,10 +34,10 @@
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-abdullakh-bot-transition-create-bot --> cnt-flexy-view-abdullakh-bot-transition-create-bot-title
-  cnt-flexy-view-abdullakh-bot-transition-create-bot --> cnt-flexy-view-abdullakh-bot-transition-create-bot-follow
-  cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0 --> cnt-flexy-view-abdullakh-bot-transition-create-bot
-  style cnt-flexy-view-abdullakh-bot-transition-create-bot fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-abdullakh-bot-transition-create-bot_ --> cnt-flexy-view-abdullakh-bot-transition-create-bot-title
+  cnt-flexy-view-abdullakh-bot-transition-create-bot_ --> cnt-flexy-view-abdullakh-bot-transition-create-bot-follow
+  cnt-flexy-view-abdullakh-bot-transition-create-bot-1_01 --> cnt-flexy-view-abdullakh-bot-transition-create-bot_
+  style cnt-flexy-view-abdullakh-bot-transition-create-bot_ fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

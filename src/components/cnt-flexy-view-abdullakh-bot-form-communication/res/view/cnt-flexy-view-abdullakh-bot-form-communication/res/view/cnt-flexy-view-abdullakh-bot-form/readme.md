@@ -16,7 +16,7 @@
 
 ### Used by
 
- - [cnt-flexy-view-abdullakh-bot-form-communication](../../..)
+ - [cnt-flexy-view-abdullakh-bot-form-communication_](../../..)
 
 ### Depends on
 
@@ -26,7 +26,7 @@
 ```mermaid
 graph TD;
   cnt-flexy-view-abdullakh-bot-form --> cnt-flexy-view-abdullakh-bot-form-input
-  cnt-flexy-view-abdullakh-bot-form-communication --> cnt-flexy-view-abdullakh-bot-form
+  cnt-flexy-view-abdullakh-bot-form-communication_ --> cnt-flexy-view-abdullakh-bot-form
   style cnt-flexy-view-abdullakh-bot-form fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

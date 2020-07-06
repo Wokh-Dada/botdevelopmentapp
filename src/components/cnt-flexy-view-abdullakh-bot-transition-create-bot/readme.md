@@ -28,16 +28,16 @@
 
 ### Depends on
 
-- [cnt-flexy-view-abdullakh-bot-transition-create-bot](res/view/cnt-flexy-view-abdullakh-bot-transition-create-bot_)
+- [cnt-flexy-view-abdullakh-bot-transition-create-bot_](./res/view/cnt-flexy-view-abdullakh-bot-transition-create-bot_)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0 --> cnt-flexy-view-abdullakh-bot-transition-create-bot
-  cnt-flexy-view-abdullakh-bot-transition-create-bot --> cnt-flexy-view-abdullakh-bot-transition-create-bot-title
-  cnt-flexy-view-abdullakh-bot-transition-create-bot --> cnt-flexy-view-abdullakh-bot-transition-create-bot-follow
-  my-component --> cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0
-  style cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0 fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-abdullakh-bot-transition-create-bot-1_01 --> cnt-flexy-view-abdullakh-bot-transition-create-bot_
+  cnt-flexy-view-abdullakh-bot-transition-create-bot_ --> cnt-flexy-view-abdullakh-bot-transition-create-bot-title
+  cnt-flexy-view-abdullakh-bot-transition-create-bot_ --> cnt-flexy-view-abdullakh-bot-transition-create-bot-follow
+  my-component --> cnt-flexy-view-abdullakh-bot-transition-create-bot-1_01
+  style cnt-flexy-view-abdullakh-bot-transition-create-bot-1_01 fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

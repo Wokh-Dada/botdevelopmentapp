@@ -24,7 +24,7 @@
 
 ### Used by
 
- - [cnt-flexy-view-abdullakh-bot-tariffs-1_0_0](../../..)
+ - [cnt-flexy-view-abdullakh-bot-tariffs-1_01](../../..)
 
 ### Depends on
 
@@ -33,9 +33,9 @@
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-abdullakh-bot-tariffs --> cnt-flexy-view-abdullakh-bot-tariffs-info-blocks
-  cnt-flexy-view-abdullakh-bot-tariffs-1_0_0 --> cnt-flexy-view-abdullakh-bot-tariffs
-  style cnt-flexy-view-abdullakh-bot-tariffs fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-abdullakh-bot-tariffs_ --> cnt-flexy-view-abdullakh-bot-tariffs-info-blocks
+  cnt-flexy-view-abdullakh-bot-tariffs-1_01 --> cnt-flexy-view-abdullakh-bot-tariffs_
+  style cnt-flexy-view-abdullakh-bot-tariffs_ fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

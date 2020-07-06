@@ -28,14 +28,14 @@
 
 ### Depends on
 
-- [cnt-flexy-view-abdullakh-bot-consultation](res/view/cnt-flexy-view-abdullakh-bot-consultation_)
+- [cnt-flexy-view-abdullakh-bot-consultation_](./res/view/cnt-flexy-view-abdullakh-bot-consultation_)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-abdullakh-bot-consultation-1_0_0 --> cnt-flexy-view-abdullakh-bot-consultation
-  my-component --> cnt-flexy-view-abdullakh-bot-consultation-1_0_0
-  style cnt-flexy-view-abdullakh-bot-consultation-1_0_0 fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-abdullakh-bot-consultation-1_01 --> cnt-flexy-view-abdullakh-bot-consultation_
+  my-component --> cnt-flexy-view-abdullakh-bot-consultation-1_01
+  style cnt-flexy-view-abdullakh-bot-consultation-1_01 fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

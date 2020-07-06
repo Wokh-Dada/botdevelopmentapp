@@ -1,8 +1,9 @@
 .Tariffs_section {
+  position: relative;
   min-height: 853px;
 }
 
-.dinamicImg{
+.dinamicImg {
   width: 280px;
   height: 280px;
   background-size: cover;
@@ -17,7 +18,7 @@
   animation-iteration-count: infinite;
 }
 
-.dollar{
+.dollar {
   display: inline-block;
   color: #ffd000;
   font-size: 69px;
@@ -34,7 +35,7 @@
   animation-direction: alternate-reverse;
 }
 
-.realitive{
+.realitive {
   position: relative;
 }
 
@@ -47,10 +48,17 @@
   padding-top: 30px;
 }
 
+.Tariffs_info_blocks_bckgrnd_position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .Tariffs_info_blocks_bckgrnd {
   position: absolute;
+  top: 40px;
   height: 852px;
-  width: 100%;
+  width: 1130px;
   background-size: cover;
   background-position: center;
 }
@@ -61,15 +69,21 @@
   align-items: center;
 }
 
-.animation_bock{
+.animation_bock {
   position: relative;
   bottom: 920px;
 }
 
 @keyframes povorot {
-  0% { transform: rotate(0.1turn); }
-  50% { transform: rotate(0.5turn); }
-  100% { transform: rotate(0.9turn); }
+  0% {
+    transform: rotate(0.1turn);
+  }
+  50% {
+    transform: rotate(0.5turn);
+  }
+  100% {
+    transform: rotate(0.9turn);
+  }
 }
 
 @media (max-width: 576px) {
@@ -78,7 +92,7 @@
     height: 230px;
   }
 
-  .dollar{
+  .dollar {
     top: 50px;
     left: 20px;
   }
@@ -93,7 +107,7 @@
     flex-direction: column;
   }
 
-  .animation_bock{
+  .animation_bock {
     bottom: 2000px;
   }
 

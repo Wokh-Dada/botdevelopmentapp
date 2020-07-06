@@ -24,7 +24,7 @@
 
 ### Used by
 
- - [cnt-flexy-view-abdullakh-bot-performance-and-benefits](../../..)
+ - [cnt-flexy-view-abdullakh-bot-performance-and-benefits_](../../..)
 
 ### Depends on
 
@@ -34,7 +34,7 @@
 ```mermaid
 graph TD;
   cnt-flexy-view-abdullakh-bot-performance-information --> cnt-flexy-view-abdullakh-bot-performance-information-list
-  cnt-flexy-view-abdullakh-bot-performance-and-benefits --> cnt-flexy-view-abdullakh-bot-performance-information
+  cnt-flexy-view-abdullakh-bot-performance-and-benefits_ --> cnt-flexy-view-abdullakh-bot-performance-information
   style cnt-flexy-view-abdullakh-bot-performance-information fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

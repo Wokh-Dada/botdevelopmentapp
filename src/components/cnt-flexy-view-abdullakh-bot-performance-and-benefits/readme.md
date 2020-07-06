@@ -28,18 +28,18 @@
 
 ### Depends on
 
-- [cnt-flexy-view-abdullakh-bot-performance-and-benefits](res/view/cnt-flexy-view-abdullakh-bot-performance-and-benefits_)
+- [cnt-flexy-view-abdullakh-bot-performance-and-benefits_](./res/view/cnt-flexy-view-abdullakh-bot-performance-and-benefits_)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0 --> cnt-flexy-view-abdullakh-bot-performance-and-benefits
-  cnt-flexy-view-abdullakh-bot-performance-and-benefits --> cnt-flexy-view-abdullakh-bot-performance-information
-  cnt-flexy-view-abdullakh-bot-performance-and-benefits --> cnt-flexy-view-abdullakh-bot-benefits-bots
+  cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_01 --> cnt-flexy-view-abdullakh-bot-performance-and-benefits_
+  cnt-flexy-view-abdullakh-bot-performance-and-benefits_ --> cnt-flexy-view-abdullakh-bot-performance-information
+  cnt-flexy-view-abdullakh-bot-performance-and-benefits_ --> cnt-flexy-view-abdullakh-bot-benefits-bots
   cnt-flexy-view-abdullakh-bot-performance-information --> cnt-flexy-view-abdullakh-bot-performance-information-list
   cnt-flexy-view-abdullakh-bot-benefits-bots --> cnt-flexy-view-abdullakh-bot-benefits-bots-block
-  my-component --> cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0
-  style cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0 fill:#f9f,stroke:#333,stroke-width:4px
+  my-component --> cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_01
+  style cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_01 fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

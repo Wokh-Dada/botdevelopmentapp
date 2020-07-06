@@ -23,7 +23,7 @@
 
 ### Used by
 
- - [cnt-flexy-view-abdullakh-bot-performance-and-benefits](../../..)
+ - [cnt-flexy-view-abdullakh-bot-performance-and-benefits_](../../..)
 
 ### Depends on
 
@@ -33,7 +33,7 @@
 ```mermaid
 graph TD;
   cnt-flexy-view-abdullakh-bot-benefits-bots --> cnt-flexy-view-abdullakh-bot-benefits-bots-block
-  cnt-flexy-view-abdullakh-bot-performance-and-benefits --> cnt-flexy-view-abdullakh-bot-benefits-bots
+  cnt-flexy-view-abdullakh-bot-performance-and-benefits_ --> cnt-flexy-view-abdullakh-bot-benefits-bots
   style cnt-flexy-view-abdullakh-bot-benefits-bots fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

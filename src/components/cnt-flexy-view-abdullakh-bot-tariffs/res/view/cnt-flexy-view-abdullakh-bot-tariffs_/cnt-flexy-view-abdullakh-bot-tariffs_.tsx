@@ -25,9 +25,11 @@ export class CntFlexyViewAbdullakhBotTariffs_ implements ComponentInterface {
   render() {
     return (
       <section class="Tariffs_section">
-        <div class="Tariffs_info_blocks_bckgrnd" style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.payload.bckgrndImg + ")"}}
-             onClick={() => this.clickOnTariffs.emit(this.payload.bckgrndImg)}>
+        <div class="Tariffs_info_blocks_bckgrnd_position">
+          <div class="Tariffs_info_blocks_bckgrnd" style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.payload.bckgrndImg + ")"}}
+               onClick={() => this.clickOnTariffs.emit(this.payload.bckgrndImg)}>
 
+          </div>
         </div>
         {/************************************************************************************************************************************/}
         <div class="container realitive">

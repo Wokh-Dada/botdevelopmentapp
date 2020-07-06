@@ -20,14 +20,14 @@
 
 ### Depends on
 
-- [cnt-flexy-view-abdullakh-universal-footer](res/view/cnt-flexy-view-abdullakh-universal-footer_)
+- [cnt-flexy-view-abdullakh-universal-footer_](./res/view/cnt-flexy-view-abdullakh-universal-footer_)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-abdullakh-universal-footer-1_0_0 --> cnt-flexy-view-abdullakh-universal-footer
-  my-component --> cnt-flexy-view-abdullakh-universal-footer-1_0_0
-  style cnt-flexy-view-abdullakh-universal-footer-1_0_0 fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-abdullakh-universal-footer-1_01 --> cnt-flexy-view-abdullakh-universal-footer_
+  my-component --> cnt-flexy-view-abdullakh-universal-footer-1_01
+  style cnt-flexy-view-abdullakh-universal-footer-1_01 fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

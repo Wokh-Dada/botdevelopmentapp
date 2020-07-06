@@ -28,16 +28,16 @@
 
 ### Depends on
 
-- [cnt-flexy-view-abdullakh-bot-product-presentation](res/view/cnt-flexy-view-abdullakh-bot-product-presentation_)
+- [cnt-flexy-view-abdullakh-bot-product-presentation_](./res/view/cnt-flexy-view-abdullakh-bot-product-presentation_)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0 --> cnt-flexy-view-abdullakh-bot-product-presentation
-  cnt-flexy-view-abdullakh-bot-product-presentation --> cnt-flexy-view-abdullakh-bot-product-presentation-img
-  cnt-flexy-view-abdullakh-bot-product-presentation --> cnt-flexy-view-abdullakh-bot-product-presentation-title
-  my-component --> cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0
-  style cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0 fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-abdullakh-bot-product-presentation-1_01 --> cnt-flexy-view-abdullakh-bot-product-presentation_
+  cnt-flexy-view-abdullakh-bot-product-presentation_ --> cnt-flexy-view-abdullakh-bot-product-presentation-img
+  cnt-flexy-view-abdullakh-bot-product-presentation_ --> cnt-flexy-view-abdullakh-bot-product-presentation-title
+  my-component --> cnt-flexy-view-abdullakh-bot-product-presentation-1_01
+  style cnt-flexy-view-abdullakh-bot-product-presentation-1_01 fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------
