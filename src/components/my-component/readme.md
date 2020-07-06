@@ -9,15 +9,15 @@
 
 ### Depends on
 
-- [cnt-flexy-view-abdullakh-bot-form-communication-1_0_0](../cnt-flexy-view-abdullakh-bot-form-communication-1_0_0)
-- [cnt-flexy-view-abdullakh-bot-header-1_0_0](../cnt-flexy-view-abdullakh-bot-header-1_0_0)
-- [cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0](../cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0)
-- [cnt-flexy-view-abdullakh-bot-product-information-1_0_0](../cnt-flexy-view-abdullakh-bot-product-information-1_0_0)
-- [cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0](../cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0)
-- [cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0](../cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0)
-- [cnt-flexy-view-abdullakh-bot-consultation-1_0_0](../cnt-flexy-view-abdullakh-bot-consultation-1_0_0)
-- [cnt-flexy-view-abdullakh-bot-tariffs-1_0_0](../cnt-flexy-view-abdullakh-bot-tariffs-1_0_0)
-- [cnt-flexy-view-abdullakh-universal-footer-1_0_0](../cnt-flexy-view-abdullakh-universal-footer-1_0_0)
+- [cnt-flexy-view-abdullakh-bot-form-communication-1_0_0](../cnt-flexy-view-abdullakh-bot-form-communication)
+- [cnt-flexy-view-abdullakh-bot-header-1_0_0](../cnt-flexy-view-abdullakh-bot-header)
+- [cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0](../cnt-flexy-view-abdullakh-bot-product-presentation)
+- [cnt-flexy-view-abdullakh-bot-product-information-1_0_0](../cnt-flexy-view-abdullakh-bot-product-information)
+- [cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0](../cnt-flexy-view-abdullakh-bot-transition-create-bot)
+- [cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0](../cnt-flexy-view-abdullakh-bot-performance-and-benefits)
+- [cnt-flexy-view-abdullakh-bot-consultation-1_0_0](../cnt-flexy-view-abdullakh-bot-consultation)
+- [cnt-flexy-view-abdullakh-bot-tariffs-1_0_0](../cnt-flexy-view-abdullakh-bot-tariffs)
+- [cnt-flexy-view-abdullakh-universal-footer-1_0_0](../cnt-flexy-view-abdullakh-universal-footer)
 
 ### Graph
 ```mermaid

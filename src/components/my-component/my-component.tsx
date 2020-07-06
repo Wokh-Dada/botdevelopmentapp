@@ -23,13 +23,13 @@ export class MyComponent {
    * временный префикс ссылки для картинок
    */
   public testPathToAssets =
-    "https://cdn.ramman.net/flexy-view/abdullakh/bot/assets/";
+    "https://cdn.ramman.net/flexy-view/abdullakh/bot/1.01/assets/";
 
   render() {
     return (
       <div>
         {this.popupComplited ? (
-          <cnt-flexy-view-abdullakh-bot-form-communication-1_0_0
+          <cnt-flexy-view-abdullakh-bot-form-communication-1_01
             payload={formCommunication}
             pathToAssets={this.testPathToAssets}
             onCloseForm={() => {
@@ -40,45 +40,45 @@ export class MyComponent {
           ""
         )}
 
-        <cnt-flexy-view-abdullakh-bot-header-1_0_0 pathToAssets={this.testPathToAssets} categories={header} />
+        <cnt-flexy-view-abdullakh-bot-header-1_01 pathToAssets={this.testPathToAssets} categories={header} />
 
-        <cnt-flexy-view-abdullakh-bot-product-presentation-1_0_0
+        <cnt-flexy-view-abdullakh-bot-product-presentation-1_01
           payload={ProductPresentation}
           pathToAssets={this.testPathToAssets}
           onOpenForm={() => this.openForm()}
         />
 
-        <cnt-flexy-view-abdullakh-bot-product-information-1_0_0
+        <cnt-flexy-view-abdullakh-bot-product-information-1_01
           payload={ProductInformation}
           pathToAssets={this.testPathToAssets}
           onOpenForm={() => this.openForm()}
         />
 
-        <cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0
+        <cnt-flexy-view-abdullakh-bot-transition-create-bot-1_01
           payload={TransitionCreateBot}
           pathToAssets={this.testPathToAssets}
           onOpenForm={() => this.openForm()}
         />
 
-        <cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0
+        <cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_01
           payload={PerformanceAndBenefits}
           pathToAssets={this.testPathToAssets}
           onOpenForm={() => this.openForm()}
         />
 
-        <cnt-flexy-view-abdullakh-bot-consultation-1_0_0
+        <cnt-flexy-view-abdullakh-bot-consultation-1_01
           payload={Consultation}
           pathToAssets={this.testPathToAssets}
           onOpenForm={() => this.openForm()}
         />
 
-        <cnt-flexy-view-abdullakh-bot-tariffs-1_0_0
+        <cnt-flexy-view-abdullakh-bot-tariffs-1_01
           payload={Tariffs}
           pathToAssets={this.testPathToAssets}
           onOpenForm={() => this.openForm()}
         />
 
-        <cnt-flexy-view-abdullakh-universal-footer-1_0_0
+        <cnt-flexy-view-abdullakh-universal-footer-1_01
           categories={footer}
         />
 
