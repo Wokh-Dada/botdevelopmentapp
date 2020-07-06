@@ -29,6 +29,7 @@
   height: 100%;
   width: 100%;
   padding: 5px 15px;
+
 }
 
 .footerIcon{
@@ -36,11 +37,13 @@
   height: 45px;
   background-position: center;
   background-size: cover;
+  cursor: pointer;
 }
 
 .footerIconName{
   display: none;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 

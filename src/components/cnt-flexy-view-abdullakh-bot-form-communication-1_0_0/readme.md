@@ -36,6 +36,7 @@ graph TD;
   cnt-flexy-view-abdullakh-bot-form-communication-1_0_0 --> cnt-flexy-view-abdullakh-bot-form-communication
   cnt-flexy-view-abdullakh-bot-form-communication --> cnt-flexy-view-abdullakh-bot-form-close
   cnt-flexy-view-abdullakh-bot-form-communication --> cnt-flexy-view-abdullakh-bot-form
+  cnt-flexy-view-abdullakh-bot-form --> cnt-flexy-view-abdullakh-bot-form-input
   my-component --> cnt-flexy-view-abdullakh-bot-form-communication-1_0_0
   style cnt-flexy-view-abdullakh-bot-form-communication-1_0_0 fill:#f9f,stroke:#333,stroke-width:4px
 ```

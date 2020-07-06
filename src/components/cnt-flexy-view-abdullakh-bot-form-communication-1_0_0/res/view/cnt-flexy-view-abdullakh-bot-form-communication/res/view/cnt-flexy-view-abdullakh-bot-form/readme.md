@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property | Attribute | Description                           | Type  | Default     |
-| -------- | --------- | ------------------------------------- | ----- | ----------- |
-| `arr`    | `arr`     | данные из массива для компонента Form | `any` | `undefined` |
+| Property | Attribute | Description                           | Type               | Default     |
+| -------- | --------- | ------------------------------------- | ------------------ | ----------- |
+| `arr`    | --        | данные из массива для компонента Form | `AbdullakhBotForm` | `undefined` |
 
 
 ## Dependencies
@@ -18,9 +18,14 @@
 
  - [cnt-flexy-view-abdullakh-bot-form-communication](../../..)
 
+### Depends on
+
+- [cnt-flexy-view-abdullakh-bot-form-input](./res/view/cnt-flexy-view-abdullakh-bot-form-input)
+
 ### Graph
 ```mermaid
 graph TD;
+  cnt-flexy-view-abdullakh-bot-form --> cnt-flexy-view-abdullakh-bot-form-input
   cnt-flexy-view-abdullakh-bot-form-communication --> cnt-flexy-view-abdullakh-bot-form
   style cnt-flexy-view-abdullakh-bot-form fill:#f9f,stroke:#333,stroke-width:4px
 ```

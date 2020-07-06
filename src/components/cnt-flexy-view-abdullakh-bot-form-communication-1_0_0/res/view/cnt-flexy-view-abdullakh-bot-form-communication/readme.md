@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property  | Attribute | Description                         | Type  | Default     |
-| --------- | --------- | ----------------------------------- | ----- | ----------- |
-| `payload` | `payload` | данные компонента FormCommunication | `any` | `undefined` |
+| Property  | Attribute | Description                         | Type                            | Default     |
+| --------- | --------- | ----------------------------------- | ------------------------------- | ----------- |
+| `payload` | --        | данные компонента FormCommunication | `AbdullakhBotFormCommunication` | `undefined` |
 
 
 ## Events
@@ -35,6 +35,7 @@
 graph TD;
   cnt-flexy-view-abdullakh-bot-form-communication --> cnt-flexy-view-abdullakh-bot-form-close
   cnt-flexy-view-abdullakh-bot-form-communication --> cnt-flexy-view-abdullakh-bot-form
+  cnt-flexy-view-abdullakh-bot-form --> cnt-flexy-view-abdullakh-bot-form-input
   cnt-flexy-view-abdullakh-bot-form-communication-1_0_0 --> cnt-flexy-view-abdullakh-bot-form-communication
   style cnt-flexy-view-abdullakh-bot-form-communication fill:#f9f,stroke:#333,stroke-width:4px
 ```

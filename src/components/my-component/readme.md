@@ -17,6 +17,7 @@
 - [cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0](../cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0)
 - [cnt-flexy-view-abdullakh-bot-consultation-1_0_0](../cnt-flexy-view-abdullakh-bot-consultation-1_0_0)
 - [cnt-flexy-view-abdullakh-bot-tariffs-1_0_0](../cnt-flexy-view-abdullakh-bot-tariffs-1_0_0)
+- [cnt-flexy-view-abdullakh-universal-footer-1_0_0](../cnt-flexy-view-abdullakh-universal-footer-1_0_0)
 
 ### Graph
 ```mermaid
@@ -29,9 +30,11 @@ graph TD;
   my-component --> cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0
   my-component --> cnt-flexy-view-abdullakh-bot-consultation-1_0_0
   my-component --> cnt-flexy-view-abdullakh-bot-tariffs-1_0_0
+  my-component --> cnt-flexy-view-abdullakh-universal-footer-1_0_0
   cnt-flexy-view-abdullakh-bot-form-communication-1_0_0 --> cnt-flexy-view-abdullakh-bot-form-communication
   cnt-flexy-view-abdullakh-bot-form-communication --> cnt-flexy-view-abdullakh-bot-form-close
   cnt-flexy-view-abdullakh-bot-form-communication --> cnt-flexy-view-abdullakh-bot-form
+  cnt-flexy-view-abdullakh-bot-form --> cnt-flexy-view-abdullakh-bot-form-input
   cnt-flexy-view-abdullakh-bot-header-1_0_0 --> cnt-flexy-view-abdullakh-bot-header
   cnt-flexy-view-abdullakh-bot-header --> cnt-flexy-view-abdullakh-bot-header-start
   cnt-flexy-view-abdullakh-bot-header --> cnt-flexy-view-abdullakh-bot-header-end
@@ -52,6 +55,7 @@ graph TD;
   cnt-flexy-view-abdullakh-bot-consultation-1_0_0 --> cnt-flexy-view-abdullakh-bot-consultation
   cnt-flexy-view-abdullakh-bot-tariffs-1_0_0 --> cnt-flexy-view-abdullakh-bot-tariffs
   cnt-flexy-view-abdullakh-bot-tariffs --> cnt-flexy-view-abdullakh-bot-tariffs-info-blocks
+  cnt-flexy-view-abdullakh-universal-footer-1_0_0 --> cnt-flexy-view-abdullakh-universal-footer
   style my-component fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
