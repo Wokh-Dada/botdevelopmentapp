@@ -1,5 +1,5 @@
 .Tariffs_section {
-  padding-top: 105px;
+  min-height: 853px;
 }
 
 .dinamicImg{
@@ -44,7 +44,9 @@
 }
 
 .Tariffs_info_blocks_bckgrnd {
-  height: 853px;
+  position: absolute;
+  height: 852px;
+  width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -53,6 +55,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.animation_bock{
+  position: relative;
+  bottom: 920px;
 }
 
 @keyframes povorot {
@@ -82,6 +89,9 @@
     flex-direction: column;
   }
 
+  .animation_bock{
+    bottom: 2000px;
+  }
 
 }
 

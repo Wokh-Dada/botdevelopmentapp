@@ -1,4 +1,6 @@
 import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
+import {AbdullakhBotFormCommunication} from "./interface/common.interface";
+
 
 
 @Component({
@@ -10,7 +12,7 @@ export class CntFlexyViewAbdullakhBotFormCommunication implements ComponentInter
   /**
    * данные компонента FormCommunication
    */
-  @Prop() payload: any;
+  @Prop() payload: AbdullakhBotFormCommunication;
 
   /**
    * Закрытие модального окна формы

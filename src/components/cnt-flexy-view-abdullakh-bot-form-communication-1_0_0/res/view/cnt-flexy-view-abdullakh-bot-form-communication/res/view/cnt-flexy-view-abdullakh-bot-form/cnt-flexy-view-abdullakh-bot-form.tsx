@@ -1,5 +1,5 @@
 import {Component, ComponentInterface, h, Prop} from '@stencil/core';
-
+import {AbdullakhBotForm} from "./interface/common.interface";
 
 @Component({
   tag: 'cnt-flexy-view-abdullakh-bot-form',
@@ -10,7 +10,7 @@ export class CntFlexyViewAbdullakhBotForm implements ComponentInterface {
   /**
    * данные из массива для компонента Form
    */
-  @Prop() arr: any;
+  @Prop() arr: AbdullakhBotForm;
 
   render() {
     return (
@@ -42,15 +42,30 @@ export class CntFlexyViewAbdullakhBotForm implements ComponentInterface {
           </div>
         </div>
         <div class="mt-4">
-          <div class="form_text">
-            {this.arr.numberInterview})
-          </div>
-          <div>
-            <input class="inputSize" type="tel" placeholder="(999) 999-99-99"/>
-            <div>
 
-            </div>
-          </div>
+          <cnt-flexy-view-abdullakh-bot-form-input  phoneMask={this.arr.numberSection}/>
+
+          {/*<div class="form_text">*/}
+          {/*  {this.arr.numberInterview})*/}
+          {/*</div>*/}
+          {/*<div>*/}
+          {/*  <div class="inputSize">*/}
+          {/*    <div class="numberSelect">*/}
+          {/*      <span class="phoneMaskFlag" style={{*/}
+          {/*        backgroundImage: "url(https://static.tildacdn.com/lib/flags/flags.png?ver=2)",*/}
+          {/*        backgroundPosition: " -257px -281px"*/}
+          {/*      }}>*/}
+          {/*      </span>*/}
+          {/*      <span class="phoneMaskIcon">*/}
+
+          {/*      </span>*/}
+          {/*      <span class="phoneMaskNumber">*/}
+          {/*        +7*/}
+          {/*      </span>*/}
+          {/*      <input class="inputSizePhone" type="tel" placeholder="(999) 999-99-99"/>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </div>
         <div class="form_btn_block mt-4">
           <button class="form_btn" disabled={true}>

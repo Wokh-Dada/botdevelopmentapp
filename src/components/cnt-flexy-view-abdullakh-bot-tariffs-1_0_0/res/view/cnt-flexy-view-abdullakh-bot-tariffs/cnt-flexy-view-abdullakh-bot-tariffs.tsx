@@ -25,26 +25,30 @@ export class CntFlexyViewAbdullakhBotTariffs implements ComponentInterface {
   render() {
     return (
       <section class="Tariffs_section">
-        {/*анимация*/}
-        <div class="dinamicImg" style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.payload.dinamicImg + ")"}}
-             onClick={() => this.clickOnTariffs.emit(this.payload.dinamicImg)}>
-          {/*вывод из массива картинки */}
+        <div class="Tariffs_info_blocks_bckgrnd" style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.payload.bckgrndImg + ")"}}
+             onClick={() => this.clickOnTariffs.emit(this.payload.bckgrndImg)}>
+
         </div>
-        <span class="dollar" onClick={() => this.clickOnTariffs.emit(this.payload.dinamicText)}>
-          {this.payload.dinamicText}
-        </span>
-        {/*анимация*/}
+        {/************************************************************************************************************************************/}
         <div class="container">
           <div class="Tariffs_title" onClick={() => this.clickOnTariffs.emit(this.payload.title)}>
             {this.payload.title}
           </div>
-          <div class="Tariffs_info_blocks_bckgrnd" style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.payload.bckgrndImg + ")"}}
-               onClick={() => this.clickOnTariffs.emit(this.payload.bckgrndImg)}>
-            <div class="Tariffs_info_blocks">
-              <TariffsInfoBlocks arr={this.payload.infoBlock}/>
-            </div>
+          <div class="Tariffs_info_blocks">
+            <TariffsInfoBlocks arr={this.payload.infoBlock}/>
           </div>
         </div>
+        {/*анимация*/}
+        <div class="animation_bock">
+          <div class="dinamicImg" style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.payload.dinamicImg + ")"}}
+               onClick={() => this.clickOnTariffs.emit(this.payload.dinamicImg)}>
+            {/*вывод из массива картинки */}
+          </div>
+          <span class="dollar" onClick={() => this.clickOnTariffs.emit(this.payload.dinamicText)}>
+          {this.payload.dinamicText}
+        </span>
+        </div>
+        {/*анимация*/}
       </section>
     );
   }

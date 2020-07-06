@@ -28,6 +28,10 @@ button:not(:disabled) {
   outline: inherit;
 }
 
+input{
+  outline: transparent;
+}
+
 @keyframes mypulse {
   0% { transform: scale(1.05); }
   2% { transform: scale(1.1); }

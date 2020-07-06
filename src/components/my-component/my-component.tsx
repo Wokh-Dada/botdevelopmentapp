@@ -1,6 +1,6 @@
 import {Component, h, State} from '@stencil/core';
 import {
-  Consultation, formCommunication,
+  Consultation, footer, formCommunication,
   header, PerformanceAndBenefits,
   ProductInformation,
   ProductPresentation, Tariffs,
@@ -77,6 +77,11 @@ export class MyComponent {
           pathToAssets={this.testPathToAssets}
           onOpenForm={() => this.openForm()}
         />
+
+        <cnt-flexy-view-abdullakh-universal-footer-1_0_0
+          categories={footer}
+        />
+
       </div>
     );
   }

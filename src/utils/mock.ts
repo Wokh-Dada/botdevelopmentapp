@@ -1,5 +1,5 @@
 export const formCommunication = {
-  id: '1',
+  id: 1,
   formInterviewText: [
     {
       nameInterview: 'Как вас зовут',
@@ -10,8 +10,294 @@ export const formCommunication = {
         {id: 3, select: 'Нет', selected: false},
       ],
       websiteInterview: 'Ссылка на ваш сайт (если есть)',
-      numberInterview: 'Ваш номер',
-      btnText: 'Создать бота'
+      numberSection: {
+        numberInterview: 'Ваш номер',
+        defaultNumber: 35,
+        phonemask: [
+          {
+            id: 1,
+            country: 'Afghanistan (افغانستان‎)',
+            countryNumber: '+93',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-61px -5px'
+          },
+          {
+            id: 2,
+            country: 'Albania (Shqipëri)',
+            countryNumber: '+355',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-117px -5ppx'
+          },
+          {
+            id: 3,
+            country: 'Algeria (الجزائر‎)',
+            countryNumber: '+213',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-61px -97px'
+          },
+          {
+            id: 4,
+            country: 'Andorra',
+            countryNumber: '+376',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '5px -5px'
+          },
+          {
+            id: 5,
+            country: 'Angola',
+            countryNumber: '+244',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-173px -5px'
+          },
+          {
+            id: 6,
+            country: 'Armenia (Հայաստան)',
+            countryNumber: '+374',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-145px -5px'
+          },
+          {
+            id: 7,
+            country: 'Antigua and Barbuda',
+            countryNumber: '+1 (268)',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-89px -5px'
+          },
+          {
+            id: 8,
+            country: 'Argentina',
+            countryNumber: '+54',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-201px -5px'
+          },
+          {
+            id: 9,
+            country: 'Australia',
+            countryNumber: '+61',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-257px -5px'
+          },
+          {
+            id: 10,
+            country: 'Austria (Österreich)',
+            countryNumber: '+43',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-229px -5px'
+          },
+          {
+            id: 11,
+            country: 'Azerbaijan (Azərbaycan)',
+            countryNumber: '+994',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-285px -5px'
+          },
+          {
+            id: 12,
+            country: 'Bahamas',
+            countryNumber: '+1 (242)',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-5px -51px'
+          },
+          {
+            id: 13,
+            country: 'Bahrain (البحرين‎)',
+            countryNumber: '+973',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-145px -28px'
+          },
+          {
+            id: 14,
+            country: 'Bangladesh (বাংলাদেশ)',
+            countryNumber: '+880',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-33px -28px'
+          },
+          {
+            id: 15,
+            country: 'Barbados',
+            countryNumber: '+1 (246)',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-5px -28px'
+          },
+          {
+            id: 16,
+            country: 'Belarus (Беларусь)',
+            countryNumber: '+375',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-89px -51px'
+          },
+          {
+            id: 17,
+            country: 'Belgium (België)',
+            countryNumber: '+32',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-61px -28px'
+          },
+          {
+            id: 18,
+            country: 'Belize',
+            countryNumber: '+501',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-117px -51px'
+          },
+          {
+            id: 19,
+            country: 'Benin (Bénin)',
+            countryNumber: '+229',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-201px -28px'
+          },
+          {
+            id: 20,
+            country: 'Canada',
+            countryNumber: '+1',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-145px -51px'
+          },
+          {
+            id: 21,
+            country: 'France',
+            countryNumber: '+33',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-33px -120px'
+          },
+          {
+            id: 22,
+            country: 'Georgia (საქართველო)',
+            countryNumber: '+995',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-145px -120px'
+          },
+          {
+            id: 23,
+            country: 'Germany (Deutschland)',
+            countryNumber: '+49',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-257px -74px'
+          },
+          {
+            id:24 ,
+            country: 'India (भारत)',
+            countryNumber: '+91',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-285px -143px'
+          },
+          {
+            id: 25,
+            country: 'Italy (Italia)',
+            countryNumber: '+39',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-61px -166px'
+          },
+          {
+            id: 26,
+            country: 'Japan (日本)',
+            countryNumber: '+81',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-145px -166px'
+          },
+          {
+            id: 27,
+            country: 'Kazakhstan (Казахстан)',
+            countryNumber: '+7',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-117px -189px'
+          },
+          {
+            id: 28,
+            country: 'Kyrgyzstan (Кыргызстан)',
+            countryNumber: '+996',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-201px -166px'
+          },
+          {
+            id: 29,
+            country: 'Latvia (Latvija)',
+            countryNumber: '+371',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-61px -212px'
+          },
+          {
+            id: 30,
+            country: 'Mexico (México)',
+            countryNumber: '+52',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-201px -235px'
+          },
+          {
+            id: 31,
+            country: 'Moldova (Republica Moldova)',
+            countryNumber: '+373',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-173px -212px'
+          },
+          {
+            id: 32,
+            country: 'Mongolia (Монгол)',
+            countryNumber: '+976',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-33px -235px'
+          },
+          {
+            id: 33,
+            country: 'Poland (Polska)',
+            countryNumber: '+48',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-61px -281px'
+          },
+          {
+            id: 34,
+            country: 'Romania (România)',
+            countryNumber: '+40',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-201px -281px'
+          },
+          {
+            id: 35,
+            country: 'Russian Federation (Российская Федерация)',
+            countryNumber: '+7',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-257px -281px'
+          },
+          {
+            id: 36,
+            country: 'Saudi Arabia (المملكة العربية السعودية‎)',
+            countryNumber: '+966',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-313px -281px'
+          },
+          {
+            id: 37,
+            country: 'South Korea (대한민국)',
+            countryNumber: '+82',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-33px -189px'
+          },
+          {
+            id: 38,
+            country: 'Spain (España)',
+            countryNumber: '+34',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-229px -97px'
+          },
+          {
+            id: 39,
+            country: 'Sweden (Sverige)',
+            countryNumber: '+46',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-89px -304px'
+          },
+          {
+            id: 40,
+            country: 'Turkey (Türkiye)',
+            countryNumber: '+90',
+            flag: 'https://static.tildacdn.com/lib/flags/flags.png?ver=2',
+            flagPosition: '-341px -28px'
+          },
+        ]
+      },
+      btnText: 'Создать бота',
+
     }
   ]
 };
@@ -390,3 +676,53 @@ export const Tariffs = {
     },
   ]
 };
+
+export const footer = {
+  icons: [
+    {
+      id: 1,
+      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/il/ios11-imessage-app-store-icon.png',
+      iconName: 'Магазин'
+    },
+    {
+      id: 2,
+      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios12-messages-imessage-photos-app.png',
+      iconName: 'Фото'
+    },
+    {
+      id: 3,
+      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios10-message-imessage-music-app.png',
+      iconName: 'Музыка'
+    },
+    {
+      id: 4,
+      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios11-imessage-digital-touch-icon.png',
+      iconName: 'Digital Touch'
+    },
+    {
+      id: 5,
+      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios10-message-imessage-images-app.png',
+      iconName: 'images'
+    },
+    {
+      id: 6,
+      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios11-message-imessage-apple-pay-app.png',
+      iconName: 'Apple Pay'
+    },
+    {
+      id: 7,
+      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios12-messages-imessage-memoji-icon.png',
+      iconName: 'Animoji'
+    },
+    {
+      id: 8,
+      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios13-imessage-memoji-sticker-icon.png',
+      iconName: 'Memoji'
+    },
+    {
+      id: 9,
+      iconHref: 'https://i2.wp.com/nigil.ru/wp-content/uploads/2015/06/whatsapp.png?resize=512%2C512',
+      iconName: 'WhatsApp'
+    },
+  ]
+}

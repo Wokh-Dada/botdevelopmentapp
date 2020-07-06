@@ -33,7 +33,7 @@ export class CntFlexyViewAbdullakhBotHeader implements ComponentInterface {
                 </div>
               </nav>
             </div>
-            <div class="HeaderEnd d-md-block d-none animate__animated animate__backInDown">
+            <div class="HeaderEnd d-md-flex d-none animate__animated animate__backInDown">
               <cnt-flexy-view-abdullakh-bot-header-end phoneNumber={this.categories.phoneNumber}/>
             </div>
           </div>

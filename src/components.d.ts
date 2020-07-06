@@ -7,6 +7,8 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { SSAbdullakhBenefitsBots, } from "./components/cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-performance-and-benefits/res/view/cnt-flexy-view-abdullakh-bot-benefits-bots/interface/common.interface";
 import { SSAbdullakhConsultation, } from "./components/cnt-flexy-view-abdullakh-bot-consultation-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-consultation/interface/common.interface";
+import { AbdullakhBotForm, } from "./components/cnt-flexy-view-abdullakh-bot-form-communication-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-form-communication/res/view/cnt-flexy-view-abdullakh-bot-form/interface/common.interface";
+import { AbdullakhBotFormCommunication, } from "./components/cnt-flexy-view-abdullakh-bot-form-communication-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-form-communication/interface/common.interface";
 import { CntFlexyViewCategoryForOwnerItemInterface, } from "./components/cnt-flexy-view-abdullakh-bot-header-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-header/interface/common.interface";
 import { AbdullakhHeaderCenter, } from "./components/cnt-flexy-view-abdullakh-bot-header-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-header/res/view/cnt-flexy-view-abdullakh-bot-header-center/interface/common.interface";
 import { SSAbdullakhPerformanceInformation, } from "./components/cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0/res/view/cnt-flexy-view-abdullakh-bot-performance-and-benefits/res/view/cnt-flexy-view-abdullakh-bot-performance-information/interface/common.interface";
@@ -43,7 +45,7 @@ export namespace Components {
         /**
           * данные из массива для компонента Form
          */
-        "arr": any;
+        "arr": AbdullakhBotForm;
     }
     interface CntFlexyViewAbdullakhBotFormClose {
     }
@@ -51,7 +53,7 @@ export namespace Components {
         /**
           * данные компонента FormCommunication
          */
-        "payload": any;
+        "payload": AbdullakhBotFormCommunication;
     }
     interface CntFlexyViewAbdullakhBotFormCommunication1_0_0 {
         "pathToAssets": string;
@@ -59,6 +61,9 @@ export namespace Components {
           * данные компонента FormCommunication
          */
         "payload": any;
+    }
+    interface CntFlexyViewAbdullakhBotFormInput {
+        "phoneMask": any;
     }
     interface CntFlexyViewAbdullakhBotHeader {
         /**
@@ -212,6 +217,12 @@ export namespace Components {
          */
         "arr": any;
     }
+    interface CntFlexyViewAbdullakhUniversalFooter {
+        "footerIcons": any;
+    }
+    interface CntFlexyViewAbdullakhUniversalFooter1_0_0 {
+        "categories": any;
+    }
     interface MyComponent {
     }
 }
@@ -263,6 +274,12 @@ declare global {
     var HTMLCntFlexyViewAbdullakhBotFormCommunication1_0_0Element: {
         prototype: HTMLCntFlexyViewAbdullakhBotFormCommunication1_0_0Element;
         new (): HTMLCntFlexyViewAbdullakhBotFormCommunication1_0_0Element;
+    };
+    interface HTMLCntFlexyViewAbdullakhBotFormInputElement extends Components.CntFlexyViewAbdullakhBotFormInput, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhBotFormInputElement: {
+        prototype: HTMLCntFlexyViewAbdullakhBotFormInputElement;
+        new (): HTMLCntFlexyViewAbdullakhBotFormInputElement;
     };
     interface HTMLCntFlexyViewAbdullakhBotHeaderElement extends Components.CntFlexyViewAbdullakhBotHeader, HTMLStencilElement {
     }
@@ -402,6 +419,18 @@ declare global {
         prototype: HTMLCntFlexyViewAbdullakhBotTransitionCreateBotTitleElement;
         new (): HTMLCntFlexyViewAbdullakhBotTransitionCreateBotTitleElement;
     };
+    interface HTMLCntFlexyViewAbdullakhUniversalFooterElement extends Components.CntFlexyViewAbdullakhUniversalFooter, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhUniversalFooterElement: {
+        prototype: HTMLCntFlexyViewAbdullakhUniversalFooterElement;
+        new (): HTMLCntFlexyViewAbdullakhUniversalFooterElement;
+    };
+    interface HTMLCntFlexyViewAbdullakhUniversalFooter1_0_0Element extends Components.CntFlexyViewAbdullakhUniversalFooter1_0_0, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewAbdullakhUniversalFooter1_0_0Element: {
+        prototype: HTMLCntFlexyViewAbdullakhUniversalFooter1_0_0Element;
+        new (): HTMLCntFlexyViewAbdullakhUniversalFooter1_0_0Element;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -417,6 +446,7 @@ declare global {
         "cnt-flexy-view-abdullakh-bot-form-close": HTMLCntFlexyViewAbdullakhBotFormCloseElement;
         "cnt-flexy-view-abdullakh-bot-form-communication": HTMLCntFlexyViewAbdullakhBotFormCommunicationElement;
         "cnt-flexy-view-abdullakh-bot-form-communication-1_0_0": HTMLCntFlexyViewAbdullakhBotFormCommunication1_0_0Element;
+        "cnt-flexy-view-abdullakh-bot-form-input": HTMLCntFlexyViewAbdullakhBotFormInputElement;
         "cnt-flexy-view-abdullakh-bot-header": HTMLCntFlexyViewAbdullakhBotHeaderElement;
         "cnt-flexy-view-abdullakh-bot-header-1_0_0": HTMLCntFlexyViewAbdullakhBotHeader1_0_0Element;
         "cnt-flexy-view-abdullakh-bot-header-center": HTMLCntFlexyViewAbdullakhBotHeaderCenterElement;
@@ -440,6 +470,8 @@ declare global {
         "cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0": HTMLCntFlexyViewAbdullakhBotTransitionCreateBot1_0_0Element;
         "cnt-flexy-view-abdullakh-bot-transition-create-bot-follow": HTMLCntFlexyViewAbdullakhBotTransitionCreateBotFollowElement;
         "cnt-flexy-view-abdullakh-bot-transition-create-bot-title": HTMLCntFlexyViewAbdullakhBotTransitionCreateBotTitleElement;
+        "cnt-flexy-view-abdullakh-universal-footer": HTMLCntFlexyViewAbdullakhUniversalFooterElement;
+        "cnt-flexy-view-abdullakh-universal-footer-1_0_0": HTMLCntFlexyViewAbdullakhUniversalFooter1_0_0Element;
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -493,7 +525,7 @@ declare namespace LocalJSX {
         /**
           * данные из массива для компонента Form
          */
-        "arr"?: any;
+        "arr"?: AbdullakhBotForm;
     }
     interface CntFlexyViewAbdullakhBotFormClose {
         /**
@@ -509,7 +541,7 @@ declare namespace LocalJSX {
         /**
           * данные компонента FormCommunication
          */
-        "payload"?: any;
+        "payload"?: AbdullakhBotFormCommunication;
     }
     interface CntFlexyViewAbdullakhBotFormCommunication1_0_0 {
         /**
@@ -521,6 +553,9 @@ declare namespace LocalJSX {
           * данные компонента FormCommunication
          */
         "payload"?: any;
+    }
+    interface CntFlexyViewAbdullakhBotFormInput {
+        "phoneMask"?: any;
     }
     interface CntFlexyViewAbdullakhBotHeader {
         /**
@@ -798,6 +833,12 @@ declare namespace LocalJSX {
          */
         "onClickOnTransitionCreateBot"?: (event: CustomEvent<any>) => void;
     }
+    interface CntFlexyViewAbdullakhUniversalFooter {
+        "footerIcons"?: any;
+    }
+    interface CntFlexyViewAbdullakhUniversalFooter1_0_0 {
+        "categories"?: any;
+    }
     interface MyComponent {
     }
     interface IntrinsicElements {
@@ -809,6 +850,7 @@ declare namespace LocalJSX {
         "cnt-flexy-view-abdullakh-bot-form-close": CntFlexyViewAbdullakhBotFormClose;
         "cnt-flexy-view-abdullakh-bot-form-communication": CntFlexyViewAbdullakhBotFormCommunication;
         "cnt-flexy-view-abdullakh-bot-form-communication-1_0_0": CntFlexyViewAbdullakhBotFormCommunication1_0_0;
+        "cnt-flexy-view-abdullakh-bot-form-input": CntFlexyViewAbdullakhBotFormInput;
         "cnt-flexy-view-abdullakh-bot-header": CntFlexyViewAbdullakhBotHeader;
         "cnt-flexy-view-abdullakh-bot-header-1_0_0": CntFlexyViewAbdullakhBotHeader1_0_0;
         "cnt-flexy-view-abdullakh-bot-header-center": CntFlexyViewAbdullakhBotHeaderCenter;
@@ -832,6 +874,8 @@ declare namespace LocalJSX {
         "cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0": CntFlexyViewAbdullakhBotTransitionCreateBot1_0_0;
         "cnt-flexy-view-abdullakh-bot-transition-create-bot-follow": CntFlexyViewAbdullakhBotTransitionCreateBotFollow;
         "cnt-flexy-view-abdullakh-bot-transition-create-bot-title": CntFlexyViewAbdullakhBotTransitionCreateBotTitle;
+        "cnt-flexy-view-abdullakh-universal-footer": CntFlexyViewAbdullakhUniversalFooter;
+        "cnt-flexy-view-abdullakh-universal-footer-1_0_0": CntFlexyViewAbdullakhUniversalFooter1_0_0;
         "my-component": MyComponent;
     }
 }
@@ -847,6 +891,7 @@ declare module "@stencil/core" {
             "cnt-flexy-view-abdullakh-bot-form-close": LocalJSX.CntFlexyViewAbdullakhBotFormClose & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotFormCloseElement>;
             "cnt-flexy-view-abdullakh-bot-form-communication": LocalJSX.CntFlexyViewAbdullakhBotFormCommunication & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotFormCommunicationElement>;
             "cnt-flexy-view-abdullakh-bot-form-communication-1_0_0": LocalJSX.CntFlexyViewAbdullakhBotFormCommunication1_0_0 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotFormCommunication1_0_0Element>;
+            "cnt-flexy-view-abdullakh-bot-form-input": LocalJSX.CntFlexyViewAbdullakhBotFormInput & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotFormInputElement>;
             "cnt-flexy-view-abdullakh-bot-header": LocalJSX.CntFlexyViewAbdullakhBotHeader & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotHeaderElement>;
             "cnt-flexy-view-abdullakh-bot-header-1_0_0": LocalJSX.CntFlexyViewAbdullakhBotHeader1_0_0 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotHeader1_0_0Element>;
             "cnt-flexy-view-abdullakh-bot-header-center": LocalJSX.CntFlexyViewAbdullakhBotHeaderCenter & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotHeaderCenterElement>;
@@ -870,6 +915,8 @@ declare module "@stencil/core" {
             "cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0": LocalJSX.CntFlexyViewAbdullakhBotTransitionCreateBot1_0_0 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotTransitionCreateBot1_0_0Element>;
             "cnt-flexy-view-abdullakh-bot-transition-create-bot-follow": LocalJSX.CntFlexyViewAbdullakhBotTransitionCreateBotFollow & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotTransitionCreateBotFollowElement>;
             "cnt-flexy-view-abdullakh-bot-transition-create-bot-title": LocalJSX.CntFlexyViewAbdullakhBotTransitionCreateBotTitle & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhBotTransitionCreateBotTitleElement>;
+            "cnt-flexy-view-abdullakh-universal-footer": LocalJSX.CntFlexyViewAbdullakhUniversalFooter & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhUniversalFooterElement>;
+            "cnt-flexy-view-abdullakh-universal-footer-1_0_0": LocalJSX.CntFlexyViewAbdullakhUniversalFooter1_0_0 & JSXBase.HTMLAttributes<HTMLCntFlexyViewAbdullakhUniversalFooter1_0_0Element>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
