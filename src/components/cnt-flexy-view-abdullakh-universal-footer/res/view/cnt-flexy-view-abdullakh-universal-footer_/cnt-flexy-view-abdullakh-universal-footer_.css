@@ -37,9 +37,28 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
+  position: relative;
   height: 100%;
   width: 100%;
   padding: 5px 15px;
+}
+
+.counter {
+  position: absolute;
+  top: 1px;
+  right: 57px;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .footerIcon {
@@ -162,8 +181,25 @@
     animation-duration: 0s;
   }
 
+  .universal_down_horizon:hover .counter {
+    top: 2px;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    font-size: 8px;
+  }
+
   .footerAppItem {
     padding: 5px 13.5px;
+  }
+
+
+  .counter {
+    top: 0px;
+    right: 7px;
+    width: 13px;
+    height: 13px;
+    font-size: 5px;
   }
 
   .footerIcon {
