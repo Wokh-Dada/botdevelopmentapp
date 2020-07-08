@@ -36,6 +36,7 @@
 graph TD;
   cnt-flexy-view-abdullakh-bot-product-presentation_ --> cnt-flexy-view-abdullakh-bot-product-presentation-img
   cnt-flexy-view-abdullakh-bot-product-presentation_ --> cnt-flexy-view-abdullakh-bot-product-presentation-title
+  cnt-flexy-view-abdullakh-bot-product-presentation-title --> cnt-flexy-view-abdullakh-bot-product-presentation-img
   cnt-flexy-view-abdullakh-bot-product-presentation-1_01 --> cnt-flexy-view-abdullakh-bot-product-presentation_
   style cnt-flexy-view-abdullakh-bot-product-presentation_ fill:#f9f,stroke:#333,stroke-width:4px
 ```

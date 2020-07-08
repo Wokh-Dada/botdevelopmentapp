@@ -42,6 +42,7 @@ graph TD;
   cnt-flexy-view-abdullakh-bot-product-presentation-1_01 --> cnt-flexy-view-abdullakh-bot-product-presentation_
   cnt-flexy-view-abdullakh-bot-product-presentation_ --> cnt-flexy-view-abdullakh-bot-product-presentation-img
   cnt-flexy-view-abdullakh-bot-product-presentation_ --> cnt-flexy-view-abdullakh-bot-product-presentation-title
+  cnt-flexy-view-abdullakh-bot-product-presentation-title --> cnt-flexy-view-abdullakh-bot-product-presentation-img
   cnt-flexy-view-abdullakh-bot-product-information-1_01 --> cnt-flexy-view-abdullakh-bot-product-information_
   cnt-flexy-view-abdullakh-bot-product-information_ --> cnt-flexy-view-abdullakh-bot-product-information-blocks
   cnt-flexy-view-abdullakh-bot-transition-create-bot-1_01 --> cnt-flexy-view-abdullakh-bot-transition-create-bot_

@@ -9,7 +9,7 @@
 
 | Property       | Attribute        | Description                                     | Type     | Default     |
 | -------------- | ---------------- | ----------------------------------------------- | -------- | ----------- |
-| `pathToAssets` | `path-to-assets` |                                                 | `string` | `undefined` |
+| `pathToAssets` | `path-to-assets` | префикс путь к картинкам                        | `string` | `undefined` |
 | `payload`      | `payload`        | массив для вывода элементов TransitionCreateBot | `any`    | `undefined` |
 
 

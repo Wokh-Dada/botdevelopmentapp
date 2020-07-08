@@ -10,7 +10,7 @@
 | Property       | Attribute        | Description                                                                | Type     | Default     |
 | -------------- | ---------------- | -------------------------------------------------------------------------- | -------- | ----------- |
 | `categories`   | `categories`     | объект с массивом меню и string для подкомпонентов header-start header-end | `any`    | `undefined` |
-| `pathToAssets` | `path-to-assets` |                                                                            | `string` | `undefined` |
+| `pathToAssets` | `path-to-assets` | префикс путь к картинкам                                                   | `string` | `undefined` |
 
 
 ## Dependencies

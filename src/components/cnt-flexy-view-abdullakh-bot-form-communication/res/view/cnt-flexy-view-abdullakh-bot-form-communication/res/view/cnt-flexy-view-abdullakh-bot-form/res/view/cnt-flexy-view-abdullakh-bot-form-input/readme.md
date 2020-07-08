@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property    | Attribute    | Description | Type  | Default     |
-| ----------- | ------------ | ----------- | ----- | ----------- |
-| `phoneMask` | `phone-mask` |             | `any` | `undefined` |
+| Property    | Attribute    | Description                                             | Type  | Default     |
+| ----------- | ------------ | ------------------------------------------------------- | ----- | ----------- |
+| `phoneMask` | `phone-mask` | данные для выбора стран в компоненте form-communication | `any` | `undefined` |
 
 
 ## Dependencies

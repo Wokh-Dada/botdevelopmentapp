@@ -7,9 +7,10 @@
 
 ## Properties
 
-| Property     | Attribute    | Description | Type  | Default     |
-| ------------ | ------------ | ----------- | ----- | ----------- |
-| `categories` | `categories` |             | `any` | `undefined` |
+| Property       | Attribute        | Description                                   | Type     | Default     |
+| -------------- | ---------------- | --------------------------------------------- | -------- | ----------- |
+| `categories`   | `categories`     | принятые данные для вывода в компоненте футер | `any`    | `undefined` |
+| `pathToAssets` | `path-to-assets` | префикс путь к картинкам                      | `string` | `undefined` |
 
 
 ## Dependencies

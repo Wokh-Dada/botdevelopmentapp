@@ -27,9 +27,14 @@
 
  - [cnt-flexy-view-abdullakh-bot-product-presentation_](../../..)
 
+### Depends on
+
+- [cnt-flexy-view-abdullakh-bot-product-presentation-img](../cnt-flexy-view-abdullakh-bot-product-presentation-img)
+
 ### Graph
 ```mermaid
 graph TD;
+  cnt-flexy-view-abdullakh-bot-product-presentation-title --> cnt-flexy-view-abdullakh-bot-product-presentation-img
   cnt-flexy-view-abdullakh-bot-product-presentation_ --> cnt-flexy-view-abdullakh-bot-product-presentation-title
   style cnt-flexy-view-abdullakh-bot-product-presentation-title fill:#f9f,stroke:#333,stroke-width:4px
 ```

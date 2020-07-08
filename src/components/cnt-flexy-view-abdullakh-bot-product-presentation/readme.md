@@ -9,7 +9,7 @@
 
 | Property       | Attribute        | Description                                          | Type     | Default     |
 | -------------- | ---------------- | ---------------------------------------------------- | -------- | ----------- |
-| `pathToAssets` | `path-to-assets` |                                                      | `string` | `undefined` |
+| `pathToAssets` | `path-to-assets` | префикс путь к картинкам                             | `string` | `undefined` |
 | `payload`      | `payload`        | массив для вывода элементов ProductPresentationTitle | `any`    | `undefined` |
 
 
@@ -36,6 +36,7 @@ graph TD;
   cnt-flexy-view-abdullakh-bot-product-presentation-1_01 --> cnt-flexy-view-abdullakh-bot-product-presentation_
   cnt-flexy-view-abdullakh-bot-product-presentation_ --> cnt-flexy-view-abdullakh-bot-product-presentation-img
   cnt-flexy-view-abdullakh-bot-product-presentation_ --> cnt-flexy-view-abdullakh-bot-product-presentation-title
+  cnt-flexy-view-abdullakh-bot-product-presentation-title --> cnt-flexy-view-abdullakh-bot-product-presentation-img
   my-component --> cnt-flexy-view-abdullakh-bot-product-presentation-1_01
   style cnt-flexy-view-abdullakh-bot-product-presentation-1_01 fill:#f9f,stroke:#333,stroke-width:4px
 ```
