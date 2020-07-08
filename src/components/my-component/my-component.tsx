@@ -81,6 +81,7 @@ export class MyComponent {
 
         <cnt-flexy-view-abdullakh-universal-footer-1_01
           categories={footer}
+          pathToAssets={this.testPathToAssets}
         />
 
       </div>

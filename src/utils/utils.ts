@@ -9,5 +9,11 @@ export function format(first: string, middle: string, last: string): string {
 
 
 export class StorageAbdullakhBot {
-  public static prefix: string;
+  private static prefix_;
+  public static get prefix (): string {
+    return this.prefix_;
+  }
+  public static set prefix (val: string) {
+    this.prefix_ = val;
+  }
 }

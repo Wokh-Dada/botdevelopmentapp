@@ -29,7 +29,6 @@ export class CntFlexyViewAbdullakhBotFormCommunication_ implements ComponentInte
    * Вызов функции вывода меню при условии совпадения таргета клика с нужным узлом
    */
   public clickPopUp (event) {
-    console.log(event)
     if (event.target === this.ourModal){
       this.closeForm.emit()
     }

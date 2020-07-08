@@ -5,7 +5,7 @@ import {StorageAbdullakhBot} from "../../utils/utils";
   tag: 'cnt-flexy-view-abdullakh-bot-product-information-1_01',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-product-information.css',
   shadow: false,
-  scoped: true
+  scoped: false
 })
 export class CntFlexyViewAbdullakhBotProductInformation implements ComponentInterface {
   /**
@@ -28,8 +28,12 @@ export class CntFlexyViewAbdullakhBotProductInformation implements ComponentInte
    * */
   componentWillLoad() {
     StorageAbdullakhBot.prefix = this.pathToAssets;
+    console.log('1 pathToAssets' + ' ' + this.pathToAssets)
+    console.log('1 StorageAbdullakhBot' + ' ' + StorageAbdullakhBot.prefix)
   }
   render() {
+    console.log('2 pathToAssets' + ' ' + this.pathToAssets)
+    console.log('2 StorageAbdullakhBot' + ' ' + StorageAbdullakhBot.prefix)
     return (
       <cnt-flexy-view-abdullakh-bot-product-information_
         ProductInformation={this.payload}

@@ -31,7 +31,6 @@ export class CntFlexyViewAbdullakhBotTransitionCreateBot implements ComponentInt
   }
 
   render() {
-    console.log(this.pathToAssets)
     return (
       <cnt-flexy-view-abdullakh-bot-transition-create-bot_
         payload={this.payload}

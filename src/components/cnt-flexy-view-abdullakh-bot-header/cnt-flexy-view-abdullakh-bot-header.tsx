@@ -27,7 +27,6 @@ export class CntFlexyViewAbdullakhBotHeader implements ComponentInterface {
   }
 
   render() {
-    console.log(StorageAbdullakhBot.prefix)
     return (
       <cnt-flexy-view-abdullakh-bot-header_ categories={this.categories} onClickOnHeader={(event) => this.clickOnHeader(event)}/>
     );
