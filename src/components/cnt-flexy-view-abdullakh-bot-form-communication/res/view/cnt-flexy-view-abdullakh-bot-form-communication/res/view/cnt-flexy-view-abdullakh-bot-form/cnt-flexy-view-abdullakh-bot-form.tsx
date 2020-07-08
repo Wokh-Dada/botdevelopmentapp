@@ -5,6 +5,7 @@ import {AbdullakhBotForm} from "./interface/common.interface";
   tag: 'cnt-flexy-view-abdullakh-bot-form',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-form.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotForm implements ComponentInterface {
   /**

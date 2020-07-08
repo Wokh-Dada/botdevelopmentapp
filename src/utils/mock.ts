@@ -677,121 +677,73 @@ export const Tariffs = {
   ]
 };
 
-
 export const footer = {
-  icons: [
+  systemButtons: [
     {
-      id: 1,
-      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/il/ios11-imessage-app-store-icon.png',
-      iconName: 'Магазин',
-      messages: [
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'}
-      ]
+      name: 'Магазин',
+      title: 'Магазин',
+      icon: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/il/ios11-imessage-app-store-icon.png',
+      badges: 3,
+      id: 1
     },
     {
+      name: 'Фото',
+      title: 'Фото',
+      icon: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios12-messages-imessage-photos-app.png',
+      badges: 0,
       id: 2,
-      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios12-messages-imessage-photos-app.png',
-      iconName: 'Фото',
-      messages: []
     },
     {
+      name: 'Музыка',
+      title: 'Музыка',
+      icon: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios10-message-imessage-music-app.png',
+      badges: 3,
       id: 3,
-      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios10-message-imessage-music-app.png',
-      iconName: 'Музыка',
-      messages: [
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'}
-      ]
     },
     {
+      name: 'Digital Touch',
+      title: 'Digital Touch',
+      icon: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios11-imessage-digital-touch-icon.png',
+      badges: 1,
       id: 4,
-      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios11-imessage-digital-touch-icon.png',
-      iconName: 'Digital Touch',
-      messages: [
-        {mess: 'sssss'}
-      ]
+    },
+
+  ],
+  userButtons: [
+    {
+      name: 'images',
+      title: 'images',
+      icon: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios10-message-imessage-images-app.png',
+      badges: 0,
+      id: 1,
     },
     {
+      name: 'Apple Pay',
+      title: 'Apple Pay',
+      icon: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios11-message-imessage-apple-pay-app.png',
+      badges: 4,
+      id: 2,
+    },
+    {
+      name: 'Animoji',
+      title: 'Animoji',
+      icon: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios12-messages-imessage-memoji-icon.png',
+      badges: 0,
+      id: 3,
+    },
+    {
+      name: 'Memoji',
+      title: 'Memoji',
+      icon: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios13-imessage-memoji-sticker-icon.png',
+      badges: 0,
+      id: 4
+    },
+    {
+      name: 'WhatsApp',
+      title: 'WhatsApp',
+      icon: 'https://i2.wp.com/nigil.ru/wp-content/uploads/2015/06/whatsapp.png?resize=512%2C512',
+      badges: 33,
       id: 5,
-      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios10-message-imessage-images-app.png',
-      iconName: 'images',
-      messages: []
-    },
-    {
-      id: 6,
-      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios11-message-imessage-apple-pay-app.png',
-      iconName: 'Apple Pay',
-      messages: [
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-      ]
-    },
-    {
-      id: 7,
-      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios12-messages-imessage-memoji-icon.png',
-      iconName: 'Animoji',
-      messages: []
-    },
-    {
-      id: 8,
-      iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios13-imessage-memoji-sticker-icon.png',
-      iconName: 'Memoji',
-      messages: []
-    },
-    {
-      id: 9,
-      iconHref: 'https://i2.wp.com/nigil.ru/wp-content/uploads/2015/06/whatsapp.png?resize=512%2C512',
-      iconName: 'WhatsApp',
-      messages: [
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-        {mess: 'sssss'},
-      ]
-    },
+    }
   ]
 }

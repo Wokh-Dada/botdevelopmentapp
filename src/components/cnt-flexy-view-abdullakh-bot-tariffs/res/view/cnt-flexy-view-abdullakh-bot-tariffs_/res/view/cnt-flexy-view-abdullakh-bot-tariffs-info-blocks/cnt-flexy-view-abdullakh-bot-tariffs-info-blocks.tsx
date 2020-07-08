@@ -5,6 +5,7 @@ import {StorageAbdullakhBot} from "../../../../../../../../utils/utils";
   tag: 'cnt-flexy-view-abdullakh-bot-tariffs-info-blocks',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-tariffs-info-blocks.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotTariffsInfoBlocks implements ComponentInterface {
   /**
@@ -26,11 +27,11 @@ export class CntFlexyViewAbdullakhBotTariffsInfoBlocks implements ComponentInter
     return (
       <div class={blockClass(this.arr.class)}>
         <div class="Tariffs_info_block_outer_icon"
-             style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.arr.outerImg + ")"}}
+             style={{backgroundImage: "url(" + StorageAbdullakhBot.prefix + this.arr.outerImg + ")"}}
              onClick={() => this.clickOnTariffs.emit(this.arr.outerImg)}>
           {/*вывод внешней картинки из массива*/}
           <div class="Tariffs_info_block_inner_icon"
-               style={{backgroundImage: "url(" +  StorageAbdullakhBot.prefix + this.arr.innerImg + ")"}}
+               style={{backgroundImage: "url(" + StorageAbdullakhBot.prefix + this.arr.innerImg + ")"}}
                onClick={() => this.clickOnTariffs.emit(this.arr.innerImg)}>
             {/*вывод внутренней картинки из массива*/}
           </div>

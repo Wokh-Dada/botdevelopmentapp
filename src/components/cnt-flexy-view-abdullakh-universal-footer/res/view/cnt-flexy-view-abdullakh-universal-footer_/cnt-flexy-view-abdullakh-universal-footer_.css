@@ -10,6 +10,24 @@
   transition: 200ms linear;
 }
 
+.systemButtons{
+  display: inline-flex;
+  width: 100%;
+}
+
+.systemButtons::after{
+  content: '';
+  align-self: center;
+  height: 80%;
+  width: 1px;
+  background-color: #a5a5a5;
+}
+
+.userButtons{
+  display: inline-flex;
+  width: 100%;
+}
+
 .universal_down_horizon::-webkit-scrollbar {
   display: none;
 }
@@ -43,10 +61,12 @@
   padding: 5px 15px;
 }
 
+.counter_pos{
+  position: relative;
+}
+
 .counter {
   position: absolute;
-  top: 1px;
-  right: 57px;
   display: inline-flex;
   text-align: center;
   align-items: center;
@@ -59,6 +79,16 @@
   padding: 2px;
   font-size: 12px;
   font-weight: 600;
+}
+
+.systemButtons .counter{
+  left: 13px;
+  top: -2px;
+}
+
+.userButtons .counter{
+  left: 13px;
+  top: -2px;
 }
 
 .footerIcon {
@@ -181,9 +211,17 @@
     animation-duration: 0s;
   }
 
-  .universal_down_horizon:hover .counter {
-    top: 2px;
-    right: 14px;
+  .universal_down_horizon:hover .systemButtons .counter {
+    left: 13px;
+    top: -4px;
+    width: 20px;
+    height: 20px;
+    font-size: 8px;
+  }
+
+  .universal_down_horizon:hover .userButtons .counter {
+    left: 13px;
+    top: -4px;
     width: 20px;
     height: 20px;
     font-size: 8px;
@@ -193,10 +231,17 @@
     padding: 5px 13.5px;
   }
 
+  .systemButtons .counter{
+    left: 7px;
+    top: -2px;
+  }
+
+  .userButtons .counter{
+    left: 7px;
+    top: -3px;
+  }
 
   .counter {
-    top: 0px;
-    right: 7px;
     width: 13px;
     height: 13px;
     font-size: 5px;

@@ -30,6 +30,8 @@
 }
 
 
+
+
 @media (max-width: 992px) {
   .transitionCreateBotImgPosition {
     align-items: center;
@@ -38,6 +40,10 @@
   .transitionCreateBotImg {
     width: 310px;
     height: 182px;
+  }
+
+  .transitionCreateBotTitle{
+    padding: 0;
   }
 }
 

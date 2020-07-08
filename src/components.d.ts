@@ -29,6 +29,9 @@ export namespace Components {
         "arr": any;
     }
     interface CntFlexyViewAbdullakhBotConsultation1_01 {
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets": string;
         /**
           * данные компонента Consultation
@@ -50,6 +53,9 @@ export namespace Components {
     interface CntFlexyViewAbdullakhBotFormClose {
     }
     interface CntFlexyViewAbdullakhBotFormCommunication1_01 {
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets": string;
         /**
           * данные компонента FormCommunication
@@ -63,6 +69,9 @@ export namespace Components {
         "payload": AbdullakhBotFormCommunication;
     }
     interface CntFlexyViewAbdullakhBotFormInput {
+        /**
+          * данные для выбора стран в компоненте form-communication
+         */
         "phoneMask": any;
     }
     interface CntFlexyViewAbdullakhBotHeader1_01 {
@@ -70,6 +79,9 @@ export namespace Components {
           * объект с массивом меню и string для подкомпонентов header-start header-end
          */
         "categories": any;
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets": string;
     }
     interface CntFlexyViewAbdullakhBotHeaderCenter {
@@ -97,6 +109,9 @@ export namespace Components {
         "categories": CntFlexyViewCategoryForOwnerItemInterface;
     }
     interface CntFlexyViewAbdullakhBotPerformanceAndBenefits1_01 {
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets": string;
         /**
           * объект с массивами компонентов PerformanceInformation, BenefitsBots
@@ -126,6 +141,9 @@ export namespace Components {
         "endText": string;
     }
     interface CntFlexyViewAbdullakhBotProductInformation1_01 {
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets": string;
         /**
           * данные из объекта для компонента ProductInformation
@@ -145,6 +163,9 @@ export namespace Components {
         "ProductInformation": SSAbdullakhProductInformation;
     }
     interface CntFlexyViewAbdullakhBotProductPresentation1_01 {
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets": string;
         /**
           * массив для вывода элементов ProductPresentationTitle
@@ -174,6 +195,9 @@ export namespace Components {
         "payload": SSAbdullakhProductPresentation;
     }
     interface CntFlexyViewAbdullakhBotTariffs1_01 {
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets": string;
         /**
           * данные компонента Tariffs
@@ -193,6 +217,9 @@ export namespace Components {
         "payload": any;
     }
     interface CntFlexyViewAbdullakhBotTransitionCreateBot1_01 {
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets": string;
         /**
           * массив для вывода элементов TransitionCreateBot
@@ -218,7 +245,14 @@ export namespace Components {
         "payload": SSAbdullakhTransitionCreateBot;
     }
     interface CntFlexyViewAbdullakhUniversalFooter1_01 {
+        /**
+          * принятые данные для вывода в компоненте футер
+         */
         "categories": any;
+        /**
+          * префикс путь к картинкам
+         */
+        "pathToAssets": string;
     }
     interface CntFlexyViewAbdullakhUniversalFooter_ {
         "footerIcons": any;
@@ -501,6 +535,9 @@ declare namespace LocalJSX {
           * Вызов модального окна формы
          */
         "onOpenForm"?: (event: CustomEvent<any>) => void;
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets"?: string;
         /**
           * данные компонента Consultation
@@ -538,6 +575,9 @@ declare namespace LocalJSX {
           * Закрытие модального окна формы
          */
         "onCloseForm"?: (event: CustomEvent<any>) => void;
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets"?: string;
         /**
           * данные компонента FormCommunication
@@ -555,6 +595,9 @@ declare namespace LocalJSX {
         "payload"?: AbdullakhBotFormCommunication;
     }
     interface CntFlexyViewAbdullakhBotFormInput {
+        /**
+          * данные для выбора стран в компоненте form-communication
+         */
         "phoneMask"?: any;
     }
     interface CntFlexyViewAbdullakhBotHeader1_01 {
@@ -562,6 +605,9 @@ declare namespace LocalJSX {
           * объект с массивом меню и string для подкомпонентов header-start header-end
          */
         "categories"?: any;
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets"?: string;
     }
     interface CntFlexyViewAbdullakhBotHeaderCenter {
@@ -609,6 +655,9 @@ declare namespace LocalJSX {
           * открытие формы связи
          */
         "onOpenForm"?: (event: CustomEvent<any>) => void;
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets"?: string;
         /**
           * объект с массивами компонентов PerformanceInformation, BenefitsBots
@@ -662,6 +711,9 @@ declare namespace LocalJSX {
           * Вызов модального окна формы
          */
         "onOpenForm"?: (event: CustomEvent<any>) => void;
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets"?: string;
         /**
           * данные из объекта для компонента ProductInformation
@@ -701,6 +753,9 @@ declare namespace LocalJSX {
           * Вызов модального окна формы
          */
         "onOpenForm"?: (event: CustomEvent<any>) => void;
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets"?: string;
         /**
           * массив для вывода элементов ProductPresentationTitle
@@ -754,6 +809,9 @@ declare namespace LocalJSX {
           * Вызов модального окна формы
          */
         "onOpenForm"?: (event: CustomEvent<any>) => void;
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets"?: string;
         /**
           * данные компонента Tariffs
@@ -793,6 +851,9 @@ declare namespace LocalJSX {
           * Вызов модального окна формы
          */
         "onOpenForm"?: (event: CustomEvent<any>) => void;
+        /**
+          * префикс путь к картинкам
+         */
         "pathToAssets"?: string;
         /**
           * массив для вывода элементов TransitionCreateBot
@@ -834,7 +895,14 @@ declare namespace LocalJSX {
         "payload"?: SSAbdullakhTransitionCreateBot;
     }
     interface CntFlexyViewAbdullakhUniversalFooter1_01 {
+        /**
+          * принятые данные для вывода в компоненте футер
+         */
         "categories"?: any;
+        /**
+          * префикс путь к картинкам
+         */
+        "pathToAssets"?: string;
     }
     interface CntFlexyViewAbdullakhUniversalFooter_ {
         "footerIcons"?: any;

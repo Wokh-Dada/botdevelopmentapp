@@ -64,7 +64,9 @@
 }
 
 @media (max-width: 992px) {
-
+  .BenefitsBotsBlock {
+    max-width: 400px;
+  }
 }
 
 @media (min-width: 768px) {

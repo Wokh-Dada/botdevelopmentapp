@@ -5,6 +5,7 @@ import {SSAbdullakhBenefitsBots} from "./interface/common.interface";
   tag: 'cnt-flexy-view-abdullakh-bot-benefits-bots',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-benefits-bots.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotBenefitsBots implements ComponentInterface {
   /**

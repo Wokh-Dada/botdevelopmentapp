@@ -104,6 +104,11 @@
     height: 12px;
   }
 
+  .mobile_presentation_img{
+    justify-content: center;
+    align-items: center;
+  }
+
   .presentationTitlePrice {
     text-align: center;
   }

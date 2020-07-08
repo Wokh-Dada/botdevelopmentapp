@@ -5,6 +5,7 @@ import {StorageAbdullakhBot} from "../../../../../../../../utils/utils";
   tag: 'cnt-flexy-view-abdullakh-bot-transition-create-bot-title',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-transition-create-bot-title.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotTransitionCreateBotTitle implements ComponentInterface {
   /**

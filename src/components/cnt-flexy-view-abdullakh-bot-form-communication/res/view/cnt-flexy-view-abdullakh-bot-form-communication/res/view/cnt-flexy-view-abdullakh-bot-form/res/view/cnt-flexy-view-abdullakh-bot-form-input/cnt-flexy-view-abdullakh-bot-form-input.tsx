@@ -4,23 +4,35 @@ import {Component, ComponentInterface, h, Prop, State} from '@stencil/core';
   tag: 'cnt-flexy-view-abdullakh-bot-form-input',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-form-input.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotFormInput implements ComponentInterface {
-
+  /**
+   * данные для выбора стран в компоненте form-communication
+   */
   @Prop() phoneMask: any;
 
   /**
-   * boolean значение для вывода компонента form-communication
+   *
+   */
+  @State() phoneCodeSelect: boolean;
+
+  /**
+   *
    */
   @State() idCountry: string;
 
+  /**
+   * ref связки с дом деревом для закрытия и открытия блока выбора страны
+   */
   navOpenTag: HTMLElement;
+
   componentDidLoad() {
     this.idCountry = this.phoneMask.defaultNumber;
+
   }
 
   render() {
-
     return (
       <div>
         <div class="form_text">
@@ -35,26 +47,23 @@ export class CntFlexyViewAbdullakhBotFormInput implements ComponentInterface {
               <input class="inputSizePhone" type="tel" placeholder="(999) 999-99-99"/>
             </div>
           </div>
-          <div class="d-none" ref={(el) => this.navOpenTag = el}>
+          {this.phoneCodeSelect ?
             <div class="country_code_selection">
-
               <CountryCodeSelection arr={this.phoneMask.phonemask} idSelected={(x) => this.idSelected(x)}/>
-
             </div>
-          </div>
+            :
+            ''
+          }
         </div>
       </div>
     );
-
   }
 
   /**
    * функция для открытия блока с странами
    * */
   public toggleMobileMenu() {
-    if (this.navOpenTag.className === "d-none") {
-      this.navOpenTag.className = 'd-flex';
-    }
+    this.phoneCodeSelect = true;
   }
 
   /**
@@ -62,13 +71,13 @@ export class CntFlexyViewAbdullakhBotFormInput implements ComponentInterface {
    * */
   public idSelected(x) {
     this.idCountry = x
-    this.navOpenTag.className = 'd-none';
+    this.phoneCodeSelect = false;
   }
 
 }
 
 /**
-* компонентная функция для вывода флага и кода выбранной страны
+ * компонентная функция для вывода флага и кода выбранной страны
  **/
 const CountryCodeSelection = (props) => {
   return props.arr.map((item) => {
@@ -92,7 +101,7 @@ const CountryCodeSelection = (props) => {
 }
 
 /**
-* компонентная функция для вывода кода и флага выбранной страны
+ * компонентная функция для вывода кода и флага выбранной страны
  **/
 const CountryCodeSelected = (props) => {
   return props.arr.map((item) => {

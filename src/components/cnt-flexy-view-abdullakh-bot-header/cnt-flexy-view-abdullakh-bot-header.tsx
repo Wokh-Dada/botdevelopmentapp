@@ -5,6 +5,7 @@ import {StorageAbdullakhBot} from "../../utils/utils";
   tag: 'cnt-flexy-view-abdullakh-bot-header-1_01',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-header.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotHeader implements ComponentInterface {
   /**
@@ -12,9 +13,16 @@ export class CntFlexyViewAbdullakhBotHeader implements ComponentInterface {
    * */
   @Prop() categories : any ;
 
+  /**
+   * префикс путь к картинкам
+   * */
   @Prop() pathToAssets: string;
 
-  componentWillLoad() {
+
+  /**
+   * присваивание переданного пути общей переменной для вызова в любом месте
+   * */
+  componentDidLoad() {
     StorageAbdullakhBot.prefix = this.pathToAssets;
   }
 

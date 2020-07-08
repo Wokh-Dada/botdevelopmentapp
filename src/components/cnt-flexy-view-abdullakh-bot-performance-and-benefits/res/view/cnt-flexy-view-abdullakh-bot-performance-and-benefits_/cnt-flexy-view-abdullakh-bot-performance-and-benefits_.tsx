@@ -5,6 +5,7 @@ import {StorageAbdullakhBot} from "../../../../../utils/utils";
   tag: 'cnt-flexy-view-abdullakh-bot-performance-and-benefits_',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-performance-and-benefits_.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotPerformanceAndBenefits_ implements ComponentInterface {
   /**

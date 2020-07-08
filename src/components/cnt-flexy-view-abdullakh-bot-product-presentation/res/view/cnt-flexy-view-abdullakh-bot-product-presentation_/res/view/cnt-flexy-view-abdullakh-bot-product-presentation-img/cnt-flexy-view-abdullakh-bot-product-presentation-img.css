@@ -68,14 +68,17 @@
   animation-delay: 4s;
 }
 
-@media (max-width: 576px) {
-  .presentationImg {
-    margin-top: 50px;
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .presentationImg{
+    width: 500px;
+    height: 629px;
   }
-
-}
-
-@media (min-width: 768px) {
 
 }
 
@@ -126,5 +129,13 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+  .presentationImg {
+    margin-top: 50px;
+  }
+
 }

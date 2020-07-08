@@ -27,8 +27,13 @@
     width: 100%;
   }
   .phone_number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
+    height: 100%;
     line-height: 0.8;
+    padding: 0;
   }
 }
 

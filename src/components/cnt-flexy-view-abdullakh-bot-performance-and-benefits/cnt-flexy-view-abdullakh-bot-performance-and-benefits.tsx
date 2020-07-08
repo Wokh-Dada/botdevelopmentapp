@@ -5,6 +5,7 @@ import {StorageAbdullakhBot} from "../../utils/utils";
   tag: 'cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_01',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-performance-and-benefits.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotPerformanceAndBenefits implements ComponentInterface {
   /**
@@ -17,8 +18,14 @@ export class CntFlexyViewAbdullakhBotPerformanceAndBenefits implements Component
    * */
   @Event() openForm: EventEmitter;
 
+  /**
+   * префикс путь к картинкам
+   * */
   @Prop() pathToAssets: string;
 
+  /**
+   * присваивание переданного пути общей переменной для вызова в любом месте
+   * */
   componentWillLoad() {
     StorageAbdullakhBot.prefix = this.pathToAssets;
   }

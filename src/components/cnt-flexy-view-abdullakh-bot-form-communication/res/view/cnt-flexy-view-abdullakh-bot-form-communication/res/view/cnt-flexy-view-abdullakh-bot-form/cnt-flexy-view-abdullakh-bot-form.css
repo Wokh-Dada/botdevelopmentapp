@@ -1,0 +1,47 @@
+.form {
+  padding: 40px 45px;
+}
+
+.form_text {
+  font-weight: 400;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+
+.inputSize {
+  width: 470px;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #c9c9c9;
+  padding: 0 20px;
+  box-sizing: border-box;
+  outline: transparent;
+}
+
+.inputSize option{
+  outline: transparent;
+  border-color: transparent;
+}
+
+.form_btn {
+  width: 470px;
+  height: 54px;
+  color: #ffffff !important;
+  background-color: #000000;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+@media (max-width: 576px) {
+  .form_text {
+    font-size: 16px;
+  }
+
+  .inputSize {
+    width: 100%;
+    min-height: 100%;
+  }
+}

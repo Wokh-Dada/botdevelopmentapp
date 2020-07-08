@@ -5,6 +5,7 @@ import {Component, ComponentInterface, Event, EventEmitter, h} from '@stencil/co
   tag: 'cnt-flexy-view-abdullakh-bot-form-close',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-form-close.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotFormClose implements ComponentInterface {
   /**

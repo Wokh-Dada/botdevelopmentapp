@@ -26,6 +26,10 @@
   justify-content: flex-end;
 }
 
+.transitionCreateBotBtnBlockInner{
+  position: relative;
+}
+
 .CreateBotBtnBlock-border {
   cursor: pointer;
   width: 314px;
@@ -36,7 +40,7 @@
   background-position: center center;
   border-color: #ffd000;
   padding: 5px;
-  animation-name: pulseBorder;
+  /*animation-name: pulseBorder;*/
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -44,8 +48,8 @@
 
 .transitionCreateBotBtn {
   position: absolute;
-  bottom: 9px;
-  right: 22px;
+  bottom: 7px;
+  right: 7px;
   width: 300px;
   height: 45px;
   color: #ffffff !important;
@@ -91,42 +95,40 @@
   }
 }
 
-@media (max-width: 1145px) {
-    .transitionCreateBotBtn {
-      bottom: 17px;
-    }
-}
 
-@media (max-width: 1097px) {
-  .transitionCreateBotBtn {
-    bottom: 25px;
+
+@media (max-width: 1200px) {
+  .innerCreateBotTextBlock {
+    flex-direction: column;
   }
-}
 
-@media (max-width: 992px) {
   .transitionCreateBotBtnBlock {
     justify-content: center;
+    width: auto;
+    margin-top: 40px;
   }
 
-  .transitionCreateBotBtn {
-    bottom: 7px;
-    right: 210px;
+}
+
+
+@media (max-width: 992px) {
+
+  .transitionCreateBotTextBlock {
+    padding-top: 20px;
   }
+
+
+
 }
 
 @media (max-width: 768px) {
-  .transitionCreateBotBtn {
-    bottom: 7px;
-    right: 120px;
-  }
+
 }
 
 @media (max-width: 576px) {
   .transitionCreateBotBtn {
     width: 250px;
-    position: relative;
-    bottom: -51px;
-    right: -7px;
+    right: 10px;
   }
 
   .CreateBotBtnBlock-border{

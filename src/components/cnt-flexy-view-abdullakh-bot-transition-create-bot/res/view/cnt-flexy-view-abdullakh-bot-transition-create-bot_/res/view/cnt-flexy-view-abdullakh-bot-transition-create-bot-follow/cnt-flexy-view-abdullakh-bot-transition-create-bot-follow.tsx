@@ -4,6 +4,7 @@ import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@sten
   tag: 'cnt-flexy-view-abdullakh-bot-transition-create-bot-follow',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-transition-create-bot-follow.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotTransitionCreateBotFollow implements ComponentInterface {
   /**
@@ -26,7 +27,7 @@ export class CntFlexyViewAbdullakhBotTransitionCreateBotFollow implements Compon
             {/*вызов html разметки из массива*/}
           </div>
           <div class="transitionCreateBotBtnBlock">
-            <div>
+            <div class="transitionCreateBotBtnBlockInner">
               <button class="transitionCreateBotBtn" innerHTML={this.arr.btnText}
                       onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.btnText)}
               >

@@ -10,7 +10,8 @@ import {
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
-  shadow: false
+  shadow: false,
+  scoped:true
 })
 export class MyComponent {
 

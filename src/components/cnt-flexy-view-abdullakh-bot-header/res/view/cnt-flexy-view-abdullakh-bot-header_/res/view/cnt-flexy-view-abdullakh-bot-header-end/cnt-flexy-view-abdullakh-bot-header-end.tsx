@@ -4,6 +4,7 @@ import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@sten
   tag: 'cnt-flexy-view-abdullakh-bot-header-end',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-header-end.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotHeaderEnd implements ComponentInterface {
   /**

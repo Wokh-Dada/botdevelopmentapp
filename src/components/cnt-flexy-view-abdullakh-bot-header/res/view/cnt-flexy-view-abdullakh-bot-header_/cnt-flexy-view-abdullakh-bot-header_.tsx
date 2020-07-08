@@ -5,6 +5,7 @@ import {CntFlexyViewCategoryForOwnerItemInterface} from "./interface/common.inte
   tag: 'cnt-flexy-view-abdullakh-bot-header_',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-header_.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotHeader implements ComponentInterface {
   /**

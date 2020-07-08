@@ -5,6 +5,7 @@ import {SSAbdullakhProductInformation} from "./interface/common.interface";
   tag: 'cnt-flexy-view-abdullakh-bot-product-information_',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-product-information_.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotProductInformation_ implements ComponentInterface {
   /**

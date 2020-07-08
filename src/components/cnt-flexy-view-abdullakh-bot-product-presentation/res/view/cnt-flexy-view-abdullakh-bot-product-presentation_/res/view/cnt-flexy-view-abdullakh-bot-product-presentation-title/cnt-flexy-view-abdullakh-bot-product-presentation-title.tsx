@@ -6,6 +6,7 @@ import {StorageAbdullakhBot} from "../../../../../../../../utils/utils";
   tag: 'cnt-flexy-view-abdullakh-bot-product-presentation-title',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-product-presentation-title.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotProductPresentationTitle implements ComponentInterface {
   /**
@@ -46,8 +47,8 @@ export class CntFlexyViewAbdullakhBotProductPresentationTitle implements Compone
               </div>
             </div>
           </div>
-          <div class="d-lg-none d-block">
-            <s-abdullakh-product-presentation-img img={this.img}/>
+          <div class="mobile_presentation_img d-lg-none d-flex">
+            <cnt-flexy-view-abdullakh-bot-product-presentation-img img={this.img}/>
           </div>
           <div class="presentationTitlePrice animate__animated animate__fadeInLeft"
                onClick={() => this.clickOnProductPresentation.emit(this.arr.price)}>

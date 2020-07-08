@@ -7,6 +7,7 @@ import {AbdullakhBotFormCommunication} from "./interface/common.interface";
   tag: 'cnt-flexy-view-abdullakh-bot-form-communication_',
   styleUrl: 'cnt-flexy-view-abdullakh-bot-form-communication_.css',
   shadow: false,
+  scoped: true
 })
 export class CntFlexyViewAbdullakhBotFormCommunication_ implements ComponentInterface {
   /**
