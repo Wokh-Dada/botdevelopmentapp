@@ -147,7 +147,7 @@
   .universal_down_horizon:hover .footerIcon {
     width: 60px;
     height: 45px;
-    transition: 300ms linear;
+    transition: 200ms linear;
     transition-property: bottom;
   }
 
@@ -177,15 +177,6 @@
   }
 
   .footerIconName {
-    position: relative;
     font-size: 10px;
-    bottom: -25px;
-  }
-
-  .universal_down_horizon:hover .footerIconName {
-    bottom: 0;
-    font-size: 10px;
-    transition: 400ms linear;
-    transition-property: bottom;
   }
 }
