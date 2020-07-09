@@ -6,7 +6,7 @@
   overflow-x: scroll;
   position: fixed;
   width: 100%;
-  transition: 300ms cubic-bezier(0, 0, 0, 1.03);
+  transition: 200ms cubic-bezier(0, 0, 0.19, 0.82);
   bottom: -22px;
 }
 
