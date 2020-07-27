@@ -34,9 +34,7 @@ export class CntFlexyViewAbdullakhBotTransitionCreateBotTitle implements Compone
   creatBotImg: HTMLElement;
 
   render() {
-    /**
-     * вызов функции анимации блока transitionCreateBotImg при скроле
-     * */
+
     return (
       <div class="transitionCreateBotImgPosition" ref={(el) => this.creatBotParent = el}>
         <div class="transitionCreateBotImg"

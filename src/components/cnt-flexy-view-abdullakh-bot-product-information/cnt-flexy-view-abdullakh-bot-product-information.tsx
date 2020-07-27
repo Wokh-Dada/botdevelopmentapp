@@ -28,12 +28,8 @@ export class CntFlexyViewAbdullakhBotProductInformation implements ComponentInte
    * */
   componentWillLoad() {
     StorageAbdullakhBot.prefix = this.pathToAssets;
-    console.log('1 pathToAssets' + ' ' + this.pathToAssets)
-    console.log('1 StorageAbdullakhBot' + ' ' + StorageAbdullakhBot.prefix)
   }
   render() {
-    console.log('2 pathToAssets' + ' ' + this.pathToAssets)
-    console.log('2 StorageAbdullakhBot' + ' ' + StorageAbdullakhBot.prefix)
     return (
       <cnt-flexy-view-abdullakh-bot-product-information_
         ProductInformation={this.payload}
