@@ -869,6 +869,10 @@ declare namespace LocalJSX {
           * клик по элементам компонента TransitionCreateBot
          */
         "onClickOnTransitionCreateBot"?: (event: CustomEvent<any>) => void;
+        /**
+          * Вызов модального окна формы
+         */
+        "onOpenForm"?: (event: CustomEvent<any>) => void;
     }
     interface CntFlexyViewAbdullakhBotTransitionCreateBotTitle {
         /**

@@ -17,6 +17,11 @@ export class CntFlexyViewAbdullakhBotTransitionCreateBotFollow implements Compon
    * */
   @Event() clickOnTransitionCreateBot: EventEmitter;
 
+  /**
+   *  Вызов модального окна формы
+   * */
+  @Event() openForm: EventEmitter
+
   render() {
     return (
       <div class="transitionCreateBotTextBlock">
@@ -33,7 +38,10 @@ export class CntFlexyViewAbdullakhBotTransitionCreateBotFollow implements Compon
               >
                 {/*вызов текста массива*/}
               </button>
-              <div class="CreateBotBtnBlock-border" onClick={() => this.clickOnTransitionCreateBot.emit(this.arr.btnText)}>
+              <div class="CreateBotBtnBlock-border" onClick={() => {
+                this.clickOnTransitionCreateBot.emit(this.arr.btnText);
+                this.openForm.emit();
+              }}>
                 {/*анимация border вокруг button*/}
               </div>
             </div>

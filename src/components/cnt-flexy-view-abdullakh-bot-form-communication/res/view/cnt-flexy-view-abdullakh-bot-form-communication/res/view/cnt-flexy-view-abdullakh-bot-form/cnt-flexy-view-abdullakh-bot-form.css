@@ -37,11 +37,20 @@
 
 @media (max-width: 576px) {
   .form_text {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .inputSize {
     width: 100%;
-    min-height: 100%;
+    height: 50px;
+  }
+
+  .inputSize, .inputSize option{
+    font-size: 14px;
+  }
+
+  .form_btn{
+    width: 100%;
+    font-size: 14px;
   }
 }
