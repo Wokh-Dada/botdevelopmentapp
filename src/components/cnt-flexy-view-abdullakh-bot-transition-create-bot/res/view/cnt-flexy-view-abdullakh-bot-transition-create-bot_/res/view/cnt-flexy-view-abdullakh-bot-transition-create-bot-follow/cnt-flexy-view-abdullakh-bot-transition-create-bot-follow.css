@@ -40,7 +40,7 @@
   background-position: center center;
   border-color: #ffd000;
   padding: 5px;
-  /*animation-name: pulseBorder;*/
+  animation-name: pulseBorder;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
