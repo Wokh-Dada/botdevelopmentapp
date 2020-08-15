@@ -29,7 +29,6 @@ export class CntFlexyViewAbdullakhBotFormInput implements ComponentInterface {
 
   componentDidLoad() {
     this.idCountry = this.phoneMask.defaultNumber;
-
   }
 
   render() {

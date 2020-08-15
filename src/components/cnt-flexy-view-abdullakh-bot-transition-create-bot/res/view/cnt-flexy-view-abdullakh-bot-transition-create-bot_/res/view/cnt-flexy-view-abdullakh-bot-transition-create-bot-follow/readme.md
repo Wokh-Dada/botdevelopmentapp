@@ -17,6 +17,7 @@
 | Event                        | Description                                      | Type               |
 | ---------------------------- | ------------------------------------------------ | ------------------ |
 | `clickOnTransitionCreateBot` | клик по элементам компонента TransitionCreateBot | `CustomEvent<any>` |
+| `openForm`                   | Вызов модального окна формы                      | `CustomEvent<any>` |
 
 
 ## Dependencies
