@@ -48,12 +48,7 @@ input{
   100% { transform: scale(1); }
 }
 
-@media (min-width: 576px) {
-
-}
-
-@media (min-width: 768px) {
-
+@media (max-width: 1200px) {
 }
 
 @media (min-width: 992px) {
@@ -62,5 +57,10 @@ input{
   }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
 }
