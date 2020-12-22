@@ -30,6 +30,8 @@ button:not(:disabled) {
 
 input{
   outline: transparent;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes mypulse {

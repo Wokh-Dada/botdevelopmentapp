@@ -746,4 +746,4 @@ export const footer = {
       id: 5,
     }
   ]
-}
+};

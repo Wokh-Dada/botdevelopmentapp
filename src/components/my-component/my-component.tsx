@@ -11,7 +11,7 @@ import {
   tag: 'my-component',
   styleUrl: 'my-component.css',
   shadow: false,
-  scoped:true
+  scoped: true
 })
 export class MyComponent {
 
@@ -33,15 +33,13 @@ export class MyComponent {
           <cnt-flexy-view-abdullakh-bot-form-communication-1_01
             payload={formCommunication}
             pathToAssets={this.testPathToAssets}
-            onCloseForm={() => {
-              this.closeForm();
-            }}
+            onCloseForm={() => this.closeForm()}
           />
         ) : (
           ""
         )}
 
-        <cnt-flexy-view-abdullakh-bot-header-1_01 pathToAssets={this.testPathToAssets} categories={header} />
+        <cnt-flexy-view-abdullakh-bot-header-1_01 pathToAssets={this.testPathToAssets} categories={header}/>
 
         <cnt-flexy-view-abdullakh-bot-product-presentation-1_01
           payload={ProductPresentation}
