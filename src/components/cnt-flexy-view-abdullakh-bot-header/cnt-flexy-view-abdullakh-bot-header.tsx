@@ -18,7 +18,6 @@ export class CntFlexyViewAbdullakhBotHeader implements ComponentInterface {
    * */
   @Prop() pathToAssets: string;
 
-
   /**
    * присваивание переданного пути общей переменной для вызова в любом месте
    * */
