@@ -7,14 +7,13 @@
 - Все компоненты разбиты на маленькие подкомпоненты чтобы можно было перебирать и переиспользовать;
 - Все стили компонентов ответственны только за свой компонент(scope) и никак не конфликтуют;
 
-Сборка компонентов и логика на Angular - [Код](https://github.com/Wokh-Dada/botDevelAppInAngular) | [Демо](https://wokh-dada.github.io/botDevelAppInAngular/)
-
 ### При создании использовалось
 
 - Сетка "Bootstrap 4" 
 - Google Fonts шрифт "Montserrat"
 - Анимации из библиотеки "animate.css"
 - script link для для подключения библиотеки "WOW.js"
-
 - script инициализации библиотеки "WOW.js"
 - также кастомные анимации и скрипты для их правильной работы
+
+### Сборка компонентов и логика на Angular - [Код](https://github.com/Wokh-Dada/botDevelAppInAngular) | [Демо](https://wokh-dada.github.io/botDevelAppInAngular/)
